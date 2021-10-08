@@ -1,15 +1,13 @@
-@import './../../../styles/sass/abstracts/variables.scss';
+@import './../../../../styles/sass/abstracts/variables.scss';
+@import './../../../../styles/sass/abstracts/mixins.scss';
 
 
 
 
-.headerTop {
-    display: flex;
-    justify-content: space-between;
-}
 
-.list {
-  display: flex;
+.headerItem {
+  font-family: "SP";
+  @include text (20px, 700, 24px, $basicTextColor);
 }
 
 

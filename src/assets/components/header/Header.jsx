@@ -1,5 +1,6 @@
 import s from '././Header.module.scss';
-
+import HeaderItem from './header-item/HeaderItem';
+import ListPersonal from './listPersonal/ListPersonal';
 
 
 
@@ -7,16 +8,29 @@ import s from '././Header.module.scss';
 
 
 function Header(props) {
+
+    const data = {
+        titleLink: "Магазины"
+    }
+    const data2 = {
+        titleLink: "Акции"
+    }
+    const data3 = {
+        titleLink: "Доставка и оплата"
+    }
+    const data4 = {
+        titleLink: "Москва,  ул. Науки  25"
+    }
+
+
     return (
 
         <div className={s.headerTop}>
             <nav className={s.navigationLeft}>
                 <ul className={s.list}>
-                    <li className={s.item}>
-                        <a className={s.itemLink}>
-                        Магазины
-                        </a>
-                    </li>
+                    <HeaderItem titleLink={data.titleLink} />
+                    <HeaderItem titleLink={data2.titleLink} />
+                    <HeaderItem titleLink={data3.titleLink} />
                 </ul>
             </nav>
 
@@ -29,26 +43,15 @@ function Header(props) {
                 </svg>
             </div>
             <div className={s.navigationRight}>
-            <ul className={s.list}>
+                <ul className={s.list}>
                     <li className={s.item}>
-                        <a className={s.itemLink}>
-                        Москва,  ул. Науки  25
-                        </a>
+                        <HeaderItem titleLink={data4.titleLink} />
                     </li>
                 </ul>
 
-                <ul className={s.listSocial}>
-                    <li className={s.itemSocial}>
-                        <a className={s.itemLinkSocial}>
-                            <img img={props.img}/>
-                        </a>
-                    </li>
-                </ul>
-
+                <ListPersonal />
 
             </div>
-
-
         </div>
     );
 }

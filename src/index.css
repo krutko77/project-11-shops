@@ -53,6 +53,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   color: #2F3035;
+  font-family: "SFProDisplayRegular";
 }
 
 code {
