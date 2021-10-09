@@ -1,5 +1,5 @@
 
-import ImgPersonal from '../imgPersonal copy/ImgPersonal';
+import ImgPersonal from '../imgPersonal/ImgPersonal';
 import s from './ListPersonal.module.scss';
 
 import personal1 from './../../../img/personal1.svg'
@@ -29,13 +29,14 @@ function ListPersonal(props) {
 
     return (
         
-        <ul className={s.listPersonal}>
-            <li className={s.itemPersonal}>
+        <div className={s.listPersonal}>
+            
                 <ImgPersonal img={data.img}/>
                 <ImgPersonal img={data2.img}/>
-                <ImgPersonal img={data3.img}/>
-            </li>
-        </ul>
+                <div className={s.counterWrap}>
+                <ImgPersonal img={data3.img} /> <span className={s.personalCounter}>2</span>
+                </div>
+        </div>
     );
 }
 

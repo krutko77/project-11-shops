@@ -6,12 +6,14 @@
 
 
 .headerItem {
-  font-family: "SP";
   @include text (20px, 700, 24px, $basicTextColor);
+
 }
 
 
-
+.headerItem:not(:last-child) {
+  margin-right: 65px;
+}
 
 
 

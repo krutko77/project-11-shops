@@ -6,8 +6,34 @@
 
 
 .headerItem {
-  font-family: "SP";
   @include text (20px, 700, 24px, $basicTextColor);
+}
+
+
+.listPersonal {
+  display: flex;
+}
+
+
+.counterWrap {
+  display: flex;
+}
+
+
+
+.personalCounter {
+  background-color: $accentColor;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  @include text (10px, 500, 12px, $veryLightColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(-50%, 50%);
 }
 
 
