@@ -6,8 +6,8 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function Options(props) {
   return (
     <div className={style.options}>
-      <Checkbox {...label} defaultChecked />
-      <h4 className={style.subtitle}>{props.charTitle}</h4>
+      <Checkbox {...label} />
+      <h4 className={style.textOptions}>{props.textOptions}</h4>
     </div>
   );
 }
