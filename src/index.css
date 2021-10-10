@@ -1,45 +1,45 @@
 @font-face {
-  font-family: BarlowBold;
+  font-family: "BarlowBold";
   src: url(./assets/fonts/Barlow/Barlow-Bold.woff);
 }
 
 @font-face {
-  font-family:BarlowRegular;
+  font-family: "BarlowRegular";
   src: url(./assets/fonts/Barlow/Barlow-Regular.woff);
 }
 
 @font-face {
-  font-family:BarlowSemiBold;
+  font-family: "BarlowSemiBold";
   src: url(./assets/fonts/Barlow/Barlow-SemiBold.woff);
 }
 
 @font-face {
-  font-family:ProximaNova-Bold;
+  font-family: "ProximaNova-Bold";
   src: url(./assets/fonts/ProximaNova/ProximaNova-Bold.woff);
 }
 
 @font-face {
-  font-family:ProximaNova-Semibold;
+  font-family: "ProximaNova-Semibold";
   src: url(./assets/fonts/ProximaNova/ProximaNova-Semibold.woff);
 }
 
 @font-face {
-  font-family: SFProDisplayBold;
+  font-family: "SFProDisplayBold";
   src: url(./assets/fonts/SFProDisplay/SFProDisplay-Bold.woff);
 }
 
 @font-face {
-  font-family: SFProDisplayMedium;
+  font-family: "SFProDisplayMedium";
   src: url(./assets/fonts/SFProDisplay/SFProDisplay-Medium.woff);
 }
 
 @font-face {
-  font-family: SFProDisplayRegular;
+  font-family: "SFProDisplayRegular";
   src: url(./assets/fonts/SFProDisplay/SFProDisplay-Regular.woff);
 }
 
 @font-face {
-  font-family: SFProDisplayRegularSemibold;
+  font-family: "SFProDisplayRegularSemibold";
   src: url(./assets/fonts/SFProDisplay/SFProDisplay-Semibold.woff);
 }
 
