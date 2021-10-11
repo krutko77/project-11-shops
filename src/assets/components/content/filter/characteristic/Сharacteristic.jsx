@@ -7,7 +7,6 @@ function Characteristic(props) {
     <div className={style.characteristic}>
       <img className={style.arrow} src={arrow} alt="" />
       <Subtitle subtitle={props.subtitle} />
-      {/* <h4 className={style.subtitle}>{props.subitle}</h4> */}
     </div>
   );
 }

@@ -1,49 +1,39 @@
-import { styled } from "@mui/material/styles";
+import style from "./Track.module.scss";
+
+import * as React from "react";
 import Box from "@mui/material/Box";
-
 import Slider from "@mui/material/Slider";
-
-const Separator = styled("div")(
-  ({ theme }) => `
-  height: ${theme.spacing(3)};
-`
-);
-
-const marks = [
-  {
-    value: 0,
-    label: "0",
-  },
-  {
-    value: 100000,
-    label: "100000",
-  },
-  {
-    value: 500000,
-    label: "500000",
-  },
-  {
-    value: 800000,
-    label: "800000",
-  },
-];
 
 function valuetext(value) {
   return `${value}°C`;
 }
 
-export default function Track() {
-  return (
-    <Box sx={{ width: 250 }}>
-      <Separator />
+export default function RangeSlider() {
+  const [value, setValue] = React.useState([20, 37]);
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box sx={{ width: 300 }}>
       <Slider
-        track="inverted"
-        aria-labelledby="track-inverted-range-slider"
+        getAriaLabel={() => "Temperature range"}
+        value={value}
+        onChange={handleChange}
+        valueLabelDisplay="auto"
         getAriaValueText={valuetext}
-        defaultValue={[100000, 500000]}
-        marks={marks}
       />
+      <div className={style.wrap}>
+        <div className={style.wrapLeft}>
+          <p className={style.text}>от</p>
+          <span className={style.span}>100 000</span>
+        </div>
+        <div className={style.wrapRight}>
+          <p className={style.text}>до</p>
+          <span className={style.span}>500 000</span>
+        </div>
+      </div>
     </Box>
   );
 }

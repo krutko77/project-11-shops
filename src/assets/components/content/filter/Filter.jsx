@@ -3,6 +3,7 @@ import Characteristic from "../filter/characteristic/Сharacteristic";
 import Options from "../filter/options/Options";
 import Track from "./track/Track";
 import Subtitle from "./subtitle/Subtitle";
+import Select from "./select/Select";
 
 function Filter(props) {
   return (
@@ -31,6 +32,23 @@ function Filter(props) {
       </div>
       <div className={style.fourthWrap}>
         <Subtitle subtitle="Мощность, л.с." />
+        <Select />
+      </div>
+      <div className={style.fourthWrap}>
+        <Subtitle subtitle="Мощность двигателя, л.с." />
+        <Select />
+      </div>
+      <div className={style.fourthWrap}>
+        <Subtitle subtitle="Макс. скорость" />
+        <Select />
+      </div>
+      <div className={style.secondWrap}>
+        <Characteristic subtitle="Бренд" />
+        <div className={style.availability}>
+          <Options textOptions="BRP" />
+          <Options textOptions="Spark 2" />
+          <Options textOptions="Spark 3" />
+        </div>
       </div>
       <div></div>
     </div>
