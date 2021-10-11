@@ -1,57 +1,21 @@
-@import './../../../styles/sass/abstracts/variables.scss';
+@import "./../../../../../styles/sass/abstracts/mixins.scss";
+@import "./../../../../../styles/sass/abstracts/variables.scss";
 
 
-
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-    margin-bottom: 47px;
+.item {
+  @include text (20px, 400, 24px, $basicTextColor);
 }
 
 
-.listLeft {
-  display: flex;
-}
-
-.logoSvg {
-  position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
+.item:hover {
+  font-weight: 600;
+  height: 40px;
+  border-bottom: 3px solid $accentColor;
+  width: max-content;
 }
 
 
-.listRight {
-  margin-right: 100px;
 
-  position: relative;
-}
-
-  .listRight::before {
-    content: "";
-    background-image: url(./../../img/location.png);
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 30px;
-
-    position: absolute;
-    top: -12%;
-    left: -15%;
-  }
-
-
-
-.navigationRight {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-a {
-  cursor: pointer;
-}
 
 
 

@@ -1,57 +1,17 @@
-@import './../../../styles/sass/abstracts/variables.scss';
+@import "./../../../../styles/sass/abstracts/variables.scss";
+@import "./../../../../styles/sass/abstracts/mixins.scss";
 
 
 
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-    margin-bottom: 47px;
-}
-
-
-.listLeft {
-  display: flex;
-}
-
-.logoSvg {
-  position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-
-.listRight {
-  margin-right: 100px;
-
-  position: relative;
-}
-
-  .listRight::before {
-    content: "";
-    background-image: url(./../../img/location.png);
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 30px;
-
-    position: absolute;
-    top: -12%;
-    left: -15%;
-  }
-
-
-
-.navigationRight {
+.list {
   display: flex;
   justify-content: space-between;
+
+  height: 53px;
 }
 
 
-a {
-  cursor: pointer;
-}
+
 
 
 

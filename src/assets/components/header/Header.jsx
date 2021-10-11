@@ -3,28 +3,23 @@ import HeaderItem from './header-item/HeaderItem';
 import ListPersonal from './listPersonal/ListPersonal';
 
 
-
+const data = {
+    titleLink: "Магазины"
+}
+const data2 = {
+    titleLink: "Акции"
+}
+const data3 = {
+    titleLink: "Доставка и оплата"
+}
+const data4 = {
+    titleLink: "Москва,  ул. Науки  25"
+}
 
 
 
 function Header(props) {
-
-    const data = {
-        titleLink: "Магазины"
-    }
-    const data2 = {
-        titleLink: "Акции"
-    }
-    const data3 = {
-        titleLink: "Доставка и оплата"
-    }
-    const data4 = {
-        titleLink: "Москва,  ул. Науки  25"
-    }
-
-
     return (
-
         <div className={s.header}>
             <nav className={s.navigationLeft}>
                 <ul className={s.listLeft}>
@@ -44,13 +39,11 @@ function Header(props) {
             </div>
             <div className={s.navigationRight}>
                 <ul className={s.listRight}>
-                    <li className={s.item}>
-                        <HeaderItem titleLink={data4.titleLink} />
-                    </li>
+                    <HeaderItem titleLink={data4.titleLink} />
                 </ul>
 
                 <ListPersonal />
-
+                
             </div>
         </div>
     );
