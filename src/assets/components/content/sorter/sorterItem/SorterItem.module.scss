@@ -3,16 +3,9 @@
 
 
 .item {
-  @include text (20px, 400, 24px, $basicTextColor);
+  @include text (14px, 400, 24px, $basicTextColor);
 }
 
-
-.item:hover {
-  font-weight: 600;
-  height: 40px;
-  border-bottom: 3px solid $accentColor;
-  width: max-content;
-}
 
 
 
