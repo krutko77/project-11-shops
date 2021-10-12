@@ -1,9 +1,7 @@
 @import './../../../styles/sass/abstracts/variables.scss';
 
 
-
-
-.header {
+.headerWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +9,11 @@
     margin-bottom: 47px;
 }
 
+.container {
+   width: 1200px;
+   padding: 0 15px;
+   margin: auto;
+}
 
 .listLeft {
   display: flex;

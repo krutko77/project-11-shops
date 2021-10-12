@@ -1,12 +1,6 @@
 
 import s from './NavigationItem.module.scss';
 
-
-
-
-
-
-
 function NavigationItem(props) {
     return (
         <li className={s.item}>

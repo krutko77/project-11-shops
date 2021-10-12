@@ -1,10 +1,4 @@
-
 import s from './HeaderItem.module.scss';
-
-
-
-
-
 
 
 function HeaderItem(props) {

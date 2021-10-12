@@ -1,3 +1,5 @@
+@import './../../../../styles/sass/abstracts/mixins.scss';
+@import './../../../../styles/sass/abstracts/variables.scss';
 
 
 
@@ -25,11 +27,30 @@
 }
 
 
+
 .sortTile {
   margin-left: 34px;
   margin-right: 10px;
 }
 
+
+.select {
+  width: 178px;
+  height: 33px;
+
+  border-color: #D7D9DF;
+  outline: #D7D9DF;
+
+  background-image: url(./../../../img/arrow_select.png);
+  background-repeat: no-repeat;
+  background-position: 90%;
+
+  appearance: none;
+
+  &:optional {
+    @include text (14px, 400, 17px, $basicTextColor);
+  }
+}
 
 
 

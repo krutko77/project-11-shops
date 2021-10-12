@@ -1,5 +1,5 @@
-import s from '././Navigation.module.scss';
-import NavigationItem from './navigationItem/NavigationItem';
+import s from './Navigation.module.scss';
+import NavigationItem from './navigationItem/NavigationItem.jsx';
 
 
 const data = {
