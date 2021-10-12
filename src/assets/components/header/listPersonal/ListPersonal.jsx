@@ -6,7 +6,6 @@ import personal1 from './../../../img/personal1.svg'
 import personal2 from './../../../img/personal2.svg'
 import personal3 from './../../../img/personal3.svg'
 
-
 const data = {
     img: personal1
 }
@@ -16,11 +15,6 @@ const data2 = {
 const data3 = {
     img: personal3
 }
-
-
-
-
-
 
 function ListPersonal(props) {
     return (
