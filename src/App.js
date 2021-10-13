@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Sorter from "./assets/components/content/sorter/Sorter";
-import { BrowserRouter } from "react-router-dom";
 
 const data = {
   heading: "Гидроциклы",
@@ -15,25 +14,23 @@ const data = {
 
 function App(props) {
   return (
-    <BrowserRouter>
-      <div className="container">
-        <Header />
-        <Navigation />
+    <div className="container">
+      <Header />
+      <Navigation />
 
-        <Breadcrumbs separator="›" aria-label="breadcrumb">
-          <Link underline="hover" color="#C4C4C4" href="/">
-            Главная
-          </Link>
-          <Typography color="#C4C4C4">Гидроциклы</Typography>
-        </Breadcrumbs>
+      <Breadcrumbs separator="›" aria-label="breadcrumb">
+        <Link underline="hover" color="#C4C4C4" href="/">
+          Главная
+        </Link>
+        <Typography color="#C4C4C4">Гидроциклы</Typography>
+      </Breadcrumbs>
 
-        <h1 className="heading">{data.heading}</h1>
+      <h1 className="heading">{data.heading}</h1>
 
-        <Sorter />
+      <Sorter />
 
-        <Filter />
-      </div>
-    </BrowserRouter>
+      <Filter />
+    </div>
   );
 }
 
