@@ -1,4 +1,10 @@
 
+@import './../../../styles/sass/abstracts/mixins.scss';
+@import './../../../styles/sass/abstracts/variables.scss';
+
+
+
+
 .container {
     width: 1200px;
     padding: 0 15px;
@@ -10,4 +16,22 @@
     
     margin: 41px 0 30px 0;
     }
+
+    .breadcrumb {
+        list-style: none;
+
+        display: flex;
+
+        @include text (15px, 400, 18px, $lightColorText);
+    }
     
+    .item:after {
+        padding: 8px;
+        content: ">";
+      }
+
+      .item a {
+        @include text (15px, 400, 18px, $lightColorText);
+
+        text-decoration: none;
+      }
