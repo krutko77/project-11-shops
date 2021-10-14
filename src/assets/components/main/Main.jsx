@@ -11,10 +11,10 @@ function Main(props) {
    return (
      <main>
         <div className={s.container}>
-            <div className={s.SliderBanner}>
+            <section className={s.sliderBanner}>
                <SliderBanner/>
                <PriceAction/>
-            </div>
+            </section>
             <Search/>
             <SectionProduct/>
             <PopularGoods/>
