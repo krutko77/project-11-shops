@@ -11,8 +11,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Main />
-      <Catalog />
-      <ProductCard />
+      {/* <Catalog /> */}
+      {/* <ProductCard /> */}
       <Footer />
     </BrowserRouter>
   );
