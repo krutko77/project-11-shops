@@ -10,9 +10,11 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Main />
-      <Catalog />
-      <ProductCard />
+      <main>
+         <Main />
+         <Catalog />
+         <ProductCard />
+      </main>
       <Footer />
     </BrowserRouter>
   );
