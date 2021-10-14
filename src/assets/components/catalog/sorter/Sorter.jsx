@@ -1,4 +1,4 @@
-import s from '././Sorter.module.scss';
+import s from './Sorter.module.scss';
 import SorterItem from './sorterItem/SorterItem';
 
 import tile from './../../../img/tile.svg';

@@ -1,9 +1,9 @@
-import s from "./BuyMore.module.scss";
+import s from "./PopularGoods.module.scss";
 
-function BuyMore() {
+function PopularGoods() {
    return (
      <div></div>
    );
  }
  
- export default BuyMore;
+ export default PopularGoods;

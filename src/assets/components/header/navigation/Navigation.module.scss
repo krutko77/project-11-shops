@@ -6,6 +6,7 @@
 .list {
   display: flex;
   justify-content: space-between;
+  align-items:center;
 
   height: 53px;
 
@@ -13,12 +14,12 @@
 }
 
 
+.navigation {
 
-
-
-.Breadcrumbs {
-  margin-bottom: 47px;
+  background-color: $basicColor;
 }
+
+
 
 
 
