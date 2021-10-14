@@ -3,13 +3,12 @@ import SliderBanner from './slider-banner/SliderBanner.jsx';
 import PriceAction from './price-action/PriceAction.jsx';
 import Search from './search/Search.jsx';
 import SectionProduct from './section-product/SectionProduct';
-import PopularGoods from './popular-goods/PopularGoods';
+import BlockVariousGoods from './block-various-goods/BlockVariousGoods';
 import Banner from './banner/Banner';
-import BuyMore from './buy-more/BuyMore.jsx';
 
 function Main(props) {
    return (
-     <main>
+     <div className={s.main}>
         <div className={s.container}>
             <section className={s.sliderBanner}>
                <SliderBanner/>
@@ -17,11 +16,11 @@ function Main(props) {
             </section>
             <Search/>
             <SectionProduct/>
-            <PopularGoods/>
+            <BlockVariousGoods/>
             <Banner/>
-            <BuyMore/>
+            <BlockVariousGoods/>
         </div>        
-     </main>
+     </div>
    );
  }
  

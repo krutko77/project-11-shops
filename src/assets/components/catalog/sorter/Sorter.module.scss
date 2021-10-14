@@ -46,6 +46,7 @@
   background-position: 90%;
 
   appearance: none;
+  padding-left: 15px;
 
   &:optional {
     @include text (14px, 400, 17px, $basicTextColor);

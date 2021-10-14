@@ -10,9 +10,12 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+      <main>
+         <Main />
+         {/* <Catalog /> */}
+         {/* <ProductCard /> */}
+      </main>
       <Main />
-      <Catalog />
-      <ProductCard />
       <Footer />
     </BrowserRouter>
   );
