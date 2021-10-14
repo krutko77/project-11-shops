@@ -1,0 +1,25 @@
+.emailText{
+    color: #2F3035;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin: 25px 0 30px 0;
+  }
+  .btn {
+    color: #ffffff;
+    font-family: SFProDisplay,sans-serif;
+    background: #1C62CD;
+    text-transform: uppercase;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  .emailInput{
+    border: none;
+    height: 30px;
+    padding-left: 12px;
+  }
+  ::placeholder {
+    font-size: 14px;
+    color: #C4C4C4;
+  }
