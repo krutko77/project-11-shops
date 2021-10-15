@@ -1,5 +1,9 @@
+@import './../../../../src/styles/sass/abstracts/mixins.scss';
+@import './../../../../src/styles/sass/abstracts/variables.scss';
+
+
 .footer{
-    background: #f0f0f4;
+    background: $basicColor;
     width: 1200px;
     padding: 0 15px;
     margin: auto;

@@ -1,3 +1,7 @@
+@import './../../../../styles/sass/abstracts/mixins.scss';
+@import './../../../../styles/sass/abstracts/variables.scss';
+
+
 .infoMenu{
     font-size: 14px;
     margin: 40px 0 0 100px;
@@ -8,7 +12,7 @@
     
 }
 .linkMenu{
-    color: #2F3035;
+    color: $basicTextColor;
     text-decoration: none;
 }
 .listMenu{

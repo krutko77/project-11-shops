@@ -1,5 +1,9 @@
+@import './../../../../styles/sass/abstracts/mixins.scss';
+@import './../../../../styles/sass/abstracts/variables.scss';
+
+
 .emailText{
-    color: #2F3035;
+    color: $basicTextColor;
     font-size: 14px;
     font-weight: bold;
     text-align: left;
@@ -8,7 +12,7 @@
   .btn {
     color: #ffffff;
     font-family: SFProDisplay,sans-serif;
-    background: #1C62CD;
+    background: $accentColor;
     text-transform: uppercase;
     padding: 8px;
     border: none;
@@ -21,5 +25,5 @@
   }
   ::placeholder {
     font-size: 14px;
-    color: #C4C4C4;
+    color: $lightColorText;
   }

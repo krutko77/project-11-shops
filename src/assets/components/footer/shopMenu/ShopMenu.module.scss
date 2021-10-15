@@ -1,3 +1,7 @@
+@import './../../../../styles/sass/abstracts/mixins.scss';
+@import './../../../../styles/sass/abstracts/variables.scss';
+
+
 .shopMenu{
     font-size: 14px;
     margin: 40px 0 0 100px;
@@ -7,7 +11,7 @@
     list-style-type: none;
 }
 .link{
-    color: #2F3035;
+    color: $basicTextColor;
     text-decoration: none;
 }
 .list{
