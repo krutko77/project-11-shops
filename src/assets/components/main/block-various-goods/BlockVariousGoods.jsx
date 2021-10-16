@@ -1,5 +1,5 @@
 import s from "./BlockVariousGoods.module.scss";
-import Slider from "react-slick";
+
 import TitleBlock from "./title-block/TitleBlock";
 import SliderProduct from "./slider-goods/SliderProduct";
 
