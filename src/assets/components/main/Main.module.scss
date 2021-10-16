@@ -1,6 +1,11 @@
-
 .container {
     width: 1200px;
     padding: 0 15px;
     margin: auto;
+}
+
+.sliderBanner {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 80px;
 }
