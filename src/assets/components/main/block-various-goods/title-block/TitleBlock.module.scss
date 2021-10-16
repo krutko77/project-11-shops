@@ -1,0 +1,7 @@
+@import './../../../../../styles/sass/abstracts/variables.scss';
+@import './../../../../../styles/sass/abstracts/mixins.scss';
+
+
+.heading {
+    @include text (25px, 700, 30px, $basicTextColor);
+}
