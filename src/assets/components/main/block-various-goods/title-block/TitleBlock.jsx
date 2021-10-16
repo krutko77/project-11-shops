@@ -1,8 +1,8 @@
 import s from "./TitleBlock.module.scss";
 
-function TitleBlock() {
+function TitleBlock(props) {
    return (
-     <div></div>
+     <h2 className={s.heading}>{props.title}</h2>
    );
  }
  
