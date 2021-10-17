@@ -4,22 +4,29 @@ import Main from "./assets/components/main/Main.jsx";
 import Catalog from "./assets/components/catalog/Catalog.jsx";
 import ProductCard from "./assets/components/product-card/ProductCard.jsx";
 import Footer from "./assets/components/footer/Footer.jsx";
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-   <BrowserRouter>
-      <Header/>
-      <Main/>
-      {/* <Catalog/> */}
-      {/* <ProductCard/> */}
-      <Footer/>   
-   </BrowserRouter>    
+    <BrowserRouter>
+      <Header />
+      <Switch>
+        <Route path="/catalog/:id">
+          <Catalog />
+        </Route>
+        <Route path="/product-card">
+          <ProductCard />
+        </Route>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
 export default App;
-
 
 // import Filter from "./assets/components/content/filter/Filter";
 // import Typography from '@mui/material/Typography';
@@ -27,14 +34,12 @@ export default App;
 // import Link from '@mui/material/Link';
 // import Sorter from "./assets/components/content/sorter/Sorter";
 
-
 // const data = {
 //    heading: "Гидроциклы"
 //  }
- 
 
 // <Navigation />
-// <Breadcrumbs 
+// <Breadcrumbs
 // separator="›"
 // aria-label="breadcrumb">
 // <Link underline="hover" color="#C4C4C4" href="/">
@@ -47,6 +52,5 @@ export default App;
 // <h1 className="heading">{data.heading}</h1>
 
 // <Sorter/>
-
 
 // <Filter />
