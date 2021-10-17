@@ -1,11 +1,9 @@
 @import "./../../../../../styles/sass/abstracts/mixins.scss";
 @import "./../../../../../styles/sass/abstracts/variables.scss";
 
-
 .item {
-  @include text (20px, 400, 53px, $basicTextColor);
+  @include text(20px, 400, 53px, $basicTextColor);
 }
-
 
 .item:hover {
   font-weight: 600;
@@ -13,44 +11,3 @@
   width: max-content;
   padding-top: 3px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -21,7 +21,6 @@ function Catalog() {
           </Link>
           <Typography color="#C4C4C4">Гидроциклы</Typography>
         </Breadcrumbs>
-
         <h1 className={s.heading}>{data.heading}</h1>
         <Filter />
         {/* <Sorter /> */}

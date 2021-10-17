@@ -23,14 +23,30 @@
 }
 .navLink {
   color: #1c62cd;
+  margin-top: 20px;
 }
 .input {
   width: 290px;
   height: 30px;
   padding: 8px 0 8px 20px;
 }
-.availability,
-.countryOptions {
+.wrap,
+.specifications {
+  margin-top: 40px;
+}
+.firstWrap,
+.secondWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.specifications {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tenthWrap,
+.sixtWrap,
+.seventhWrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);

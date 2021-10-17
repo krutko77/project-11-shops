@@ -2,7 +2,6 @@ import s from "././Header.module.scss";
 import HeaderItem from "./header-item/HeaderItem";
 import ListPersonal from "./listPersonal/ListPersonal";
 import Navigation from "./navigation/Navigation";
-// import { Link } from "react-router-dom";
 
 const data = {
   titleLink: "Магазины",

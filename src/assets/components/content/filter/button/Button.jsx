@@ -6,14 +6,16 @@ import Stack from "@mui/material/Stack";
 export default function ContainedButtons() {
   return (
     <Stack direction="row" spacing={2}>
-      <Button variant="contained">SALE</Button>
-      <Button variant="contained" disabled>
+      <Button className={style.secondButton} variant="contained">
+        SALE
+      </Button>
+      <Button className={style.secondButton} variant="contained" disabled>
         NEW
       </Button>
-      <Button variant="contained" disabled>
+      <Button className={style.thirdButton} variant="contained" disabled>
         HIT
       </Button>
-      <Button className={style.button} variant="contained" color="info">
+      <Button className={style.fourthButton} variant="contained" color="info">
         ДИЛЕР
       </Button>
     </Stack>
