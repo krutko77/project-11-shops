@@ -1,0 +1,106 @@
+.promoSale {
+   width: 265px;
+   height: 400px;
+   border: 1px solid #CDCDCD;
+}
+
+.priceBlock {
+   display: flex;
+   justify-content: space-between;
+}
+
+button {
+   width: 90px;
+   height: 30px;
+   color: white;
+   border: none;
+   background-color: #1C62CD;
+   font-family: "ProximaNova-Bold";
+   font-size: 12px;
+   letter-spacing: 10%;
+   cursor: pointer;
+}
+
+.newPriceBlock {
+   padding-top: 3px;
+   margin-bottom: 9px;
+}
+
+.iconBig {
+   margin-right: 7px;
+}
+
+.newPrice {
+   font-family: "BarlowBold";
+   font-size: 27px;
+   line-height: 120%;
+   color: #1C62CD;
+   margin-right: 6px;
+}
+
+.oldPriceBlock {
+   display: flex;
+   justify-content: flex-end;
+   margin-bottom: 7px;
+}
+
+.oldPrice {
+   position: relative;
+   font-family: "BarlowRegular";
+   font-size: 14px;
+   line-height: 120%;
+   color: #C4C4C4;
+   margin-right: 8px;
+}
+
+.oldPrice::after {
+   content: "";
+   position: absolute;
+   top: -2px;
+   left: -3px;
+   width: 54px;
+   height: 17px;
+   background: url("./../../../img/price-pseudo.svg");
+}
+
+.iconSmall {
+   margin-right: 4px;
+}
+
+.imgProduct {
+   margin-left: 60px;
+}
+
+.label {
+   text-align: center;
+   max-width: 200px;
+   margin: 0 auto 10px;
+}
+
+.productName {
+   font-family: "SFProDisplayBold";
+   font-size: 18px;
+   line-height: 120%;
+}
+
+.validity {
+   background-color: #F0F0F4;
+   text-align: center;
+   padding: 22px 0 30px;
+}
+
+.text {
+   font-family: "SFProDisplayRegular";
+   font-size: 18px;
+   line-height: 120%;
+   display: block;
+   margin-bottom: 3px;
+}
+
+.date {
+   font-family: "BarlowBold";
+   font-size: 18px;
+   line-height: 120%;
+   color: #1C62CD;
+   display: block;
+}

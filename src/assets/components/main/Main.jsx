@@ -1,6 +1,6 @@
 import s from "./Main.module.scss";
 import SliderBanner from './slider-banner/SliderBanner.jsx';
-import PriceAction from './price-action/PriceAction.jsx';
+import PromoSale from './promo-sale/PromoSale.jsx';
 import Search from './search/Search.jsx';
 import SectionProduct from './section-product/SectionProduct';
 import BlockVariousGoods from './block-various-goods/BlockVariousGoods';
@@ -12,7 +12,7 @@ function Main(props) {
         <div className={s.container}>
             <section className={s.sliderBanner}>
                <SliderBanner/>
-               <PriceAction/>
+               <PromoSale/>
             </section>
             <Search/>
             <SectionProduct/>
