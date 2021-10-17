@@ -1,42 +1,27 @@
 import s from "./Catalog.module.scss";
 import Sorter from "./sorter/Sorter";
 
-
-
-
-
-
-
 const data = {
-   heading: "Гидроциклы"
- }
-
-
-
-
-
+  heading: "Гидроциклы",
+};
 
 function Catalog() {
-   return (
-      <div>
-         <div className={s.container}>
+  return (
+    <div>
+      <div className={s.container}>
+        <Breadcrumbs separator="›" aria-label="breadcrumb">
+          <Link underline="hover" color="#C4C4C4" href="/">
+            Главная
+          </Link>
+          <Typography color="#C4C4C4">Гидроциклы</Typography>
+        </Breadcrumbs>
 
-
-
-            <ol class={s.breadcrumb}>
-               <li class={s.item}><a href="#">Главная</a></li>
-               <li class={s.itemActive}>Гидроциклы</li>
-            </ol>
-            
-         
-            <h1 className={s.heading}>{data.heading}</h1>
-
-            <Sorter/>
-
-
-         </div>
+        <h1 className={s.heading}>{data.heading}</h1>
+        <Filter />
+        <Sorter />
       </div>
-   );
- }
- 
- export default Catalog;
+    </div>
+  );
+}
+
+export default Catalog;

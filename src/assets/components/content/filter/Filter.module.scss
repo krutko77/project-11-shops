@@ -1,6 +1,14 @@
+.title {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
 .availability {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .filter {
   max-width: 292px;
@@ -20,4 +28,15 @@
   width: 290px;
   height: 30px;
   padding: 8px 0 8px 20px;
+}
+.availability,
+.countryOptions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.reset {
+  border: none;
+  background-color: inherit;
+  text-decoration-line: underline;
 }
