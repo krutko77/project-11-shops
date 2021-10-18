@@ -95,8 +95,8 @@ function Filter(props) {
       </NavLink>
       <div className={style.footerFilter}>
         <ContainedButtons />
-        <div>
-          <p>Дополнительные параметры</p>
+        <div className={style.optionsWrap}>
+          <p className={style.optionsText}>Дополнительные параметры</p>
           <img className={style.arrow} src={arrow} alt="" />
         </div>
       </div>

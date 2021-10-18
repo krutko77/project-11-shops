@@ -55,4 +55,18 @@
   border: none;
   background-color: inherit;
   text-decoration-line: underline;
+  display: flex;
+}
+.optionsWrap {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.optionsText {
+  margin-right: 17px;
+  margin-bottom: 15px;
+  margin: 0 auto;
+}
+.containedButtons {
+  margin: 0 auto;
 }

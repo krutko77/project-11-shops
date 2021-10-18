@@ -14,7 +14,7 @@ const data = {
 function Catalog() {
   return (
     <div>
-      <div clBreadcrumbsassName={s.container}>
+      <div className={s.container}>
         <Breadcrumbs separator="›" aria-label="breadcrumb">
           <Link underline="hover" color="#C4C4C4" href="/">
             Главная
