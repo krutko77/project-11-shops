@@ -8,11 +8,6 @@
    position: relative;
 }
 
-// .priceBlock {
-//    display: flex;
-//    justify-content: space-between;
-// }
-
 .PromoSaleLabel {
    width: 90px;
    height: 30px;
@@ -85,10 +80,15 @@
    margin: 0 auto 10px;
 }
 
-.productName {
-   font-family: "SFProDisplayBold";
+.productName,
+.text,
+.date {
    font-size: 18px;
    line-height: 120%;
+}
+
+.productName {
+   font-family: "SFProDisplayBold";
 }
 
 .validity {
@@ -100,16 +100,12 @@
 
 .text {
    font-family: "SFProDisplayRegular";
-   font-size: 18px;
-   line-height: 120%;
+   margin-bottom: 5px;
    display: block;
-   margin-bottom: 3px;
 }
 
 .date {
    font-family: "BarlowBold";
-   font-size: 18px;
-   line-height: 120%;
    color: #1C62CD;
    display: block;
 }
