@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import s from "./SliderBanner.module.scss";
+import "./SliderBanner.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import img1 from './../../../img/slider-banner-img.jpg';
@@ -18,8 +18,8 @@ export default function SliderBanner() {
       slidesToScroll: 1
    };
    return (
-      <div className={s.container}>
-         <Slider {...settings} className={s.slickSlider}>
+      <div className="slider-banner">
+         <Slider {...settings}>
             <div><img src={img1} alt="img" /></div>
             <div><img src={img2} alt="img" /></div>
             <div><img src={img3} alt="img" /></div>

@@ -10,7 +10,7 @@ function Main(props) {
    return (
      <div className={s.main}>
         <div className={s.container}>
-            <section className={s.sliderBanner}>
+            <section className={s.topBlock}>
                <SliderBanner/>
                <PromoSale/>
             </section>
