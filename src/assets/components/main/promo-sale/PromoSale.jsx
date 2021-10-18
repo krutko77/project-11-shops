@@ -15,16 +15,14 @@ function PromoSale() {
 
    return (
       <div className={s.promoSale}>
-         <div className={s.priceBlock}>
-            <button>АКЦИЯ</button>
-            <div className={s.newPriceBlock}>
-               <span className={s.newPrice}>{data.newPrice}</span>
-               <img className={s.iconBig} src={iconBig} alt="" />
-            </div>
+         <span className={s.PromoSaleLabel}>АКЦИЯ</span>
+         <div className={s.newPriceBlock}>
+            <span className={s.newPrice}>{data.newPrice}</span>
+            <img className={s.iconBig} src={iconBig} alt="" />           
          </div>
          <div className={s.oldPriceBlock}>
-         <span className={s.oldPrice}>{data.oldPrice}</span>
-         <img className={s.iconSmall} src={iconSmall} alt="" />
+            <span className={s.oldPrice}>{data.oldPrice}</span>
+            <img className={s.iconSmall} src={iconSmall} alt="" />
          </div>
          <img className={s.imgProduct} src={data.img} alt="img" />
          <div className={s.label}>
