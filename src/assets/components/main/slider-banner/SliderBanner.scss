@@ -27,27 +27,27 @@
    border: none !important;
 }
 
-.slick-prev,
-.slick-next {
+.slider-banner .slick-prev,
+.slider-banner .slick-next {
    height: 30px !important;
 }
 
-.slick-prev {
+.slider-banner .slick-prev {
    left: 25px !important;
    background: url("./../../../img/slider-banner-prev.svg") 0 0 no-repeat !important;
    z-index: 2 !important;
 }
 
-.slick-prev:before {
+.slider-banner .slick-prev:before {
    content: none !important;
 }
 
-.slick-next {
+.slider-banner .slick-next {
    right: 25px !important;
    background: url("./../../../img/slider-banner-next.svg") 0 0 no-repeat !important;
 }
 
-.slick-next:before {
+.slider-banner .slick-next:before {
    content: none !important;
 }
 

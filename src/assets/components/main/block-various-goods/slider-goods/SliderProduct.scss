@@ -1,24 +1,24 @@
 
 
-.slick-track {
+.slider-product .slick-track {
     position: relative !important;
 }
 
 
-.slick-prev {
+.slider-product .slick-prev {
     background-image: url(./../../../../img/slider1/arrow_right.svg) !important;
     
     left: -5% !important;
 }
 
-.slick-next {
+.slider-product .slick-next {
     background-image: url(./../../../../img/slider1/arrow_left.svg) !important;
    
     right: -5% !important;
 }
 
 
-.slick-arrow {
+.slider-product .slick-arrow {
     position: absolute !important;
     top: 40% !important;
 }

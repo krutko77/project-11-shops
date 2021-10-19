@@ -18,7 +18,7 @@ export default function SliderBanner() {
       slidesToScroll: 1
    };
    return (
-      <div className="slider-banner">
+      <div className=".slider-product">
          <Slider {...settings}>
             <div><img src={img1} alt="img" /></div>
             <div><img src={img2} alt="img" /></div>

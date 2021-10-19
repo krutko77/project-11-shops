@@ -75,7 +75,8 @@ export default function SliderProduct() {
     slidesToScroll: 1
   };
   return (
-    <Slider  {...settings}>
+   <div className="slider-product">
+    <Slider  {...settings} >
       
       <div>
       <SliderProductCard title = {data.title} img = {data.img} price = {data.price} cartImg = {data.cartImg}/>
@@ -103,5 +104,6 @@ export default function SliderProduct() {
       <SliderProductCard title = {data6.title} img = {data6.img} nope = {data6.nope} inform = {data4.inform}/>
       </div>
     </Slider>
+    </div>
   );
 }
