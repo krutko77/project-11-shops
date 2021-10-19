@@ -22,7 +22,7 @@ function ListPersonal(props) {
             <ImgPersonal img={data.img} />
             <ImgPersonal img={data2.img} />
             <div className={s.counterWrap}>
-                <ImgPersonal img={data3.img} /> <span className={s.personalCounter}>2</span>
+                <ImgPersonal img={data3.img} /> <a className={s.personalCounter}>2</a>
             </div>
         </div>
     );
