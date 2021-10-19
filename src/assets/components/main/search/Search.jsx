@@ -14,17 +14,17 @@ function Search() {
    }
 
    return (
-      <section className={s.search}>
-         <div className={s.selectButtons}>
-            <button className={`${s.btnSelect} ${s.active} ${s.active}`}>{data1.label}</button>
-            <button className={s.btnSelect}>{data2.label}</button>
-            <button className={s.btnSelect}>{data3.label}</button>
-         </div>
+      <div className={s.search}>
+         <ul className={s.selectButtons}>
+            <li><button className={s.btnSelect}>{data1.label}</button></li>
+            <li><button className={`${s.btnSelect} ${s.active} ${s.active}`}>{data2.label}</button></li>
+            <li><button className={s.btnSelect}>{data3.label}</button></li>
+         </ul>
          <div className={s.inputBlock}>
             <input className={s.inputSearch} type="text" placeholder="Введите марку " />
             <button className={s.btnSearch}>ИСКАТЬ</button>
          </div>
-      </section>
+      </div>
    );
 }
 

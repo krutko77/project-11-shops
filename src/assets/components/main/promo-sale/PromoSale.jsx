@@ -1,7 +1,7 @@
 import s from "./PromoSale.module.scss";
-import imgPromoSale from './../../../img/promo-sale-img.jpg';
-import iconBig from './../../../img/icons-rub-1.svg';
-import iconSmall from './../../../img/icons-rub-2.svg';
+import imgPromoSale from './../../../img/promo-sale/img.jpg';
+import iconBig from './../../../img/promo-sale/icons-rub-1.svg';
+import iconSmall from './../../../img/promo-sale/icons-rub-2.svg';
 
 function PromoSale() {
    const data = {
