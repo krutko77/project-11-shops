@@ -1,0 +1,61 @@
+.search {
+   margin-bottom: 80px;
+}
+
+.selectButtons,
+.inputBlock {
+   display: flex;
+   align-items: center;
+}
+
+.selectButtons {
+   margin-bottom: 25px;
+}
+
+.btnSelect {
+   padding: 12px 26px;
+   border: none;
+   margin-right: 5px;
+   color: #2F3035;
+   background-color: transparent;
+   border-radius: 5px;
+   font-family: "SFProDisplayRegular";
+   font-size: 20px;
+   line-height: 120%;
+   cursor: pointer;
+}
+
+.btnSelect:hover {
+   background-color: #F0F0F4;
+   font-weight: 700;
+}
+
+.btnSearch {
+   width: 160px;
+   height: 50px;
+   border: none;
+   color: white;
+   background-color: #1C62CD;
+   border-radius: 3px;
+   font-family: "SFProDisplayBold";
+   font-size: 14px;
+   line-height: 120%;
+   letter-spacing: 0.8px;
+   cursor: pointer;
+}
+
+.inputSearch {
+   height: 50px;
+   width: 100%;
+   background-color: #F0F0F4;
+   border: none;
+}
+
+input::placeholder {
+   padding-left: 20px;
+   color: #656464;
+   font-family: "SFProDisplayRegular";
+   font-size: 16px;
+   line-height: 120%;
+   letter-spacing: 0.8px;
+}

@@ -25,7 +25,7 @@ function PromoSale() {
             <img className={s.iconSmall} src={iconSmall} alt="" />
          </div>
          <img className={s.imgProduct} src={data.img} alt="img" />
-         <div className={s.label}>
+         <div className={s.productNameBlock}>
             <span className={s.productName}>{data.productName}</span>
          </div>
          <div className={s.validity}>
