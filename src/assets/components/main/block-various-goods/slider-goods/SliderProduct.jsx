@@ -28,7 +28,7 @@ const data2 = {
    img: img2,
    price: "6 900 ₽",
    sale: "SALE",
-   // cartImg: cartImg
+   cartImg: cartImg
 }
 
 
@@ -36,7 +36,7 @@ const data3 = {
    title: "BRP Audio-Premium System",
    img: img3,
    price: "68 000 ₽",
-   // imgCart: imgCart
+   cartImg: cartImg
 }
 
 
@@ -46,7 +46,7 @@ const data4 = {
    nope: "нет в наличии",
    inform: "Сообщить о поступлении",
    sale: "SALE",
-
+   cartImg: cartImg
 }
 
 
@@ -54,14 +54,14 @@ const data5 = {
    title: "BRP Audio-Premium System",
    img: img,
    price: "6 900 ₽",
-
+   cartImg: cartImg
 }
 const data6 = {
    title: "Водонепроницаемый Рюкзак",
    img: img3,
    nope: "нет в наличии",
    inform: "Сообщить о поступлении",
-
+   cartImg: cartImg
 }
 
 
@@ -79,29 +79,82 @@ export default function SliderProduct() {
          <Slider  {...settings} >
 
             <div>
-               <SliderProductCard title={data.title} img={data.img} price={data.price} cartImg={data.cartImg} />
+               <SliderProductCard 
+               sale= "" 
+               styleSale= {{display: "none"}}
+
+               title={data.title} 
+               img={data.img} 
+               price={data.price} 
+
+               cartImg={data.cartImg}
+               /> 
             </div>
 
             <div>
-               <SliderProductCard title={data2.title} img={data2.img} price={data2.price}
-                  sale={data2.sale} />
+               <SliderProductCard 
+               sale={data2.sale}
+
+               title={data2.title} 
+               img={data2.img}
+               price={data2.price}
+
+               cartImg={data2.cartImg}
+               />
             </div>
 
             <div>
-               <SliderProductCard title={data3.title} img={data3.img} price={data3.price} />
+               <SliderProductCard 
+               sale= "" 
+               styleSale= {{display: "none"}}
+
+               title={data3.title} 
+               img={data3.img} 
+               price={data3.price}
+
+               cartImg={data3.cartImg}
+               />
             </div>
 
             <div>
-               <SliderProductCard title={data4.title} img={data4.img}
-                  nope={data4.nope} inform={data4.inform} sale={data4.sale} />
+               <SliderProductCard 
+               sale={data4.sale}
+
+               title={data4.title} 
+               img={data4.img}
+               nope={data4.nope} 
+               inform={data4.inform} 
+               
+               cartImg = ""
+               styleCart = {{display: "none"}} />
             </div>
 
             <div>
-               <SliderProductCard title={data5.title} img={data5.img} price={data5.price} />
+               <SliderProductCard 
+               sale= "" 
+               styleSale= {{display: "none"}}
+
+               title={data5.title} 
+               img={data5.img} 
+               price={data5.price} 
+
+               cartImg={data5.cartImg}
+               />
             </div>
 
             <div>
-               <SliderProductCard title={data6.title} img={data6.img} nope={data6.nope} inform={data4.inform} />
+               <SliderProductCard 
+               sale= "" 
+               styleSale= {{display: "none"}}
+
+               title={data6.title} 
+               img={data6.img} 
+               nope={data6.nope} 
+               inform={data6.inform}
+
+               cartImg = ""
+               styleCart = {{display: "none"}}
+                />
             </div>
          </Slider>
       </div>

@@ -21,4 +21,15 @@
 .slider-product .slick-arrow {
     position: absolute !important;
     top: 40% !important;
+    color: transparent;
+}
+
+.slider-product .slick-prev:before, .slick-next:before {
+    content: ""
+}
+
+
+
+.sale {
+    font-size: 80px;
 }
