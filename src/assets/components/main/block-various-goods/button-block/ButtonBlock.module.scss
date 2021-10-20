@@ -1,0 +1,18 @@
+
+@import './../../../../../styles/sass/abstracts/variables.scss';
+@import './../../../../../styles/sass/abstracts/mixins.scss';
+
+
+
+.btn {
+    @include text (15px, 400, 18px, $basicTextColor);
+
+    width: 252px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
