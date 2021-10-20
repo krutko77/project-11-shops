@@ -9,6 +9,7 @@ import Social from './social/Social';
 function Footer() {
    return (
       <footer className={s.footer}>
+         <div className={s.container}>
          <div className={s.inner}>
             <Mailing />
             <InfoMenu />
@@ -16,6 +17,7 @@ function Footer() {
             <Social />
          </div>
          <Contract />
+         </div>
       </footer>
    );
 }

@@ -17,13 +17,20 @@
     padding: 8px;
     border: none;
     cursor: pointer;
+    font-size: 11px;
+    line-height: 13px;
+    width: 109px;
+    height: 33px;
+    margin-right: 50px;
   }
   .emailInput{
     border: none;
-    height: 30px;
-    padding-left: 12px;
+    height: 33px;
+    width: 201px;
+    margin-left: -10px;
   }
   ::placeholder {
     font-size: 14px;
+    line-height: 17px;
     color: $lightColorText;
   }
