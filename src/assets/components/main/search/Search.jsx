@@ -17,7 +17,7 @@ function Search() {
       <div className={s.search}>
          <ul className={s.selectButtons}>
             <li><button className={s.btnSelect}>{data1.label}</button></li>
-            <li><button className={`${s.btnSelect} ${s.active} ${s.active}`}>{data2.label}</button></li>
+            <li><button className={`${s.btnSelect} ${s.active}`}>{data2.label}</button></li>
             <li><button className={s.btnSelect}>{data3.label}</button></li>
          </ul>
          <div className={s.inputBlock}>

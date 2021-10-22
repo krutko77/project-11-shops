@@ -14,13 +14,12 @@ import cartImg from './../../../../img/slider1/cart.png';
 
 
 
-const data = {
-   title: "Водонепроницаемый Рюкзак",
-   img: img,
-   price: "9 800 ₽",
-   cartImg: cartImg
-}
-
+// const data = {
+//    title: "Водонепроницаемый Рюкзак",
+//    img: img,
+//    price: "9 800 ₽",
+//    cartImg: cartImg
+// }
 
 
 const data2 = {
@@ -65,7 +64,7 @@ const data6 = {
 }
 
 
-export default function SliderProduct() {
+export default function SliderProduct(props) {
    var settings = {
       arrows: true,
       dots: false,
@@ -78,7 +77,7 @@ export default function SliderProduct() {
       <div className="slider-product">
          <Slider  {...settings} >
 
-            <div>
+            {/* <div>
                <SliderProductCard 
                sale= "" 
                styleSale= {{display: "none"}}
@@ -88,6 +87,17 @@ export default function SliderProduct() {
                price={data.price} 
 
                cartImg={data.cartImg}
+               /> 
+            </div> */}
+
+<div>
+               <SliderProductCard 
+               sale= "" 
+               styleSale= {{display: "none"}}
+               title={props.cardsData.cardData1.title} 
+               img={props.cardsData.cardData1.img} 
+               price={props.cardsData.cardData1.price} 
+               cartImg={cartImg}
                /> 
             </div>
 

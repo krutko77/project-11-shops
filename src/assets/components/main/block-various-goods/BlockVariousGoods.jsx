@@ -5,21 +5,18 @@ import SliderProduct from "./slider-goods/SliderProduct";
 
 
 
-const data = {
-  title: "Популярные товары"
+// const data = {
+//   title: "Популярные товары"
+// }
+
+
+function BlockVariousGoods(props) {
+   return (
+      <div className={s.blockVariousGoods}>
+         <TitleBlock title={props.title} />
+         <SliderProduct cardsData={props.cardsData} />
+      </div>
+   );
 }
 
-
-
-
-
-function BlockVariousGoods() {
-  return (
-    <div>
-      <TitleBlock title={data.title} />
-      <SliderProduct />
-    </div>
-  );
-}
-
- export default BlockVariousGoods;
+export default BlockVariousGoods;

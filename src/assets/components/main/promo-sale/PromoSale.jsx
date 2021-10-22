@@ -1,36 +1,36 @@
 import s from "./PromoSale.module.scss";
-import imgPromoSale from './../../../img/promo-sale/img.jpg';
+// import imgPromoSale from './../../../img/promo-sale/img.jpg';
 import iconBig from './../../../img/promo-sale/icons-rub-1.svg';
 import iconSmall from './../../../img/promo-sale/icons-rub-2.svg';
 
-function PromoSale() {
-   const data = {
-      img: imgPromoSale,
-      newPrice: "190 000",
-      oldPrice: "225 000",
-      productName: "Лодочный мотор Suzuki DF9.9BRS",
-      text: "Акция действует до",
-      date: "31.08.2020"
-   }
+function PromoSale(props) {
+   // const data = {
+   //    img: imgPromoSale,
+   //    newPrice: "190 000",
+   //    oldPrice: "225 000",
+   //    productName: "Лодочный мотор Suzuki DF9.9BRS",
+   //    text: "Акция действует до",
+   //    date: "31.08.2020"
+   // }
 
    return (
       <div className={s.promoSale}>
          <span className={s.PromoSaleLabel}>АКЦИЯ</span>
          <div className={s.newPriceBlock}>
-            <span className={s.newPrice}>{data.newPrice}</span>
+            <span className={s.newPrice}>{props.promoData.newPrice}</span>
             <img className={s.iconBig} src={iconBig} alt="" />           
          </div>
          <div className={s.oldPriceBlock}>
-            <span className={s.oldPrice}>{data.oldPrice}</span>
+            <span className={s.oldPrice}>{props.promoData.oldPrice}</span>
             <img className={s.iconSmall} src={iconSmall} alt="" />
          </div>
-         <img className={s.imgProduct} src={data.img} alt="img" />
+         <img className={s.imgProduct} src={props.promoData.img} alt="img" />
          <div className={s.productNameBlock}>
-            <span className={s.productName}>{data.productName}</span>
+            <span className={s.productName}>{props.promoData.productName}</span>
          </div>
          <div className={s.validity}>
-            <span className={s.text}>{data.text}</span>
-            <span className={s.date}>{data.date}</span>
+            <span className={s.text}>{props.promoData.text}</span>
+            <span className={s.date}>{props.promoData.date}</span>
          </div>
       </div>
    );
