@@ -1,8 +1,8 @@
 import s from "./ButtonBlock.module.scss";
 
-function ButtonBlock() {
+function ButtonBlock(props) {
    return (
-     <div></div>
+     <a className={s.btn}>{props.btn}</a>
    );
  }
  

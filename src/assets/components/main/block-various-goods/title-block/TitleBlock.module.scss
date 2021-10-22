@@ -4,4 +4,6 @@
 
 .heading {
     @include text (25px, 700, 30px, $basicTextColor);
+
+    margin-bottom: 25px;
 }
