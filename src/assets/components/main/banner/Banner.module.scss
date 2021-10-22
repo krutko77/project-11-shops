@@ -1,0 +1,28 @@
+.banner {
+   width: 100%;
+   height: 165px;
+   background-color: #1C62CD;
+   color: white;
+   display: grid;
+   grid-template-columns: 222px 222px 319px 407px;
+   
+}
+
+.text {
+   font-family: "SFProDisplayBold";
+   font-size: 36px;
+   line-height: 100%;
+}
+
+.btn {
+   display: inline-block;
+   width: 284px;
+   height: 57px;
+   background-color: white;
+   text-decoration: none;
+   padding: 4px 41px;
+   font-family: "SFProDisplayMedium";
+   font-size: 24px;
+   color: black;
+   line-height: 210%;
+}

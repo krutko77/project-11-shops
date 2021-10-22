@@ -2,7 +2,7 @@ import s from "./Main.module.scss";
 import SliderBanner from './slider-banner/SliderBanner.jsx';
 import PromoSale from './promo-sale/PromoSale.jsx';
 import Search from './search/Search.jsx';
-import SectionProduct from './section-product/SectionProduct';
+import SectionProducts from './section-products/SectionProducts.jsx';
 import BlockVariousGoods from './block-various-goods/BlockVariousGoods';
 import Banner from './banner/Banner';
 
@@ -15,11 +15,18 @@ import imgSliderBanner6 from './../../img/slider-banner/img.jpg';
 
 import imgPromo from './../../img/promo-sale/img.jpg';
 
+import imgProduct1 from "./../../img/section_products/img1.png";
+import imgProduct2 from "./../../img/section_products/img2.png";
+import imgProduct3 from "./../../img/section_products/img3.png";
+import imgProduct4 from "./../../img/section_products/img4.png";
+import imgProduct5 from "./../../img/section_products/img5.png";
+import imgProduct6 from "./../../img/section_products/img6.png";
+
 import imgSliderCard1 from "./../../img/slider1/img.png";
 
 
 function Main() {
-   const bannerData = {
+   const sliderBannerData = {
       img1: imgSliderBanner1,
       img2: imgSliderBanner2,
       img3: imgSliderBanner3,
@@ -40,38 +47,76 @@ function Main() {
    const searchData = {
       label1: "Поиск по номеру",
       label2: "Поиск по марке",
-      label3: "Поиск по названию товара"      
+      label3: "Поиск по названию товара"
+   }
+
+   const sectionProductsData = {
+      cardData1: {
+         title: "Квадроциклы",
+         img: imgProduct1,
+         link: '/'
+      },
+      cardData2: {
+         title: "Гидроциклы",
+         img: imgProduct2,
+         link: '/'
+      },
+      cardData3: {
+         title: "Катера",
+         img: imgProduct3,
+         link: '/'
+      },
+      cardData4: {
+         title: "Снегоходы",
+         img: imgProduct4,
+         link: '/'
+      },
+      cardData5: {
+         title: "Вездеходы",
+         img: imgProduct5,
+         link: '/'
+      },
+      cardData6: {
+         title: "Двигатели",
+         img: imgProduct6,
+         link: '/'
+      }
    }
 
    const popularProductCardsData = {
       cardData1: {
          title: "Водонепроницаемый Рюкзак",
          img: imgSliderCard1,
-         price: "9 800 ₽"        
+         price: "9 800 ₽"
       },
       cardData2: {},
       cardData3: {},
-      cardData4: {},      
+      cardData4: {},
+   }
+
+   const bannerData = {
+      text: "CКИДКИ на все запчасти до 70%",
+      link: '/'
    }
 
    const otherProductCardsData = {
       cardData1: {},
       cardData2: {},
       cardData3: {},
-      cardData4: {}, 
+      cardData4: {},
    }
 
    return (
       <div className={s.main}>
          <div className={s.container}>
             <div className={s.topBlock}>
-               <SliderBanner bannerData={bannerData} />
+               <SliderBanner bannerData={sliderBannerData} />
                <PromoSale promoData={promoData} />
             </div>
             <Search searchData={searchData} />
-            <SectionProduct />
+            <SectionProducts cardsProductData={sectionProductsData} />
             <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
-            <Banner />
+            <Banner bannerData={bannerData} />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} />
          </div>
       </div>
