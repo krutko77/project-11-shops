@@ -6,26 +6,26 @@ import SectionProduct from './section-product/SectionProduct';
 import BlockVariousGoods from './block-various-goods/BlockVariousGoods';
 import Banner from './banner/Banner';
 
-import imgBanner1 from './../../img/slider-banner/img.jpg';
-import imgBanner2 from './../../img/slider-banner/img.jpg';
-import imgBanner3 from './../../img/slider-banner/img.jpg';
-import imgBanner4 from './../../img/slider-banner/img.jpg';
-import imgBanner5 from './../../img/slider-banner/img.jpg';
-import imgBanner6 from './../../img/slider-banner/img.jpg';
+import imgSliderBanner1 from './../../img/slider-banner/img.jpg';
+import imgSliderBanner2 from './../../img/slider-banner/img.jpg';
+import imgSliderBanner3 from './../../img/slider-banner/img.jpg';
+import imgSliderBanner4 from './../../img/slider-banner/img.jpg';
+import imgSliderBanner5 from './../../img/slider-banner/img.jpg';
+import imgSliderBanner6 from './../../img/slider-banner/img.jpg';
 
 import imgPromo from './../../img/promo-sale/img.jpg';
 
-import imgCard1 from "./../../img/slider1/img.png";
+import imgSliderCard1 from "./../../img/slider1/img.png";
 
 
 function Main() {
    const bannerData = {
-      img1: imgBanner1,
-      img2: imgBanner2,
-      img3: imgBanner3,
-      img4: imgBanner4,
-      img5: imgBanner5,
-      img6: imgBanner6
+      img1: imgSliderBanner1,
+      img2: imgSliderBanner2,
+      img3: imgSliderBanner3,
+      img4: imgSliderBanner4,
+      img5: imgSliderBanner5,
+      img6: imgSliderBanner6
    }
 
    const promoData = {
@@ -37,10 +37,16 @@ function Main() {
       date: "31.08.2020"
    }
 
+   const searchData = {
+      label1: "Поиск по номеру",
+      label2: "Поиск по марке",
+      label3: "Поиск по названию товара"      
+   }
+
    const popularProductCardsData = {
       cardData1: {
          title: "Водонепроницаемый Рюкзак",
-         img: imgCard1,
+         img: imgSliderCard1,
          price: "9 800 ₽"        
       },
       cardData2: {},
@@ -62,7 +68,7 @@ function Main() {
                <SliderBanner bannerData={bannerData} />
                <PromoSale promoData={promoData} />
             </div>
-            <Search />
+            <Search searchData={searchData} />
             <SectionProduct />
             <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
             <Banner />
