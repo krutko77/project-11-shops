@@ -19,25 +19,37 @@ function Filter(props) {
     <div className={style.filter}>
       <h3 className={style.title}>Параметры</h3>
       <div className={style.wrap}>
-        <Characteristic subtitle="Наличие" />
-        <div className={style.firstWrap}>
-          <Options textOptions="В наличие" />
-          <Options textOptions="Под заказ" />
-        </div>
+        <details>
+          <summary>
+            <Characteristic subtitle="Наличие" />
+          </summary>
+          <div className={style.firstWrap}>
+            <Options textOptions="В наличие" />
+            <Options textOptions="Под заказ" />
+          </div>
+        </details>
       </div>
       <div className={style.wrap}>
-        <Characteristic subtitle="Новинки" />
-        <div className={style.secondWrap}>
-          <Options textOptions="Все" />
-          <Options textOptions="Новинки" />
-          <Options textOptions="Акции" />
-        </div>
+        <details>
+          <summary>
+            <Characteristic subtitle="Новинки" />
+          </summary>
+          <div className={style.secondWrap}>
+            <Options textOptions="Все" />
+            <Options textOptions="Новинки" />
+            <Options textOptions="Акции" />
+          </div>
+        </details>
       </div>
       <div className={style.wrap}>
-        <Characteristic subtitle="Цена" />
-        <div className={style.thirdWrap}>
-          <Track />
-        </div>
+        <details>
+          <summary>
+            <Characteristic subtitle="Цена" />
+          </summary>
+          <div className={style.thirdWrap}>
+            <Track />
+          </div>
+        </details>
       </div>
       <div className={style.specifications}>
         <Subtitle subtitle="Мощность, л.с." />
@@ -52,47 +64,66 @@ function Filter(props) {
         <Select />
       </div>
       <div className={style.wrap}>
-        <Characteristic subtitle="Бренд" />
-        <div className={style.sixtWrap}>
-          <Options textOptions="BRP" />
-          <Options textOptions="Spark 2" />
-          <Options textOptions="Spark 3" />
-        </div>
+        <details>
+          <summary>
+            <Characteristic subtitle="Бренд" />
+          </summary>
+          <div className={style.sixtWrap}>
+            <Options textOptions="BRP" />
+            <Options textOptions="Spark 2" />
+            <Options textOptions="Spark 3" />
+          </div>
+          <NavLink className={style.navLink} to={"/"}>
+            Показать еще
+          </NavLink>
+        </details>
       </div>
-      <NavLink className={style.navLink} to={"/"}>
-        Показать еще
-      </NavLink>
+
       <div className={style.wrap}>
-        <Characteristic subtitle="Модель" />
-        <input className={style.input} placeholder="Введите модель" />
-        <div className={style.seventhWrap}>
-          <Options textOptions="Sea-doo Spark 2" />
-          <Options textOptions="SeaDoo Spark 90 " />
-          <Options textOptions="SeaDoo GTI 155" />
-          <Options textOptions="SeaDoo GTR 230" />
-        </div>
+        <details>
+          <summary>
+            <Characteristic subtitle="Модель" />
+          </summary>
+          <input className={style.input} placeholder="Введите модель" />
+          <div className={style.seventhWrap}>
+            <Options textOptions="Sea-doo Spark 2" />
+            <Options textOptions="SeaDoo Spark 90 " />
+            <Options textOptions="SeaDoo GTI 155" />
+            <Options textOptions="SeaDoo GTR 230" />
+          </div>
+          <NavLink className={style.navLink} to={"/"}>
+            Показать еще
+          </NavLink>
+        </details>
       </div>
-      <NavLink className={style.navLink} to={"/"}>
-        Показать еще
-      </NavLink>
+
       <div className={style.wrap}>
-        <Characteristic subtitle="Акции" />
-        <div className={style.availability}>
-          <Stack />
-        </div>
+        <details>
+          <summary>
+            <Characteristic subtitle="Акции" />
+          </summary>
+          <div className={style.availability}>
+            <Stack />
+          </div>
+        </details>
       </div>
       <div className={style.wrap}>
-        <Country subtitle="Страны" />
-        <div className={style.tenthWrap}>
-          <Options textOptions="Россия" />
-          <Options textOptions="Германия" />
-          <Options textOptions="Китай" />
-          <Options textOptions="CША" />
-        </div>
+        <details>
+          <summary>
+            <Country subtitle="Страны" />
+          </summary>
+          <div className={style.tenthWrap}>
+            <Options textOptions="Россия" />
+            <Options textOptions="Германия" />
+            <Options textOptions="Китай" />
+            <Options textOptions="CША" />
+          </div>
+          <NavLink className={style.navLink} to={"/"}>
+            Показать еще
+          </NavLink>
+        </details>
       </div>
-      <NavLink className={style.navLink} to={"/"}>
-        Показать еще
-      </NavLink>
+
       <div className={style.footerFilter}>
         <ContainedButtons />
         <div className={style.optionsWrap}>
