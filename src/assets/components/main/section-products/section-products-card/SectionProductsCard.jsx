@@ -1,4 +1,4 @@
-import s from "./ProductCard.module.scss";
+import s from "./SectionProductsCard.module.scss";
 
 
 
@@ -21,7 +21,7 @@ import s from "./ProductCard.module.scss";
  
 //  export default ProductCard;
 
-function ProductCard(props) {
+function SectionProductsCard(props) {
    return (
       <article className={s.productCard}>
          <div className={s.wrap}>
@@ -35,4 +35,4 @@ function ProductCard(props) {
    );
  }
  
- export default ProductCard;
+ export default SectionProductsCard;

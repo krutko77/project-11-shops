@@ -1,4 +1,4 @@
-import ProductCard from "./product-card/ProductCard";
+import SectionProductsCard from "./section-products-card/SectionProductsCard.jsx";
 import s from "./SectionProducts.module.scss";
 
 // import img1 from "./../../../img/section_products/img1.png";
@@ -56,12 +56,12 @@ function SectionProducts(props) {
         <ProductCard title={data5.title} details={data5.details} img={data5.img} />
         <ProductCard title={data6.title} details={data6.details} img={data6.img} /> */}
 
-        <ProductCard cardsProductData={props.cardsProductData.cardData1}/>
-        <ProductCard cardsProductData={props.cardsProductData.cardData2}/>
-        <ProductCard cardsProductData={props.cardsProductData.cardData3}/>
-        <ProductCard cardsProductData={props.cardsProductData.cardData4}/>
-        <ProductCard cardsProductData={props.cardsProductData.cardData5}/>
-        <ProductCard cardsProductData={props.cardsProductData.cardData6}/>
+        <SectionProductsCard cardsProductData={props.cardsProductData.cardData1}/>
+        <SectionProductsCard cardsProductData={props.cardsProductData.cardData2}/>
+        <SectionProductsCard cardsProductData={props.cardsProductData.cardData3}/>
+        <SectionProductsCard cardsProductData={props.cardsProductData.cardData4}/>
+        <SectionProductsCard cardsProductData={props.cardsProductData.cardData5}/>
+        <SectionProductsCard cardsProductData={props.cardsProductData.cardData6}/>
       </section>
     </div>
   );

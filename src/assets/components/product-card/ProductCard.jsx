@@ -2,7 +2,10 @@ import s from "./ProductCard.module.scss";
 
 function ProductCard() {
    return (
-     <div></div>
+     <section className={s.productDescription}>
+        <div className={s.productAppearanceCost}></div>
+        <div className={s.productCharacteristics}></div>
+     </section>
    );
  }
  

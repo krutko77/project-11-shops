@@ -5,13 +5,19 @@
    color: white;
    display: grid;
    grid-template-columns: 222px 222px 319px 407px;
-   
+   align-items: center;
+   margin-bottom: 72px;
+}
+
+.img1 {
+   justify-self:flex-end;
 }
 
 .text {
    font-family: "SFProDisplayBold";
    font-size: 36px;
    line-height: 100%;
+   max-width: 270px;
 }
 
 .btn {
@@ -25,4 +31,5 @@
    font-size: 24px;
    color: black;
    line-height: 210%;
+   cursor: pointer;
 }

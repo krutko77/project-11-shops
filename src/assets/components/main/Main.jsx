@@ -22,8 +22,15 @@ import imgProduct4 from "./../../img/section_products/img4.png";
 import imgProduct5 from "./../../img/section_products/img5.png";
 import imgProduct6 from "./../../img/section_products/img6.png";
 
-import imgSliderCard1 from "./../../img/slider1/img.png";
+import imgSlider1Card1 from "./../../img/slider1/img.png";
+import imgSlider1Card2 from "./../../img/slider1/img2.png";
+import imgSlider1Card3 from "./../../img/slider1/img3.png";
+import imgSlider1Card4 from "./../../img/slider1/img4.png";
 
+import imgSlider2Card1 from "./../../img/slider2/img1.png";
+import imgSlider2Card2 from "./../../img/slider2/img2.png";
+import imgSlider2Card3 from "./../../img/slider2/img3.png";
+import imgSlider2Card4 from "./../../img/slider2/img4.png";
 
 function Main() {
    const sliderBannerData = {
@@ -50,7 +57,7 @@ function Main() {
       label3: "Поиск по названию товара"
    }
 
-   const sectionProductsData = {
+   const sectionProductsCardsData = {
       cardData1: {
          title: "Квадроциклы",
          img: imgProduct1,
@@ -86,12 +93,17 @@ function Main() {
    const popularProductCardsData = {
       cardData1: {
          title: "Водонепроницаемый Рюкзак",
-         img: imgSliderCard1,
+         img: imgSlider1Card1,
          price: "9 800 ₽"
       },
       cardData2: {},
       cardData3: {},
-      cardData4: {},
+      cardData4: {},     
+   }
+
+   const btnBlockData = {
+      label: "ПОКАЗАТЬ ЕЩЕ",
+      link: '/'
    }
 
    const bannerData = {
@@ -100,7 +112,11 @@ function Main() {
    }
 
    const otherProductCardsData = {
-      cardData1: {},
+      cardData1: {
+         title: "BRP Audio-портативная система",
+         img: imgSlider2Card1,
+         price: ""
+      },
       cardData2: {},
       cardData3: {},
       cardData4: {},
@@ -114,10 +130,10 @@ function Main() {
                <PromoSale promoData={promoData} />
             </div>
             <Search searchData={searchData} />
-            <SectionProducts cardsProductData={sectionProductsData} />
-            <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
+            <SectionProducts cardsProductData={sectionProductsCardsData} />
+            <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} btnData={btnBlockData} />
             <Banner bannerData={bannerData} />
-            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} />
+            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} style={{ display: "none" }} />
          </div>
       </div>
    );

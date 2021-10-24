@@ -17,6 +17,7 @@ function BlockVariousGoods(props) {
       <div className={s.blockVariousGoods}>
          <TitleBlock title={props.title} />
          <SliderProduct cardsData={props.cardsData} />
+         <ButtonBlock style={props.style} btnData={props.btnData}/>
       </div>
    );
 }

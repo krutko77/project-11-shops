@@ -1,8 +1,9 @@
 import s from "./ButtonBlock.module.scss";
+import {NavLink} from "react-router-dom";
 
 function ButtonBlock(props) {
    return (
-     <a className={s.btn}>{props.btn}</a>
+     <NavLink className={s.btn} to={props.btnData.link}>{props.btnData.label}</NavLink>
    );
  }
  
