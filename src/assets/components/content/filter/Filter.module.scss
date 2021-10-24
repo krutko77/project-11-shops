@@ -70,3 +70,11 @@
 .containedButtons {
   margin: 0 auto;
 }
+
+details > summary {
+  list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
