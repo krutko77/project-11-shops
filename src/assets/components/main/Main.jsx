@@ -107,7 +107,8 @@ function Main() {
    }
 
    const bannerData = {
-      text: "CКИДКИ на все запчасти до 70%",
+      bannerType: "Скидки",
+      text: " на все запчасти до 70%",
       link: '/'
    }
 

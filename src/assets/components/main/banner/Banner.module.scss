@@ -4,20 +4,30 @@
    background-color: #1C62CD;
    color: white;
    display: grid;
-   grid-template-columns: 222px 222px 319px 407px;
+   grid-template-columns: 222px 222px 1fr 407px;
    align-items: center;
    margin-bottom: 72px;
 }
 
 .img1 {
-   justify-self:flex-end;
+   justify-self: flex-end;
 }
 
+.bannerText {
+   display: flex;
+   flex-direction: column;
+   max-width: 280px;
+}
+
+.bannerType,
 .text {
    font-family: "SFProDisplayBold";
    font-size: 36px;
    line-height: 100%;
-   max-width: 270px;
+}
+
+.bannerType {
+   text-transform: uppercase;
 }
 
 .btn {

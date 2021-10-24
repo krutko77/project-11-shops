@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 function ButtonBlock(props) {
    return (
-     <NavLink className={s.btn} to={props.btnData.link}>{props.btnData.label}</NavLink>
+     <NavLink className={s.btn} to={'/'} style={props.style}>ПОКАЗАТЬ ЕЩЕ</NavLink>
    );
  }
  
