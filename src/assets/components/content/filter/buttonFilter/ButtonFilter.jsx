@@ -5,7 +5,7 @@ import Stack from "@mui/material/Stack";
 
 export default function ContainedButtons() {
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack className={style.buttonWrap} direction="row" spacing={2}>
       <Button className={style.button} variant="contained" disabled>
         ВЫБРАТЬ
       </Button>

@@ -1,16 +1,27 @@
-.thirdButton {
-  width: 52px;
+// .firstButton {
+//   width: 63px;
+//   margin-left: 10px;
+// }
+// .secondButton {
+//   width: 60px;
+// }
+// .thirdButton {
+//   width: 52px;
+// }
+// .fourthButton {
+//   background-color: black;
+//   width: 86px;
+// }
+// .css-e53awj-MuiStack-root > :not(style) + :not(style) {
+//   margin-left: 5px;
+// }
+.buttons {
+  margin-top: 20px;
 }
-.secondButton {
-  width: 60px;
-}
-.thirdButton {
-  width: 63px;
-}
-.fourthButton {
-  background-color: black;
-  width: 86px;
-}
-.css-e53awj-MuiStack-root > :not(style) + :not(style) {
-  margin-left: 5px;
+.buttonsFirst {
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
 }
