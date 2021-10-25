@@ -96,9 +96,49 @@ function Main() {
          img: imgSlider1Card1,
          price: "9 800 ₽"
       },
-      cardData2: {},
-      cardData3: {},
-      cardData4: {},     
+      cardData2: {
+         title: "Спасательный жилет BRP Men's Airflow PFD",
+         img: imgSlider1Card2,
+         price: "6 900 ₽",
+         sale: "SALE"
+      },
+      cardData3: {
+         title: "BRP Audio-Premium System",
+         img: imgSlider1Card3,
+         price: "68 000 ₽"
+      },
+      cardData4: {
+         title: "Спасательное снаряжение",
+         img: imgSlider1Card4,
+         sale: "SALE",
+         nope: "нет в наличии",
+         inform: "Сообщить о поступлении"
+      },  
+      cardData5: {
+         title: "Спасательное снаряжение",
+         img: imgSlider1Card1,
+         sale: "SALE",
+         nope: "нет в наличии",
+         inform: "Сообщить о поступлении"
+      }, 
+      cardData6: {
+         title: "Водонепроницаемый Рюкзак",
+         img: imgSlider1Card1,
+         price: "9 800 ₽"
+      }, 
+      cardData7: {
+         title: "Спасательное снаряжение",
+         img: imgSlider1Card4,
+         sale: "SALE",
+         nope: "нет в наличии",
+         inform: "Сообщить о поступлении"
+      }, 
+      cardData8: {
+         title: "Спасательное снаряжение",
+         img: imgSlider1Card4,
+         sale: "SALE",
+         price: "7 000 ₽"
+      }, 
    }
 
    const bannerData = {
@@ -109,13 +149,54 @@ function Main() {
 
    const otherProductCardsData = {
       cardData1: {
-         title: "BRP Audio-портативная система",
+         title: "Спасательное снаряжение",
          img: imgSlider2Card1,
-         price: ""
+         price: "45 800 ₽",
+      }, 
+      cardData2: {
+         title: "Garmin Echomap Plus 62cv",
+         img: imgSlider2Card2,
+         price: "45 800 ₽",
+         sale: "SALE",
       },
-      cardData2: {},
-      cardData3: {},
-      cardData4: {},
+      cardData3: {
+         title: "Garmin Echomap Plus 62cv",
+         img: imgSlider2Card3,
+         price: "45 800 ₽",
+      },
+      
+      cardData4: {
+         title: "Спасательное снаряжение",
+         img: imgSlider2Card4,
+         sale: "SALE",
+         nope: "нет в наличии",
+         inform: "Сообщить о поступлении"
+      },
+      cardData5: {
+         title: "Спасательное снаряжение",
+         img: imgSlider2Card1,
+         sale: "SALE",
+         nope: "нет в наличии",
+         inform: "Сообщить о поступлении"
+      },
+      cardData6: {
+         title: "Garmin Echomap Plus 62cv",
+         img: imgSlider2Card2,
+         price: "45 800 ₽"
+      }, 
+      cardData7: {
+         title: "Спасательное снаряжение",
+         img: imgSlider2Card3,
+         sale: "SALE",
+         nope: "нет в наличии",
+         inform: "Сообщить о поступлении"
+      }, 
+      cardData8: {
+         title: "Спасательное снаряжение",
+         img: imgSlider2Card4,
+         sale: "SALE",
+         price: "7 000 ₽"
+      }, 
    }
 
    return (
@@ -129,7 +210,7 @@ function Main() {
             <SectionProducts cardsProductData={sectionProductsCardsData} />
             <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
             <Banner bannerData={bannerData} />
-            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} style={{ display: "none" }} />
+            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>
       </div>
    );

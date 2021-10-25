@@ -7,9 +7,6 @@ import ButtonShowMore from "./button-show-more/ButtonShowMore";
 
 
 
-// const data = {
-//   title: "Популярные товары"
-// }
 
 
 function BlockVariousGoods(props) {

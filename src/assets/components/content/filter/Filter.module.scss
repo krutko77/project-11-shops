@@ -11,7 +11,7 @@
   justify-content: space-between;
 }
 .filter {
-  max-width: 292px;
+  max-width: 300px;
   width: 100%;
 }
 .fourthWrap {
@@ -29,6 +29,7 @@
   width: 290px;
   height: 30px;
   padding: 8px 0 8px 20px;
+  margin-top: 20px;
 }
 .wrap,
 .specifications {
@@ -71,10 +72,26 @@
   margin: 0 auto;
 }
 
+.reset {
+  color: #c4c4c4;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
 details > summary {
   list-style-type: none;
 }
 
 details > summary::-webkit-details-marker {
   display: none;
+}
+
+details[open] {
+  img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
 }
