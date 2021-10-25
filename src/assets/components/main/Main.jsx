@@ -101,11 +101,6 @@ function Main() {
       cardData4: {},     
    }
 
-   const btnBlockData = {
-      label: "ПОКАЗАТЬ ЕЩЕ",
-      link: '/'
-   }
-
    const bannerData = {
       bannerType: "Скидки",
       text: " на все запчасти до 70%",
@@ -132,7 +127,7 @@ function Main() {
             </div>
             <Search searchData={searchData} />
             <SectionProducts cardsProductData={sectionProductsCardsData} />
-            <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} btnData={btnBlockData} />
+            <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
             <Banner bannerData={bannerData} />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} style={{ display: "none" }} />
          </div>
