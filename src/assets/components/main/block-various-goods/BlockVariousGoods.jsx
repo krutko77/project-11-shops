@@ -13,7 +13,7 @@ function BlockVariousGoods(props) {
       <div className={s.blockVariousGoods}>
          <TitleBlock title={props.title} />
          <SliderProduct cardsData={props.cardsData} />
-         <ButtonShowMore style={props.style} />
+         <ButtonShowMore style={props.btnStyle} />
       </div>
    );
 }
