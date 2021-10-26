@@ -61,32 +61,32 @@ function Main() {
       cardData1: {
          title: "Квадроциклы",
          img: imgProduct1,
-         link: '/'
+         link: '/1'
       },
       cardData2: {
          title: "Гидроциклы",
          img: imgProduct2,
-         link: '/'
+         link: '/product-card/jet-skis'
       },
       cardData3: {
          title: "Катера",
          img: imgProduct3,
-         link: '/'
+         link: '/3'
       },
       cardData4: {
          title: "Снегоходы",
          img: imgProduct4,
-         link: '/'
+         link: '/4'
       },
       cardData5: {
          title: "Вездеходы",
          img: imgProduct5,
-         link: '/'
+         link: '/5'
       },
       cardData6: {
          title: "Двигатели",
          img: imgProduct6,
-         link: '/'
+         link: '/6'
       }
    }
 
@@ -139,11 +139,6 @@ function Main() {
          sale: "SALE",
          price: "7 000 ₽"
       }, 
-   }
-
-   const btnBlockData = {
-      label: "ПОКАЗАТЬ ЕЩЕ",
-      link: '/'
    }
 
    const bannerData = {
@@ -213,9 +208,9 @@ function Main() {
             </div>
             <Search searchData={searchData} />
             <SectionProducts cardsProductData={sectionProductsCardsData} />
-            <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} btnData={btnBlockData} />
+            <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
             <Banner bannerData={bannerData} />
-            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
+            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{display: "none"}} />
          </div>
       </div>
    );
