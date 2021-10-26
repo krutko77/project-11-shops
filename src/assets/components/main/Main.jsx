@@ -210,7 +210,7 @@ function Main() {
             <SectionProducts cardsProductData={sectionProductsCardsData} />
             <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
             <Banner bannerData={bannerData} />
-            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{display: "none"}} />
+            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>
       </div>
    );
