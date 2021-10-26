@@ -6,8 +6,6 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Sorter from "./sorter/Sorter";
 
-
-
 const data = {
   heading: "Гидроциклы",
 };
@@ -23,7 +21,7 @@ function Catalog() {
           <Typography color="#C4C4C4">Гидроциклы</Typography>
         </Breadcrumbs>
         <h1 className={s.heading}>{data.heading}</h1>
-        <Sorter/>
+        <Sorter />
         <Filter />
       </div>
     </div>

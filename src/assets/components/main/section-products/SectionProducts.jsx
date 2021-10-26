@@ -8,13 +8,10 @@ import s from "./SectionProducts.module.scss";
 // import img5 from "./../../../img/section_products/img5.png";
 // import img6 from "./../../../img/section_products/img6.png";
 
-
-
 // const data = {
 //   title: "Квадроциклы",
 //   img: img1,
 //   details: "Подробее"
-
 // }
 // const data2 = {
 //   title: "Гидроциклы",
@@ -42,13 +39,10 @@ import s from "./SectionProducts.module.scss";
 //   details: "Подробее"
 // }
 
-
-
 function SectionProducts(props) {
   return (
     <div className={s.container}>
       <section className={s.sectionProducts}>
-
         {/* <ProductCard title={data.title} details={data.details}  img={data.img}/>       
         <ProductCard title={data2.title} details={data2.details} img={data2.img} />
         <ProductCard title={data3.title} details={data3.details} img={data3.img} />
@@ -56,15 +50,27 @@ function SectionProducts(props) {
         <ProductCard title={data5.title} details={data5.details} img={data5.img} />
         <ProductCard title={data6.title} details={data6.details} img={data6.img} /> */}
 
-        <SectionProductsCard cardsProductData={props.cardsProductData.cardData1}/>
-        <SectionProductsCard cardsProductData={props.cardsProductData.cardData2}/>
-        <SectionProductsCard cardsProductData={props.cardsProductData.cardData3}/>
-        <SectionProductsCard cardsProductData={props.cardsProductData.cardData4}/>
-        <SectionProductsCard cardsProductData={props.cardsProductData.cardData5}/>
-        <SectionProductsCard cardsProductData={props.cardsProductData.cardData6}/>
+        <SectionProductsCard
+          cardsProductData={props.cardsProductData.cardData1}
+        />
+        <SectionProductsCard
+          cardsProductData={props.cardsProductData.cardData2}
+        />
+        <SectionProductsCard
+          cardsProductData={props.cardsProductData.cardData3}
+        />
+        <SectionProductsCard
+          cardsProductData={props.cardsProductData.cardData4}
+        />
+        <SectionProductsCard
+          cardsProductData={props.cardsProductData.cardData5}
+        />
+        <SectionProductsCard
+          cardsProductData={props.cardsProductData.cardData6}
+        />
       </section>
     </div>
   );
- }
- 
- export default SectionProducts;
+}
+
+export default SectionProducts;
