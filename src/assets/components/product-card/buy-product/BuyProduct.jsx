@@ -1,12 +1,12 @@
-import s from "./Breadcrumbs.module.scss";
+import s from "./BuyProduct.module.scss";
 
 
-function Breadcrumbs() {
+function BuyProduct() {
    return (   
-        <div className={s.Breadcrumbs}>
+        <div className={s.BuyProduct}>
 
         </div> 
    );
 }
 
-export default Breadcrumbs;
+export default BuyProduct;
