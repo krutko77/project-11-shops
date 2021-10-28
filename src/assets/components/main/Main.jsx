@@ -3,7 +3,7 @@ import SliderBanner from './slider-banner/SliderBanner.jsx';
 import PromoSale from './promo-sale/PromoSale.jsx';
 import Search from './search/Search.jsx';
 import SectionProducts from './section-products/SectionProducts.jsx';
-import BlockVariousGoods from './block-various-goods/BlockVariousGoods';
+import BlockVariousGoods from './block-various-goods/BlockVariousGoods.jsx';
 import Banner from './banner/Banner';
 
 import imgSliderBanner1 from './../../img/slider-banner/img.jpg';

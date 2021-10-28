@@ -6,9 +6,6 @@ import NavigationBlock from "./navigation-block/NavigationBlock";
 import ButtonShowMore from "./button-show-more/ButtonShowMore";
 
 
-
-
-
 function BlockVariousGoods(props) {
    return (
       <div className={s.blockVariousGoods}>
