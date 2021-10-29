@@ -1,14 +1,21 @@
 .productDescription {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   padding-top: 27px;
 }
 
-.productAppearanceCost {
+.leftBlock {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.productAppearancePrice {
    position: relative;
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding-top: 50px;
+   padding-top: 64px;
 }
 
 .saleLabel {
@@ -24,13 +31,19 @@
    left: 0px;
 }
 
-.saleLabel, .link {
+.img {
+   margin-bottom: 18px;
+}
+
+.saleLabel,
+.link {
    font-family: "SFProDisplayRegular";
    font-size: 15px;
    line-height: 120%;
 }
 
-.oldPrice, .newPrice {
+.oldPrice,
+.newPrice {
    line-height: 120%;
 }
 
@@ -38,16 +51,27 @@
    font-family: "BarlowRegular";
    font-size: 30px;
    color: #2F3035;
+   position: relative;
+   margin-bottom: 6px;
+}
+
+.oldPrice::after {
+   content: "";
+   position: absolute;
+   top: 9px;
+   left: 0;
+   width: 133px;
+   height: 21px;
+   background: url("./../../../img/product-card/pseudo-line.svg") 0 0 no-repeat;
 }
 
 .newPrice {
    font-family: "BarlowBold";
    font-size: 40px;
-   margin-bottom: 17px;
+   margin-bottom: 12px;
 }
 
 .link {
    color: #1C62CD;
 
 }
-

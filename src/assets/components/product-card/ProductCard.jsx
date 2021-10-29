@@ -12,7 +12,9 @@ const productDescriptionData = {
    },
    img: imgProductCard,
    oldPrice: "1 200 475 ₽",
-   newPrice: "1 100 475 ₽"
+   newPrice: "1 100 475 ₽",
+   title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
+   itemNumber: "Код товара: 	366666-2"
    
 }
 
