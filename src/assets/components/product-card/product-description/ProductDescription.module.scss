@@ -1,13 +1,16 @@
+@import './../../../../styles/sass/abstracts/variables.scss';
+
+
 .productDescription {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   padding-top: 27px;
 }
 
 .leftBlock {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   padding-top: 27px;
 }
 
 .productAppearancePrice {
@@ -23,8 +26,8 @@
    height: 44px;
    border-radius: 3px;
    padding: 13px 26px;
-   color: white;
-   background-color: #1C62CD;
+   color: $veryLightColor;
+   background-color: $accentColor;
    letter-spacing: 0.8px;
    position: absolute;
    top: 0px;
@@ -36,7 +39,8 @@
 }
 
 .saleLabel,
-.link {
+.link,
+.itemNumber {
    font-family: "SFProDisplayRegular";
    font-size: 15px;
    line-height: 120%;
@@ -50,7 +54,7 @@
 .oldPrice {
    font-family: "BarlowRegular";
    font-size: 30px;
-   color: #2F3035;
+   color: $semiLightColorText;
    position: relative;
    margin-bottom: 6px;
 }
@@ -72,6 +76,52 @@
 }
 
 .link {
-   color: #1C62CD;
+   color: $accentColor;
+}
 
+.productCharacteristics {
+   padding: 20px 0 0 13px;
+}
+
+.title {
+   max-width: 530px;
+   font-family: "SFProDisplayBold";
+   font-size: 30px;
+   line-height: 120%;
+   margin-bottom: 10px;
+}
+
+.itemNumber {
+   display: block;
+   color: $semiLightColorText;
+   margin-bottom: 25px;
+}
+
+.itemNumberData {
+   padding-left: 7px;
+}
+
+.rating {
+   padding-left: 100px;
+   position: relative;
+}
+
+.rating::before {
+   content: "";
+   position: absolute;
+   top: -8px;
+   left: 0;
+   width: 25px;
+   height: 24px;
+   background: url("./../../../img/product-card/like-icon.svg") no-repeat;
+}
+
+.rating::after {
+   content: "";
+   position: absolute;
+   top: -12px;
+   left: 55px;
+   width: 24px;
+   height: 30px;
+   background: url("./../../../img/product-card/diagram-icon.svg") 0 0 no-repeat;
 }

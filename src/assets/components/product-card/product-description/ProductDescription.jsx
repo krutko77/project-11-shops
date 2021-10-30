@@ -1,8 +1,17 @@
 import s from "./ProductDescription.module.scss";
 import { NavLink } from "react-router-dom";
 import { Rating } from "@mui/material";
+import { styled } from '@mui/material/styles';
 
-
+const ProductRating = styled(Rating)({
+    '& .MuiRating-iconFilled': {
+     color: '#1C62CD',
+   },
+   '& .MuiRating-iconEmpty': {
+     color: '#C4C4C4',     
+   },
+ });
+<
 
 function productDescription(props) {
    return (
@@ -19,8 +28,12 @@ function productDescription(props) {
          <div className={s.productCharacteristics}>
             <div className={s.titleRating}>
                <h2 className={s.title}>{props.descriptionData.title}</h2>
-               <span className={s.itemNumber}>{props.descriptionData.itemNumber}</span>
-               <Rating />
+               <span className={s.itemNumber}>Код товара:<span className={s.itemNumberData}>{props.descriptionData.itemNumber}</span></span>
+               <span className={s.rating}>
+               <ProductRating 
+                  readOnly 
+                  defaultValue={props.descriptionData.rating} />
+               </span>
             </div>
          </div>
       </section>
