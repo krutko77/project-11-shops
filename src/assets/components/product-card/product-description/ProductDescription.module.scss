@@ -9,6 +9,7 @@
    "leftBlock navBlock"
    "leftBlock table"
    "leftBlock button";
+   margin-bottom: 80px;
 }
 
 .leftBlock {
@@ -117,25 +118,25 @@
    position: relative;
 }
 
-.rating::before {
-   content: "";
-   position: absolute;
-   top: -8px;
-   left: 0;
-   width: 25px;
-   height: 24px;
-   background: url("./../../../img/product-card/like-icon.svg") no-repeat;
-}
+// .rating::before {
+//    content: "";
+//    position: absolute;
+//    top: -8px;
+//    left: 0;
+//    width: 25px;
+//    height: 24px;
+//    background: url("./../../../img/product-card/like-icon.svg") no-repeat;
+// }
 
-.rating::after {
-   content: "";
-   position: absolute;
-   top: -12px;
-   left: 55px;
-   width: 24px;
-   height: 30px;
-   background: url("./../../../img/product-card/diagram-icon.svg") 0 0 no-repeat;
-}
+// .rating::after {
+//    content: "";
+//    position: absolute;
+//    top: -12px;
+//    left: 55px;
+//    width: 24px;
+//    height: 30px;
+//    background: url("./../../../img/product-card/diagram-icon.svg") 0 0 no-repeat;
+// }
 
 .navigationList {
    grid-area: navBlock;
@@ -161,6 +162,7 @@
    border-bottom: $accentColor 3px solid;
    width: max-content;
    opacity: 100%;
+   transition: 0.3s;
 }
 
 .btn {
