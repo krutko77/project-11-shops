@@ -4,6 +4,11 @@
 .productDescription {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   grid-template-areas: 
+   "leftBlock titleBlock"
+   "leftBlock navBlock"
+   "leftBlock table"
+   "leftBlock button";
 }
 
 .leftBlock {
@@ -11,6 +16,7 @@
    flex-direction: column;
    align-items: flex-start;
    padding-top: 27px;
+   grid-area: leftBlock;
 }
 
 .productAppearancePrice {
@@ -83,6 +89,11 @@
    padding: 20px 0 0 13px;
 }
 
+.titleBlock {
+   margin-bottom: 45px;
+   grid-area: titleBlock;
+}
+
 .title {
    max-width: 530px;
    font-family: "SFProDisplayBold";
@@ -124,4 +135,44 @@
    width: 24px;
    height: 30px;
    background: url("./../../../img/product-card/diagram-icon.svg") 0 0 no-repeat;
+}
+
+.navigationList {
+   grid-area: navBlock;
+   margin-bottom: 50px;
+}
+
+.list {
+   display: flex;
+}
+
+.linkList {
+   font-family: "SFProDisplayRegular";
+   color: $basicTextColor;
+   font-size: 20px;
+   line-height: 120%;
+   padding-bottom: 3px;
+   margin-right: 40px;
+   opacity: 60%;   
+}
+
+.linkList:hover {
+   font-weight: 700;
+   border-bottom: $accentColor 3px solid;
+   width: max-content;
+   opacity: 100%;
+}
+
+.btn {
+   width: 180px;
+   height: 50px;
+   border: none;
+   color: white;
+   background-color: #1C62CD;
+   border-radius: 3px;
+   font-family: "SFProDisplayRegular";
+   font-size: 14px;
+   line-height: 120%;
+   letter-spacing: 0.8px;
+   cursor: pointer;
 }
