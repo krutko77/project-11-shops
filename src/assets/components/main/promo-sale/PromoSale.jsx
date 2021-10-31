@@ -9,7 +9,7 @@ function PromoSale(props) {
          <span className={s.PromoSaleLabel}>АКЦИЯ</span>
          <div className={s.newPriceBlock}>
             <span className={s.newPrice}>{props.promoData.newPrice}</span>
-            <img className={s.iconBig} src={iconBig} alt="" />           
+            <img className={s.iconBig} src={iconBig} alt="img" />           
          </div>
          <div className={s.oldPriceBlock}>
             <span className={s.oldPrice}>{props.promoData.oldPrice}</span>

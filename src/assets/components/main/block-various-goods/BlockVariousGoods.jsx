@@ -5,9 +5,6 @@ import SliderProduct from "./slider-goods/SliderProduct";
 import ButtonShowMore from "./button-show-more/ButtonShowMore";
 
 
-
-
-
 function BlockVariousGoods(props) {
    return (
       <div className={s.blockVariousGoods}>
