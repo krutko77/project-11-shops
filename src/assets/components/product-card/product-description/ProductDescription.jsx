@@ -2,14 +2,20 @@ import s from "./ProductDescription.module.scss";
 import { NavLink } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { styled } from '@mui/material/styles';
+import StarIcon from '@mui/icons-material/Star';
 
 const ProductRating = styled(Rating)({
+   '& .MuiRating-root': {
+      display: 'flex',
+      justifyContent: 'space-between',
+      width: 400
+   },
    '& .MuiRating-iconFilled': {
       color: '#1C62CD',
    },
-   '& .MuiRating-iconEmpty': {
-      color: '#C4C4C4',
-   },
+   // '& .MuiRating-iconEmpty': {
+   //    color: 'red',
+   // },
 });
 
 
@@ -28,12 +34,11 @@ function productDescription(props) {
          <div className={s.productCharacteristics}>
             <div className={s.titleBlock}>
                <h2 className={s.title}>{props.descriptionData.title}</h2>
-               <span className={s.itemNumber}>Код товара:<span className={s.itemNumberData}>{props.descriptionData.itemNumber}</span></span>
-               <span className={s.rating}>
-                  <ProductRating
+               <span className={s.itemNumber}>Код товара:  {props.descriptionData.itemNumber}</span>
+               <ProductRating
                      readOnly
-                     defaultValue={props.descriptionData.rating} />
-               </span>
+                     defaultValue={props.descriptionData.rating} 
+                     emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}/>               
             </div>
             <nav className={s.navigationList}>
                <ul className={s.list}>
@@ -43,7 +48,7 @@ function productDescription(props) {
                   </li>
                </ul>
             </nav>
-            <NavLink className={s.btn} to={'/'}>Купить</NavLink>
+            {/* <NavLink className={s.btn} to={'/'}>Купить</NavLink> */}
          </div>
       </section>
 
