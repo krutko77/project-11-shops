@@ -10,17 +10,17 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      {/* <Switch>
+      <Switch>
         <Route path="/catalog/:id">
           <Catalog />
         </Route>
-        <Route path="/product-card"> */}
+        <Route path="/product-card">
           <ProductCard />
-        {/* </Route>
+        </Route>
         <Route path="/">
           <Main />
         </Route>
-      </Switch> */}
+      </Switch>
       <Footer />
     </BrowserRouter>
   );

@@ -4,6 +4,14 @@ import * as React from "react";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { styled } from "@mui/material/styles";
+import InputBase from "@mui/material/InputBase";
+
+const MyInput = styled(InputBase)(({ theme }) => ({
+  "& .MuiInputBase-input::before": {
+    borderBottom: "none",
+  },
+}));
 
 export default function SelectVariants() {
   const [age, setAge] = React.useState("");
@@ -21,6 +29,7 @@ export default function SelectVariants() {
           id="demo-simple-select-standard"
           value={age}
           onChange={handleChange}
+          input={<MyInput />}
         >
           <MenuItem value={10}>90</MenuItem>
           <MenuItem value={20}>130</MenuItem>
