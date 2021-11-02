@@ -3,8 +3,20 @@ import { NavLink } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import StarIcon from '@mui/icons-material/Star';
+import IconCheckboxes from '../../common/IconCheckboxes.jsx';
 
-const ProductRating = styled(Rating)({
+import diagramIcon from './../../../img/product-card/diagram-icon.svg';
+
+// const StyledRating = styled({
+//    iconFilled: {
+//      color: '#1C62CD'
+//    },
+//    iconEmpty: {
+//      color: '#C4C4C4'
+//    }
+//  })(Rating);
+ 
+const StyledRating = styled(Rating)({
    '& .MuiRating-root': {
       display: 'flex',
       justifyContent: 'space-between',
@@ -35,10 +47,17 @@ function productDescription(props) {
             <div className={s.titleBlock}>
                <h2 className={s.title}>{props.descriptionData.title}</h2>
                <span className={s.itemNumber}>Код товара:  {props.descriptionData.itemNumber}</span>
-               <ProductRating
+               <div className={s.rating}>
+                  <div className={s.checkbox}>
+                     <IconCheckboxes/>
+                  </div>
+                  <img className={s.diagramIcon} src={diagramIcon} alt="icon" />
+                  <StyledRating
                      readOnly
                      defaultValue={props.descriptionData.rating} 
-                     emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}/>               
+                     emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
+                  /> 
+               </div>                            
             </div>
             <nav className={s.navigationList}>
                <ul className={s.list}>
