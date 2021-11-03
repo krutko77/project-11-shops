@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import StarIcon from '@mui/icons-material/Star';
-import IconCheckboxes from '../../common/IconCheckboxes.jsx';
+import IconCheckboxes from '../../common/Icon-boxes/IconCheckboxes.jsx';
+import SmallTable from './../product-description/small-table/SmallTable.jsx'
 
 import diagramIcon from './../../../img/product-card/diagram-icon.svg';
 
@@ -55,6 +56,9 @@ function productDescription(props) {
                   </li>
                </ul>
             </nav>
+            <div className={s.smallTable}>
+               <SmallTable/>
+            </div>
             {/* <NavLink className={s.btn} to={'/'}>Купить</NavLink> */}
          </div>
       </section>
