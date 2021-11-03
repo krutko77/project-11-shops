@@ -24,7 +24,7 @@ const StyledBreadcrumbs = styled(Breadcrumbs)(({ theme }) => {
    fontFamily: "SFProDisplayRegular",
    fontSize: 15,
    color: "#C4C4C4",
-   "& .css-1wuw8dw-MuiBreadcrumbs-separator": {
+   "& .MuiBreadcrumbs-separator": {
       marginLeft: 0,
       marginRight: 0
    }

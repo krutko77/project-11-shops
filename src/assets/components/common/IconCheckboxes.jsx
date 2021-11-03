@@ -6,22 +6,25 @@ import { styled } from '@mui/material/styles';
 
 
 // стилизация размера иконки
+const MyCheckbox = styled(Checkbox)({
+   paddingLeft: 0
+}
+);
+
 const MyFavoriteBorder = styled(FavoriteBorder)({
-   fontSize: 30,
+   fontSize: 30
 }
 );
 
 const MyFavorite = styled(Favorite)({
-   // width: 24,
-   // height: 22
-   fontSize: 30,
+   fontSize: 30
 }
 );
 
 function IconCheckboxes(props) {
    return (
       <div>
-         <Checkbox icon={<MyFavoriteBorder />} checkedIcon={<MyFavorite />} />
+         <MyCheckbox icon={<MyFavoriteBorder />} checkedIcon={<MyFavorite />} />
       </div>
    );
 }

@@ -7,27 +7,15 @@ import IconCheckboxes from '../../common/IconCheckboxes.jsx';
 
 import diagramIcon from './../../../img/product-card/diagram-icon.svg';
 
-// const StyledRating = styled({
-//    iconFilled: {
-//      color: '#1C62CD'
-//    },
-//    iconEmpty: {
-//      color: '#C4C4C4'
-//    }
-//  })(Rating);
- 
+// стилизация рейтинга 
 const StyledRating = styled(Rating)({
-   '& .MuiRating-root': {
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: 400
+   '& .MuiRating-icon ': {
+      marginRight: 6,
+      paddingTop: 10
    },
    '& .MuiRating-iconFilled': {
       color: '#1C62CD',
-   },
-   // '& .MuiRating-iconEmpty': {
-   //    color: 'red',
-   // },
+   },   
 });
 
 

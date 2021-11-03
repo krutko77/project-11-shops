@@ -4,11 +4,11 @@
 .productDescription {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-areas: 
-   "leftBlock titleBlock"
-   "leftBlock navBlock"
-   "leftBlock table"
-   "leftBlock button";
+   grid-template-areas:
+      "leftBlock titleBlock"
+      "leftBlock navBlock"
+      "leftBlock table"
+      "leftBlock button";
    margin-bottom: 80px;
 }
 
@@ -106,7 +106,7 @@
 .itemNumber {
    display: block;
    color: $semiLightColorText;
-   margin-bottom: 25px;
+   margin-bottom: 13px;
 }
 
 .itemNumberData {
@@ -114,7 +114,7 @@
 }
 
 .rating {
-  display: flex;
+   display: flex;
 }
 
 .diagramIcon {
@@ -141,7 +141,7 @@
    line-height: 120%;
    padding-bottom: 3px;
    margin-right: 40px;
-   opacity: 60%;   
+   opacity: 60%;
 }
 
 .linkList:hover {
