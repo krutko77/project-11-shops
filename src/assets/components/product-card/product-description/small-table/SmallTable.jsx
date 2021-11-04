@@ -6,7 +6,7 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 
-// стилизация таблицы
+// стилизация маленькой таблицы
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
    [`&.${tableCellClasses.body}`]: {
       fontFamily: "SFProDisplayRegular",
@@ -16,46 +16,32 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
       paddingTop: 17,
       paddingRight: 0,
       paddingBottom: 4,
-      paddingLeft: 0,           
-   },  
-}));
-
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-   // hide last border
-   '& th': {
-      paddingRight: 40
+      paddingLeft: 0,
    },
 }));
 
+const customColumnStyle = {
+   width: "130px"
+};
 
-function createData(name, value) {
-   return { name, value };
-}
-
-const rows = [
-   createData('Производитель', 'Канада'),
-   createData('Количество мест, шт:', 3),
-   createData('Мощность, л.с.', 155),
-   createData('Тип двигателя', 'Бензиновый'),
-   createData('Год выпуска', 2018),
-];
-
-function SmallTable() {
+function SmallTable(props) {
    return (
-      <Table sx={{ maxWidth: 440 }} aria-label="simple table">
-         <TableBody>
-            {rows.map((row) => (
-               <StyledTableRow
-                  key={row.name}
-               >
-                  <StyledTableCell component="th" scope="row" >
-                     {row.name}
-                  </StyledTableCell>
-                  <StyledTableCell align="left">{row.value}</StyledTableCell>
-               </StyledTableRow>
-            ))}
-         </TableBody>
-      </Table>
+      <div className={s.smallTable}>
+         <Table sx={{ maxWidth: 440 }} aria-label="simple table">
+            <TableBody>
+               {props.rows.map((row) => (
+                  <TableRow
+                     key={row.name}
+                  >
+                     <StyledTableCell component="th" scope="row" >
+                        {row.name}
+                     </StyledTableCell>
+                     <StyledTableCell align="left" style={customColumnStyle}>{row.value}</StyledTableCell>
+                  </TableRow>
+               ))}
+            </TableBody>
+         </Table>
+      </div>
    );
 }
 

@@ -16,9 +16,8 @@ const StyledRating = styled(Rating)({
    },
    '& .MuiRating-iconFilled': {
       color: '#1C62CD',
-   },   
+   },
 });
-
 
 function productDescription(props) {
    return (
@@ -38,28 +37,29 @@ function productDescription(props) {
                <span className={s.itemNumber}>Код товара:  {props.descriptionData.itemNumber}</span>
                <div className={s.rating}>
                   <div className={s.checkbox}>
-                     <IconCheckboxes/>
+                     <IconCheckboxes />
                   </div>
                   <img className={s.diagramIcon} src={diagramIcon} alt="icon" />
                   <StyledRating
                      readOnly
-                     defaultValue={props.descriptionData.rating} 
+                     defaultValue={props.descriptionData.rating}
                      emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
-                  /> 
-               </div>                            
+                  />
+               </div>
             </div>
             <nav className={s.navigationList}>
                <ul className={s.list}>
                   <li className={s.item}>
-                     <NavLink className={s.linkList} to={'/'} >Характеристики</NavLink>
+                     <NavLink className={s.linkList, s.active} to={'/'} >Характеристики</NavLink>
                      <NavLink className={s.linkList} to={'/'}>Наличие в магазине</NavLink>
                   </li>
                </ul>
             </nav>
-            <div className={s.smallTable}>
-               <SmallTable/>
+            <div className={s.smallTableWrap}>
+               <SmallTable rows={props.rows} />
+               <NavLink className={s.linkSmallTable} to={'/'}>Показать еще</NavLink>
             </div>
-            {/* <NavLink className={s.btn} to={'/'}>Купить</NavLink> */}
+            <button className={s.btn}>КУПИТЬ</button>
          </div>
       </section>
 

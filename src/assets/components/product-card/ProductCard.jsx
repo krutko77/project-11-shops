@@ -52,6 +52,19 @@ const productDescriptionData = {
    link: '/'
 }
 
+// данные для маленькой таблицы в секции productDescription
+function createData(name, value) {
+   return { name, value };
+}
+
+const rowsData = [
+   createData('Производитель', 'Канада'),
+   createData('Количество мест, шт:', 3),
+   createData('Мощность, л.с.', 155),
+   createData('Тип двигателя', 'Бензиновый'),
+   createData('Год выпуска', 2018),
+];
+
 // данные для секции buyProduct
 const buyProductData = {}
 
@@ -73,7 +86,6 @@ const otherProductCardsData = {
       img: imgSlider2Card3,
       price: "45 800 ₽",
    },
-
    cardData4: {
       title: "Спасательное снаряжение",
       img: imgSlider2Card4,
@@ -108,7 +120,6 @@ const otherProductCardsData = {
    },
 }
 
-
 function ProductCard() {
    return (
       <div className={s.productCard}>
@@ -123,7 +134,7 @@ function ProductCard() {
                </MyTypography>
             </StyledBreadcrumbs>
             </nav>           
-            <ProductDescription descriptionData={productDescriptionData} />
+            <ProductDescription descriptionData={productDescriptionData} rows={rowsData}/>
             <BuyProduct buyProductData={buyProductData} />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>

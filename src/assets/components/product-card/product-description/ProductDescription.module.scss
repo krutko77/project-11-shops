@@ -91,7 +91,7 @@
 }
 
 .titleBlock {
-   margin-bottom: 45px;
+   margin-bottom: 40px;
    grid-area: titleBlock;
 }
 
@@ -127,14 +127,15 @@
 
 .navigationList {
    grid-area: navBlock;
-   margin-bottom: 50px;
+   margin-bottom: 5px;
 }
 
 .list {
    display: flex;
 }
 
-.linkList {
+.linkList,
+.active {
    font-family: "SFProDisplayRegular";
    color: $basicTextColor;
    font-size: 20px;
@@ -144,7 +145,8 @@
    opacity: 60%;
 }
 
-.linkList:hover {
+.linkList:hover,
+.active {
    font-weight: 700;
    border-bottom: $accentColor 3px solid;
    width: max-content;
@@ -152,12 +154,22 @@
    transition: 0.2s;
 }
 
+.linkSmallTable {
+   color: $accentColor;
+   text-decoration: underline;
+}
+
+.smallTableWrap {
+   margin-bottom: 40px;
+}
+
 .btn {
    width: 180px;
    height: 50px;
-   border: none;
+   // padding: 19px 61px;
    color: white;
    background-color: #1C62CD;
+   border: none;
    border-radius: 3px;
    font-family: "SFProDisplayRegular";
    font-size: 14px;
