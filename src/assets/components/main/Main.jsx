@@ -32,173 +32,180 @@ import imgSlider2Card2 from "./../../img/slider2/img2.png";
 import imgSlider2Card3 from "./../../img/slider2/img3.png";
 import imgSlider2Card4 from "./../../img/slider2/img4.png";
 
+// картинки для верхнего слайдера
+const sliderBannerData = {
+   img1: imgSliderBanner1,
+   img2: imgSliderBanner2,
+   img3: imgSliderBanner3,
+   img4: imgSliderBanner4,
+   img5: imgSliderBanner5,
+   img6: imgSliderBanner6
+}
+
+// данные для акционной карточки
+const promoData = {
+   newPrice: "190 000",
+   oldPrice: "225 000",
+   img: imgPromo,
+   productName: "Лодочный мотор Suzuki DF9.9BRS",
+   text: "Акция действует до",
+   date: "31.08.2020"
+}
+
+// данные для поиска
+const searchData = {
+   label1: "Поиск по номеру",
+   label2: "Поиск по марке",
+   label3: "Поиск по названию товара"
+}
+
+// данные для секции товаров
+const sectionProductsCardsData = {
+   cardData1: {
+      title: "Квадроциклы",
+      img: imgProduct1,
+      link: '/1'
+   },
+   cardData2: {
+      title: "Гидроциклы",
+      img: imgProduct2,
+      link: '/product-card/jet-skis'
+   },
+   cardData3: {
+      title: "Катера",
+      img: imgProduct3,
+      link: '/3'
+   },
+   cardData4: {
+      title: "Снегоходы",
+      img: imgProduct4,
+      link: '/4'
+   },
+   cardData5: {
+      title: "Вездеходы",
+      img: imgProduct5,
+      link: '/5'
+   },
+   cardData6: {
+      title: "Двигатели",
+      img: imgProduct6,
+      link: '/6'
+   }
+}
+
+// данные для среднего слайдера
+const popularProductCardsData = {
+   cardData1: {
+      title: "Водонепроницаемый Рюкзак",
+      img: imgSlider1Card1,
+      price: "9 800 ₽"
+   },
+   cardData2: {
+      title: "Спасательный жилет BRP Men's Airflow PFD",
+      img: imgSlider1Card2,
+      price: "6 900 ₽",
+      sale: "SALE"
+   },
+   cardData3: {
+      title: "BRP Audio-Premium System",
+      img: imgSlider1Card3,
+      price: "68 000 ₽"
+   },
+   cardData4: {
+      title: "Спасательное снаряжение",
+      img: imgSlider1Card4,
+      sale: "SALE",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении"
+   },
+   cardData5: {
+      title: "Спасательное снаряжение",
+      img: imgSlider1Card1,
+      sale: "SALE",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении"
+   },
+   cardData6: {
+      title: "Водонепроницаемый Рюкзак",
+      img: imgSlider1Card1,
+      price: "9 800 ₽"
+   },
+   cardData7: {
+      title: "Спасательное снаряжение",
+      img: imgSlider1Card4,
+      sale: "SALE",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении"
+   },
+   cardData8: {
+      title: "Спасательное снаряжение",
+      img: imgSlider1Card4,
+      sale: "SALE",
+      price: "7 000 ₽"
+   },
+}
+
+// данные для баннера
+const bannerData = {
+   bannerType: "Скидки",
+   text: " на все запчасти до 70%",
+   link: '/'
+}
+
+// данные для нижнего слайдера
+const otherProductCardsData = {
+   cardData1: {
+      title: "Спасательное снаряжение",
+      img: imgSlider2Card1,
+      price: "45 800 ₽",
+   },
+   cardData2: {
+      title: "Garmin Echomap Plus 62cv",
+      img: imgSlider2Card2,
+      price: "45 800 ₽",
+      sale: "SALE",
+   },
+   cardData3: {
+      title: "Garmin Echomap Plus 62cv",
+      img: imgSlider2Card3,
+      price: "45 800 ₽",
+   },
+
+   cardData4: {
+      title: "Спасательное снаряжение",
+      img: imgSlider2Card4,
+      sale: "SALE",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении"
+   },
+   cardData5: {
+      title: "Спасательное снаряжение",
+      img: imgSlider2Card1,
+      sale: "SALE",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении"
+   },
+   cardData6: {
+      title: "Garmin Echomap Plus 62cv",
+      img: imgSlider2Card2,
+      price: "45 800 ₽"
+   },
+   cardData7: {
+      title: "Спасательное снаряжение",
+      img: imgSlider2Card3,
+      sale: "SALE",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении"
+   },
+   cardData8: {
+      title: "Спасательное снаряжение",
+      img: imgSlider2Card4,
+      sale: "SALE",
+      price: "7 000 ₽"
+   },
+}
+
 function Main() {
-   const sliderBannerData = {
-      img1: imgSliderBanner1,
-      img2: imgSliderBanner2,
-      img3: imgSliderBanner3,
-      img4: imgSliderBanner4,
-      img5: imgSliderBanner5,
-      img6: imgSliderBanner6
-   }
-
-   const promoData = {
-      newPrice: "190 000",
-      oldPrice: "225 000",
-      img: imgPromo,
-      productName: "Лодочный мотор Suzuki DF9.9BRS",
-      text: "Акция действует до",
-      date: "31.08.2020"
-   }
-
-   const searchData = {
-      label1: "Поиск по номеру",
-      label2: "Поиск по марке",
-      label3: "Поиск по названию товара"
-   }
-
-   const sectionProductsCardsData = {
-      cardData1: {
-         title: "Квадроциклы",
-         img: imgProduct1,
-         link: '/1'
-      },
-      cardData2: {
-         title: "Гидроциклы",
-         img: imgProduct2,
-         link: '/product-card/jet-skis'
-      },
-      cardData3: {
-         title: "Катера",
-         img: imgProduct3,
-         link: '/3'
-      },
-      cardData4: {
-         title: "Снегоходы",
-         img: imgProduct4,
-         link: '/4'
-      },
-      cardData5: {
-         title: "Вездеходы",
-         img: imgProduct5,
-         link: '/5'
-      },
-      cardData6: {
-         title: "Двигатели",
-         img: imgProduct6,
-         link: '/6'
-      }
-   }
-
-   const popularProductCardsData = {
-      cardData1: {
-         title: "Водонепроницаемый Рюкзак",
-         img: imgSlider1Card1,
-         price: "9 800 ₽"
-      },
-      cardData2: {
-         title: "Спасательный жилет BRP Men's Airflow PFD",
-         img: imgSlider1Card2,
-         price: "6 900 ₽",
-         sale: "SALE"
-      },
-      cardData3: {
-         title: "BRP Audio-Premium System",
-         img: imgSlider1Card3,
-         price: "68 000 ₽"
-      },
-      cardData4: {
-         title: "Спасательное снаряжение",
-         img: imgSlider1Card4,
-         sale: "SALE",
-         nope: "нет в наличии",
-         inform: "Сообщить о поступлении"
-      },  
-      cardData5: {
-         title: "Спасательное снаряжение",
-         img: imgSlider1Card1,
-         sale: "SALE",
-         nope: "нет в наличии",
-         inform: "Сообщить о поступлении"
-      }, 
-      cardData6: {
-         title: "Водонепроницаемый Рюкзак",
-         img: imgSlider1Card1,
-         price: "9 800 ₽"
-      }, 
-      cardData7: {
-         title: "Спасательное снаряжение",
-         img: imgSlider1Card4,
-         sale: "SALE",
-         nope: "нет в наличии",
-         inform: "Сообщить о поступлении"
-      }, 
-      cardData8: {
-         title: "Спасательное снаряжение",
-         img: imgSlider1Card4,
-         sale: "SALE",
-         price: "7 000 ₽"
-      }, 
-   }
-
-   const bannerData = {
-      bannerType: "Скидки",
-      text: " на все запчасти до 70%",
-      link: '/'
-   }
-
-   const otherProductCardsData = {
-      cardData1: {
-         title: "Спасательное снаряжение",
-         img: imgSlider2Card1,
-         price: "45 800 ₽",
-      }, 
-      cardData2: {
-         title: "Garmin Echomap Plus 62cv",
-         img: imgSlider2Card2,
-         price: "45 800 ₽",
-         sale: "SALE",
-      },
-      cardData3: {
-         title: "Garmin Echomap Plus 62cv",
-         img: imgSlider2Card3,
-         price: "45 800 ₽",
-      },
-      
-      cardData4: {
-         title: "Спасательное снаряжение",
-         img: imgSlider2Card4,
-         sale: "SALE",
-         nope: "нет в наличии",
-         inform: "Сообщить о поступлении"
-      },
-      cardData5: {
-         title: "Спасательное снаряжение",
-         img: imgSlider2Card1,
-         sale: "SALE",
-         nope: "нет в наличии",
-         inform: "Сообщить о поступлении"
-      },
-      cardData6: {
-         title: "Garmin Echomap Plus 62cv",
-         img: imgSlider2Card2,
-         price: "45 800 ₽"
-      }, 
-      cardData7: {
-         title: "Спасательное снаряжение",
-         img: imgSlider2Card3,
-         sale: "SALE",
-         nope: "нет в наличии",
-         inform: "Сообщить о поступлении"
-      }, 
-      cardData8: {
-         title: "Спасательное снаряжение",
-         img: imgSlider2Card4,
-         sale: "SALE",
-         price: "7 000 ₽"
-      }, 
-   }
-
    return (
       <div className={s.main}>
          <div className={s.container}>
