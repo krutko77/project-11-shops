@@ -49,7 +49,7 @@ const productDescriptionData = {
    title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
    itemNumber: "366666-2",
    rating: 4,
-   link: '/'
+   link: '/'  
 }
 
 // данные для маленькой таблицы в секции productDescription
@@ -65,8 +65,15 @@ const rowsData = [
    createData('Год выпуска', 2018),
 ];
 
-// данные для секции buyProduct
-const buyProductData = {}
+// данные для кнопки секции productDescription
+const buttonData1 = {
+   label: "КУПИТЬ"
+}
+
+// данные для кнопки секции buyProduct
+const buttonData2 = {
+   label: "КУПИТЬ"
+}
 
 // данные для слайдера
 const otherProductCardsData = {
@@ -134,8 +141,8 @@ function ProductCard() {
                </MyTypography>
             </StyledBreadcrumbs>
             </nav>           
-            <ProductDescription descriptionData={productDescriptionData} rows={rowsData}/>
-            <BuyProduct buyProductData={buyProductData} />
+            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} buttonData={buttonData1}/>
+            <BuyProduct buttonData={buttonData2} />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>
       </div>

@@ -4,7 +4,8 @@ import { Rating } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import StarIcon from '@mui/icons-material/Star';
 import IconCheckboxes from '../../common/Icon-boxes/IconCheckboxes.jsx';
-import SmallTable from './../product-description/small-table/SmallTable.jsx'
+import SmallTable from './../product-description/small-table/SmallTable.jsx';
+import Button from '../../common/button/Button.jsx';
 
 import diagramIcon from './../../../img/product-card/diagram-icon.svg';
 
@@ -18,6 +19,13 @@ const StyledRating = styled(Rating)({
       color: '#1C62CD',
    },
 });
+
+// стилизация кнопки
+const style = {
+   padding: "19px 61px",
+   fontSize: "14px",
+   letterSpacing: "0.8px"
+}
 
 function productDescription(props) {
    return (
@@ -50,7 +58,7 @@ function productDescription(props) {
             <nav className={s.navigationList}>
                <ul className={s.list}>
                   <li className={s.item}>
-                     <NavLink className={s.linkList, s.active} to={'/'} >Характеристики</NavLink>
+                     <NavLink className={`${s.linkList} ${s.active}`} to={'/'} >Характеристики</NavLink>
                      <NavLink className={s.linkList} to={'/'}>Наличие в магазине</NavLink>
                   </li>
                </ul>
@@ -59,7 +67,7 @@ function productDescription(props) {
                <SmallTable rows={props.rows} />
                <NavLink className={s.linkSmallTable} to={'/'}>Показать еще</NavLink>
             </div>
-            <button className={s.btn}>КУПИТЬ</button>
+            <Button style={style} buttonData={props.buttonData}/>
          </div>
       </section>
 
