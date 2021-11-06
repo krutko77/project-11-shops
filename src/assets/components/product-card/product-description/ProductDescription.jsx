@@ -59,6 +59,8 @@ function productDescription(props) {
                <ul className={s.list}>
                   <li className={s.item}>
                      <NavLink className={`${s.linkList} ${s.active}`} to={'/'} >Характеристики</NavLink>
+                  </li>
+                  <li className={s.item}>
                      <NavLink className={s.linkList} to={'/'}>Наличие в магазине</NavLink>
                   </li>
                </ul>
@@ -67,7 +69,7 @@ function productDescription(props) {
                <SmallTable rows={props.rows} />
                <NavLink className={s.linkSmallTable} to={'/'}>Показать еще</NavLink>
             </div>
-            <Button className={s.button} style={styleButton} buttonData={props.buttonData}/>
+            <Button className={s.button} style={styleButton} buttonData={props.buttonData} />
          </div>
       </section>
    );

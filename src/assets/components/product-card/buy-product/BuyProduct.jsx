@@ -1,15 +1,15 @@
 import Navigation from "../../common/navigation/Navigation.jsx";
 import s from "./BuyProduct.module.scss";
+import RadioButtons from "./radio-buttons/RadioButtons.jsx";
 
 // стилизация блока навигации
 const styledNavigation = {
    justifyContent: "space-around",
-   height: "70px"   
+   height: "70px"
 }
 
 // стилизация элементов навигации
-const styledNavigationItem = {
-   fontFamily: "SFProDisplayRegular",
+const styledNavItem = {
    fontSize: "20px",
    lineHeight: "150%"
 }
@@ -17,21 +17,18 @@ const styledNavigationItem = {
 function BuyProduct(props) {
    return (
       <section className={s.buyProduct}>
-         <Navigation className={s.navigation} navData={props.navData} styledNavigation={styledNavigation} styledNavigationItem={styledNavigationItem}/>
-         <div className={s.search}>
-            <span className={s.labelName}>Магазин</span>
-            <input className={s.inputSearch} type="text" />
-         </div>
-         <div className={s.checkBoxes}>
-            <div className={s.checkBoxLeft}>
-               <span className={s.labelTimeLeft}>Забрать сегодня</span>
+         <Navigation navData={props.navData} styledNavigation={styledNavigation}
+            styledNavItem={styledNavItem} />
+         <div className={s.contentBlock}>
+            <div className={s.searchBlock}>
+               <div className={s.search}>
+                  <span className={s.labelName}>Магазин</span>
+                  <input className={s.inputSearch} name="name" type="text" autofocus />
+               </div>
+               <RadioButtons />
+            </div>            
+            <div className={s.table}>
             </div>
-            <div className={s.checkBoxRight}>
-               <span className={s.labelTimeRight}>Забрать в течение недели</span>
-            </div>
-         </div>
-         <div className={s.table}>
-
          </div>
       </section>
    );

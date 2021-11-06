@@ -83,13 +83,12 @@ const navBuyProductData = {
       path: "/"
    },
    data4: {
-      styleItem: {
+      myStyle: {
          fontWeight: 600,
-         borderBottomWidth: "2px",
-         borderBottom: "solid",
+         borderBottomWidth: 2,
+         borderBottomStyle: "solid",
          borderBottomColor: "#1C62CD",
-         width: "max-content",
-         paddingTop: "3px"
+         width: "max-content"         
       },
       title: "Самовывоз",
       path: "/"    
@@ -107,7 +106,7 @@ const navBuyProductData = {
       path: "/"
    },
    data8: {
-      styleItem: {
+      myStyle: {
          display: "none"
       },
       title: "",

@@ -1,7 +1,7 @@
 import s from "././Header.module.scss";
 import HeaderItem from "./header-item/HeaderItem";
 import ListPersonal from "./listPersonal/ListPersonal";
-import Navigation from "./navigation/Navigation";
+import NavigationHeader from "./navigation-header/NavigationHeader.jsx";
 
 const data = {
   titleLink: "Магазины",
@@ -70,7 +70,7 @@ function Header(props) {
           </div>
         </div>
         <div>
-          <Navigation />
+          <NavigationHeader />
         </div>
       </div>
     </header>

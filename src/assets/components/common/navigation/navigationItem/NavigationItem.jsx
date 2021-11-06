@@ -1,12 +1,12 @@
 import s from "./NavigationItem.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavigationItem(props) {
   return (
-    <li className={s.item} style={props.styledNavigationItem, props.itemData.styleItem}>
-      <Link to={props.itemData.path} className={s.link}>
+    <li className={s.item} style={props.itemData.myStyle}>
+      <NavLink style={props.styledNavItem} to={props.itemData.path} className={s.linkNavigationItem}>
         {props.itemData.title}
-      </Link>
+      </NavLink>
     </li>
   );
 }
