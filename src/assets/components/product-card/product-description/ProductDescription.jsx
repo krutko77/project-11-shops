@@ -21,7 +21,7 @@ const StyledRating = styled(Rating)({
 });
 
 // стилизация кнопки
-const style = {
+const styleButton = {
    padding: "19px 61px",
    fontSize: "14px",
    letterSpacing: "0.8px"
@@ -67,11 +67,9 @@ function productDescription(props) {
                <SmallTable rows={props.rows} />
                <NavLink className={s.linkSmallTable} to={'/'}>Показать еще</NavLink>
             </div>
-            <Button style={style} buttonData={props.buttonData}/>
+            <Button className={s.button} style={styleButton} buttonData={props.buttonData}/>
          </div>
       </section>
-
-
    );
 }
 

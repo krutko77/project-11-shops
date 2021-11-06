@@ -8,7 +8,6 @@ import Link from '@mui/material/Link';
 import BuyProduct from "./buy-product/BuyProduct.jsx";
 import BlockVariousGoods from "./../main/block-various-goods/BlockVariousGoods.jsx";
 
-
 import imgProductCard from "./../../img/product-card/product-card-img.png";
 
 import imgSlider2Card1 from "./../../img/slider2/img1.png";
@@ -17,24 +16,23 @@ import imgSlider2Card3 from "./../../img/slider2/img3.png";
 import imgSlider2Card4 from "./../../img/slider2/img4.png";
 
 
-
 // стилизация "хлебных крошек"
 const StyledBreadcrumbs = styled(Breadcrumbs)(({ theme }) => {
    return {
-   fontFamily: "SFProDisplayRegular",
-   fontSize: 15,
-   color: "#C4C4C4",
-   "& .MuiBreadcrumbs-separator": {
-      marginLeft: 0,
-      marginRight: 0
-   }
+      fontFamily: "SFProDisplayRegular",
+      fontSize: 15,
+      color: "#C4C4C4",
+      "& .MuiBreadcrumbs-separator": {
+         marginLeft: 0,
+         marginRight: 0
+      }
    };
 })
 
 const MyTypography = styled(Typography)(({ theme }) => {
    return {
-   fontFamily: "SFProDisplayRegular",
-   fontSize: 15,   
+      fontFamily: "SFProDisplayRegular",
+      fontSize: 15,
    };
 })
 
@@ -49,7 +47,7 @@ const productDescriptionData = {
    title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
    itemNumber: "366666-2",
    rating: 4,
-   link: '/'  
+   link: '/'
 }
 
 // данные для маленькой таблицы в секции productDescription
@@ -68,6 +66,53 @@ const rowsData = [
 // данные для кнопки секции productDescription
 const buttonData1 = {
    label: "КУПИТЬ"
+}
+
+// данные для навигации секции buyProduct
+const navBuyProductData = {
+   data1: {
+      title: "О товаре",
+      path: "/"
+   },
+   data2: {
+      title: "Характеристики",
+      path: "/"
+   },
+   data3: {
+      title: "Отзывы",
+      path: "/"
+   },
+   data4: {
+      styleItem: {
+         fontWeight: 600,
+         borderBottomWidth: "2px",
+         borderBottom: "solid",
+         borderBottomColor: "#1C62CD",
+         width: "max-content",
+         paddingTop: "3px"
+      },
+      title: "Самовывоз",
+      path: "/"    
+   },
+   data5: {
+      title: "Доставка",
+      path: "/"
+   },
+   data6: {
+      title: "Сервис",
+      path: "/"
+   },
+   data7: {
+      title: "Гарантия",
+      path: "/"
+   },
+   data8: {
+      styleItem: {
+         display: "none"
+      },
+      title: "",
+      path: "/"
+   },
 }
 
 // данные для кнопки секции buyProduct
@@ -127,22 +172,23 @@ const otherProductCardsData = {
    },
 }
 
+
 function ProductCard() {
    return (
       <div className={s.productCard}>
          <div className={s.container}>
             <nav className={s.NavBreadcrumbs}>
-            <StyledBreadcrumbs
-               separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
-               <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,
-               <Link underline="hover" key="2" color="inherit" href="/">Гидроциклы</Link>,
-               <MyTypography key="3" color="inherit" >
-                  Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
-               </MyTypography>
-            </StyledBreadcrumbs>
-            </nav>           
-            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} buttonData={buttonData1}/>
-            <BuyProduct buttonData={buttonData2} />
+               <StyledBreadcrumbs
+                  separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
+                  <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,
+                  <Link underline="hover" key="2" color="inherit" href="/">Гидроциклы</Link>,
+                  <MyTypography key="3" color="inherit" >
+                     Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+                  </MyTypography>
+               </StyledBreadcrumbs>
+            </nav>
+            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} buttonData={buttonData1} />
+            <BuyProduct navData={navBuyProductData} buttonData={buttonData2} />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>
       </div>

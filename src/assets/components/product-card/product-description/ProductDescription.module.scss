@@ -7,7 +7,7 @@
    grid-template-areas:
       "leftBlock titleBlock"
       "leftBlock navBlock"
-      "leftBlock table"
+      "leftBlock tableBlock"
       "leftBlock button";
    margin-bottom: 80px;
 }
@@ -148,10 +148,15 @@
 .linkList:hover,
 .active {
    font-weight: 700;
-   border-bottom: $accentColor 3px solid;
+   border-bottom: 2px solid $accentColor;
    width: max-content;
    opacity: 100%;
    transition: 0.2s;
+}
+
+.smallTableWrap {
+   margin-bottom: 40px;
+   grid-area: tableBlock;
 }
 
 .linkSmallTable {
@@ -159,21 +164,6 @@
    text-decoration: underline;
 }
 
-.smallTableWrap {
-   margin-bottom: 40px;
-}
-
-.btn {
-   width: 180px;
-   height: 50px;
-   // padding: 19px 61px;
-   color: white;
-   background-color: #1C62CD;
-   border: none;
-   border-radius: 3px;
-   font-family: "SFProDisplayRegular";
-   font-size: 14px;
-   line-height: 120%;
-   letter-spacing: 0.8px;
-   cursor: pointer;
+.button {
+   grid-area: button;
 }
