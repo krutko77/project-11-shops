@@ -21,7 +21,7 @@ const MyFavorite = styled(Favorite)({
 }
 );
 
-function IconCheckboxes(props) {
+function IconCheckboxes() {
    return (
       <div>
          <MyCheckbox icon={<MyFavoriteBorder />} checkedIcon={<MyFavorite />} />

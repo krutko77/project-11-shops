@@ -21,11 +21,6 @@ const BpCheckedIcon = styled(BpIcon)({
 function BpRadio(props) {
    return (
       <Radio
-         sx={{
-            '&:hover': {
-               bgcolor: 'transparent',
-            },
-         }}
          disableRipple
          color="default"
          checkedIcon={<BpCheckedIcon />}
@@ -35,12 +30,39 @@ function BpRadio(props) {
    );
 }
 
-function RadioButtons() {
+const StyledFormControlLabel = styled(FormControlLabel)({
+   'MuiFormControlLabel-root': {
+      marginRight: "50px"
+      }   
+});
+
+// const StyledFormControlLabel = styled('label')(({ theme }) => ({
+//    'MuiFormControlLabel-root': {
+//       marginRight: "50px"
+//       }   
+// }));
+
+
+// function StyledFormControlLabel(props) {
+//    return (
+//       <FormControlLabel
+//          sx={{
+//             'MuiFormControlLabel-root': {
+//                marginRight: "50px"
+//             },
+//          }}
+//          {...props}
+//       />
+//    );
+// }
+
+
+function RadioButtons(props) {
    return (
       <FormControl component="fieldset">
          <RadioGroup row aria-label="time" name="row-radio-buttons-group">
-            <FormControlLabel value="Забрать сегодня" control={<BpRadio />} label="Забрать сегодня" />
-            <FormControlLabel value="Забрать в течение недели" control={<BpRadio />} label="Забрать в течение недели" />
+            <StyledFormControlLabel value="Забрать сегодня" control={<BpRadio />} label="Забрать сегодня" />
+            <StyledFormControlLabel value="Забрать в течение недели" control={<BpRadio />} label="Забрать в течение недели" />
          </RadioGroup>
       </FormControl>
    );

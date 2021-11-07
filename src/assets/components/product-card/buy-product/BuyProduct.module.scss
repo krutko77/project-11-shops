@@ -5,8 +5,10 @@
 }
 
 .contentBlock {
-   padding: 47px 0 0 37px;
+   padding: 50px 0 0 37px;
 }
+
+.searchBlock {}
 
 .inputSearch {
    height: 35px;
@@ -19,7 +21,7 @@
    margin-right: 150px;
 }
 
-.inputSearch::before {
+.inputSearch::after {
    content: "";
    position: absolute;
    top: 0px;
