@@ -4,12 +4,13 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import { styled } from '@mui/material/styles';
 
+// стилизация RadioButtons
 const BpIcon = styled('span')(({ theme }) => ({
    outline: '1px auto rgba(19,124,189,.6)',
    outlineOffset: 3,
    width: 8,
    height: 8,
-   marginRight: "50px"
+   marginRight: 9,
 }));
 
 const BpCheckedIcon = styled(BpIcon)({
@@ -21,7 +22,7 @@ const BpCheckedIcon = styled(BpIcon)({
 
 function BpRadio(props) {
    return (
-      <Radio
+      <Radio       
          disableRipple
          color="default"
          checkedIcon={<BpCheckedIcon />}
@@ -31,39 +32,12 @@ function BpRadio(props) {
    );
 }
 
-const StyledFormControlLabel = styled(FormControlLabel)({
-   '.MuiFormControlLabel-root': {
-      marginRight: "50px"
-      }   
-});
-
-// const StyledFormControlLabel = styled('label')(({ theme }) => ({
-//    'MuiFormControlLabel-root': {
-//       marginRight: "50px"
-//       }   
-// }));
-
-
-// function StyledFormControlLabel(props) {
-//    return (
-//       <FormControlLabel
-//          sx={{
-//             'MuiFormControlLabel-root': {
-//                marginRight: "50px"
-//             },
-//          }}
-//          {...props}
-//       />
-//    );
-// }
-
-
 function RadioButtons(props) {
    return (
       <FormControl component="fieldset">
          <RadioGroup row aria-label="time" name="row-radio-buttons-group">
-            <StyledFormControlLabel value="Забрать сегодня" control={<BpRadio />} label="Забрать сегодня" />
-            <StyledFormControlLabel value="Забрать в течение недели" control={<BpRadio />} label="Забрать в течение недели" />
+            <FormControlLabel style={{ marginRight: "56px"}} value="Забрать сегодня" control={<BpRadio />} label="Забрать сегодня" />
+            <FormControlLabel value="Забрать в течение недели" control={<BpRadio />} label="Забрать в течение недели" />
          </RadioGroup>
       </FormControl>
    );
