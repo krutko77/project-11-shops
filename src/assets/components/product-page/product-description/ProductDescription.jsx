@@ -3,7 +3,9 @@ import { NavLink } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import StarIcon from '@mui/icons-material/Star';
-import IconCheckboxes from '../../common/IconCheckboxes.jsx';
+import IconCheckboxes from '../../common/Icon-boxes/IconCheckboxes.jsx';
+import SmallTable from './small-table/SmallTable.jsx';
+import Button from '../../common/button/Button.jsx';
 
 import diagramIcon from './../../../img/product-card/diagram-icon.svg';
 
@@ -15,9 +17,15 @@ const StyledRating = styled(Rating)({
    },
    '& .MuiRating-iconFilled': {
       color: '#1C62CD',
-   },   
+   },
 });
 
+// стилизация кнопки
+const styleButton = {
+   padding: "19px 61px",
+   fontSize: "14px",
+   letterSpacing: "0.8px"
+}
 
 function productDescription(props) {
    return (
@@ -37,29 +45,33 @@ function productDescription(props) {
                <span className={s.itemNumber}>Код товара:  {props.descriptionData.itemNumber}</span>
                <div className={s.rating}>
                   <div className={s.checkbox}>
-                     <IconCheckboxes/>
+                     <IconCheckboxes />
                   </div>
                   <img className={s.diagramIcon} src={diagramIcon} alt="icon" />
                   <StyledRating
                      readOnly
-                     defaultValue={props.descriptionData.rating} 
+                     defaultValue={props.descriptionData.rating}
                      emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
-                  /> 
-               </div>                            
+                  />
+               </div>
             </div>
             <nav className={s.navigationList}>
                <ul className={s.list}>
                   <li className={s.item}>
-                     <NavLink className={s.linkList} to={'/'} >Характеристики</NavLink>
+                     <NavLink className={`${s.linkList} ${s.active}`} to={'/'} >Характеристики</NavLink>
+                  </li>
+                  <li className={s.item}>
                      <NavLink className={s.linkList} to={'/'}>Наличие в магазине</NavLink>
                   </li>
                </ul>
             </nav>
-            {/* <NavLink className={s.btn} to={'/'}>Купить</NavLink> */}
+            <div className={s.smallTableWrap}>
+               <SmallTable rows={props.rows} />
+               <NavLink className={s.linkSmallTable} to={'/'}>Показать еще</NavLink>
+            </div>
+            <Button className={s.button} style={styleButton} label={props.labelButton} />
          </div>
       </section>
-
-
    );
 }
 

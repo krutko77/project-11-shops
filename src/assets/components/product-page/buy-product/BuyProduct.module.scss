@@ -1,0 +1,45 @@
+@import './../../../../styles/sass/abstracts/variables.scss';
+
+.buyProduct {
+   margin-bottom: 100px;   
+}
+
+.contentBlock {
+   padding: 50px 0 0 37px;
+}
+
+.searchBlock {}
+
+.inputSearch {
+   height: 35px;
+   width: 315px;
+   padding-left: 17px;
+   background-color: $basicColor;
+   border: none;
+   position: relative;
+   font-size: 17px;
+   margin-right: 150px;
+}
+
+.inputSearch::after {
+   content: "";
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   width: 15px;
+   height: 15px;
+   background: url("./../../../img/product-card/search.svg") 0 0 no-repeat;   
+}
+
+.searchBlock {
+   display: flex;
+   align-items: center;
+   font-family: "SFProDisplayRegular";
+   font-size: 17px;
+   line-height: 120%;
+}
+
+.labelName {
+   margin-right: 17px;
+}
+

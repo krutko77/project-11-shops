@@ -1,4 +1,4 @@
-import s from "./ProductCard.module.scss";
+import s from "./ProductPage.module.scss";
 import ProductDescription from "./product-description/ProductDescription.jsx";
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { styled } from '@mui/material/styles';
@@ -6,8 +6,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import BuyProduct from "./buy-product/BuyProduct.jsx";
-import BlockVariousGoods from "./../main/block-various-goods/BlockVariousGoods.jsx";
-
+import BlockVariousGoods from "../main-page/block-various-goods/BlockVariousGoods.jsx";
 
 import imgProductCard from "./../../img/product-card/product-card-img.png";
 
@@ -17,24 +16,23 @@ import imgSlider2Card3 from "./../../img/slider2/img3.png";
 import imgSlider2Card4 from "./../../img/slider2/img4.png";
 
 
-
 // стилизация "хлебных крошек"
 const StyledBreadcrumbs = styled(Breadcrumbs)(({ theme }) => {
    return {
-   fontFamily: "SFProDisplayRegular",
-   fontSize: 15,
-   color: "#C4C4C4",
-   "& .MuiBreadcrumbs-separator": {
-      marginLeft: 0,
-      marginRight: 0
-   }
+      fontFamily: "SFProDisplayRegular",
+      fontSize: 15,
+      color: "#C4C4C4",
+      "& .MuiBreadcrumbs-separator": {
+         marginLeft: 0,
+         marginRight: 0
+      }
    };
 })
 
 const MyTypography = styled(Typography)(({ theme }) => {
    return {
-   fontFamily: "SFProDisplayRegular",
-   fontSize: 15,   
+      fontFamily: "SFProDisplayRegular",
+      fontSize: 15,
    };
 })
 
@@ -52,8 +50,64 @@ const productDescriptionData = {
    link: '/'
 }
 
-// данные для секции buyProduct
-const buyProductData = {}
+// данные для маленькой таблицы в секции productDescription
+function createData(name, value) {
+   return { name, value };
+}
+
+const rowsData = [
+   createData('Производитель', 'Канада'),
+   createData('Количество мест, шт:', 3),
+   createData('Мощность, л.с.', 155),
+   createData('Тип двигателя', 'Бензиновый'),
+   createData('Год выпуска', 2018),
+];
+
+// данные для навигации секции buyProduct
+const navBuyProductData = {
+   data1: {
+      title: "О товаре",
+      path: "/"
+   },
+   data2: {
+      title: "Характеристики",
+      path: "/"
+   },
+   data3: {
+      title: "Отзывы",
+      path: "/"
+   },
+   data4: {
+      myStyle: {
+         fontWeight: 600,
+         borderBottomWidth: 2,
+         borderBottomStyle: "solid",
+         borderBottomColor: "#1C62CD",
+         width: "max-content"         
+      },
+      title: "Самовывоз",
+      path: "/"    
+   },
+   data5: {
+      title: "Доставка",
+      path: "/"
+   },
+   data6: {
+      title: "Сервис",
+      path: "/"
+   },
+   data7: {
+      title: "Гарантия",
+      path: "/"
+   },
+   data8: {
+      myStyle: {
+         display: "none"
+      },
+      title: "",
+      path: "/"
+   },
+}
 
 // данные для слайдера
 const otherProductCardsData = {
@@ -73,7 +127,6 @@ const otherProductCardsData = {
       img: imgSlider2Card3,
       price: "45 800 ₽",
    },
-
    cardData4: {
       title: "Спасательное снаряжение",
       img: imgSlider2Card4,
@@ -109,26 +162,26 @@ const otherProductCardsData = {
 }
 
 
-function ProductCard() {
+function ProductPage() {
    return (
-      <div className={s.productCard}>
+      <div className={s.productPage}>
          <div className={s.container}>
             <nav className={s.NavBreadcrumbs}>
-            <StyledBreadcrumbs
-               separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
-               <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,
-               <Link underline="hover" key="2" color="inherit" href="/">Гидроциклы</Link>,
-               <MyTypography key="3" color="inherit" >
-                  Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
-               </MyTypography>
-            </StyledBreadcrumbs>
-            </nav>           
-            <ProductDescription descriptionData={productDescriptionData} />
-            <BuyProduct buyProductData={buyProductData} />
+               <StyledBreadcrumbs
+                  separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
+                  <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,
+                  <Link underline="hover" key="2" color="inherit" href="/">Гидроциклы</Link>,
+                  <MyTypography key="3" color="inherit" >
+                     Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+                  </MyTypography>
+               </StyledBreadcrumbs>
+            </nav>
+            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} labelButton="КУПИТЬ" />
+            <BuyProduct navData={navBuyProductData} labelButton="КУПИТЬ" />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>
       </div>
    );
 }
 
-export default ProductCard;
+export default ProductPage;

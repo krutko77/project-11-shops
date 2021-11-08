@@ -5,9 +5,9 @@ import Favorite from '@mui/icons-material/Favorite';
 import { styled } from '@mui/material/styles';
 
 
-// стилизация размера иконки
+// стилизация маржина и размера иконки
 const MyCheckbox = styled(Checkbox)({
-   paddingLeft: 0
+   marginLeft: -10
 }
 );
 
@@ -21,7 +21,7 @@ const MyFavorite = styled(Favorite)({
 }
 );
 
-function IconCheckboxes(props) {
+function IconCheckboxes() {
    return (
       <div>
          <MyCheckbox icon={<MyFavoriteBorder />} checkedIcon={<MyFavorite />} />

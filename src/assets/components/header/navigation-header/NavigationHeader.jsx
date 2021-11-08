@@ -1,5 +1,5 @@
-import s from "./Navigation.module.scss";
-import NavigationItem from "./navigationItem/NavigationItem.jsx";
+import s from "./NavigationHeader.module.scss";
+import NavigationItem from "./navigation-header-Item/NavigationHeaderItem.jsx";
 
 const data = {
   title: "Квадроциклы",

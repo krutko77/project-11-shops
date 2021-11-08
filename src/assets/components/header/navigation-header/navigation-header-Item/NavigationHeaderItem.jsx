@@ -1,4 +1,4 @@
-import s from "./NavigationItem.module.scss";
+import s from "./NavigationHeaderItem.module.scss";
 import { Link } from "react-router-dom";
 
 function NavigationItem(props) {
