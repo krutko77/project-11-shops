@@ -1,6 +1,7 @@
 import s from "./Catalog.module.scss";
 
 import Filter from "../content/filter/Filter";
+import Directory from "../content/directory/Directory";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
@@ -22,7 +23,10 @@ function Catalog() {
         </Breadcrumbs>
         <h1 className={s.heading}>{data.heading}</h1>
         <Sorter />
-        <Filter />
+        <div className={s.wrapper}>
+          <Filter />
+          <Directory />
+        </div>
       </div>
     </div>
   );

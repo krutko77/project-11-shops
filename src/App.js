@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        {/* <Route path="/catalog/:id">
+        <Route path="/catalog/:id">
           <Catalog />
         </Route>
         <Route path="/product-card"> */}
