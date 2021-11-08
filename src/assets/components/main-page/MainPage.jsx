@@ -1,4 +1,4 @@
-import s from "./Main.module.scss";
+import s from "./MainPage.module.scss";
 import SliderBanner from './slider-banner/SliderBanner.jsx';
 import PromoSale from './promo-sale/PromoSale.jsx';
 import Search from './search/Search.jsx';
@@ -205,9 +205,9 @@ const otherProductCardsData = {
    },
 }
 
-function Main() {
+function MainPage() {
    return (
-      <div className={s.main}>
+      <div className={s.mainPage}>
          <div className={s.container}>
             <div className={s.topBlock}>
                <SliderBanner bannerData={sliderBannerData} />
@@ -223,4 +223,4 @@ function Main() {
    );
 }
 
-export default Main;
+export default MainPage;

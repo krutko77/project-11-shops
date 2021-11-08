@@ -1,4 +1,4 @@
-import s from "./ProductCard.module.scss";
+import s from "./ProductPage.module.scss";
 import ProductDescription from "./product-description/ProductDescription.jsx";
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { styled } from '@mui/material/styles';
@@ -6,7 +6,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import BuyProduct from "./buy-product/BuyProduct.jsx";
-import BlockVariousGoods from "./../main/block-various-goods/BlockVariousGoods.jsx";
+import BlockVariousGoods from "../main-page/block-various-goods/BlockVariousGoods.jsx";
 
 import imgProductCard from "./../../img/product-card/product-card-img.png";
 
@@ -63,11 +63,6 @@ const rowsData = [
    createData('Год выпуска', 2018),
 ];
 
-// данные для кнопки секции productDescription
-const buttonData1 = {
-   label: "КУПИТЬ"
-}
-
 // данные для навигации секции buyProduct
 const navBuyProductData = {
    data1: {
@@ -112,11 +107,6 @@ const navBuyProductData = {
       title: "",
       path: "/"
    },
-}
-
-// данные для кнопки секции buyProduct
-const buttonData2 = {
-   label: "КУПИТЬ"
 }
 
 // данные для слайдера
@@ -172,9 +162,9 @@ const otherProductCardsData = {
 }
 
 
-function ProductCard() {
+function ProductPage() {
    return (
-      <div className={s.productCard}>
+      <div className={s.productPage}>
          <div className={s.container}>
             <nav className={s.NavBreadcrumbs}>
                <StyledBreadcrumbs
@@ -186,12 +176,12 @@ function ProductCard() {
                   </MyTypography>
                </StyledBreadcrumbs>
             </nav>
-            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} buttonData={buttonData1} />
-            <BuyProduct navData={navBuyProductData} buttonData={buttonData2} />
+            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} labelButton="КУПИТЬ" />
+            <BuyProduct navData={navBuyProductData} labelButton="КУПИТЬ" />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>
       </div>
    );
 }
 
-export default ProductCard;
+export default ProductPage;

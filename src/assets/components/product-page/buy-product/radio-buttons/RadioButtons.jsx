@@ -8,7 +8,8 @@ const BpIcon = styled('span')(({ theme }) => ({
    outline: '1px auto rgba(19,124,189,.6)',
    outlineOffset: 3,
    width: 8,
-   height: 8
+   height: 8,
+   marginRight: "50px"
 }));
 
 const BpCheckedIcon = styled(BpIcon)({
@@ -31,7 +32,7 @@ function BpRadio(props) {
 }
 
 const StyledFormControlLabel = styled(FormControlLabel)({
-   'MuiFormControlLabel-root': {
+   '.MuiFormControlLabel-root': {
       marginRight: "50px"
       }   
 });

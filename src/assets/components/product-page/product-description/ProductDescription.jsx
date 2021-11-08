@@ -4,7 +4,7 @@ import { Rating } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import StarIcon from '@mui/icons-material/Star';
 import IconCheckboxes from '../../common/Icon-boxes/IconCheckboxes.jsx';
-import SmallTable from './../product-description/small-table/SmallTable.jsx';
+import SmallTable from './small-table/SmallTable.jsx';
 import Button from '../../common/button/Button.jsx';
 
 import diagramIcon from './../../../img/product-card/diagram-icon.svg';
@@ -69,7 +69,7 @@ function productDescription(props) {
                <SmallTable rows={props.rows} />
                <NavLink className={s.linkSmallTable} to={'/'}>Показать еще</NavLink>
             </div>
-            <Button className={s.button} style={styleButton} buttonData={props.buttonData} />
+            <Button className={s.button} style={styleButton} label={props.labelButton} />
          </div>
       </section>
    );
