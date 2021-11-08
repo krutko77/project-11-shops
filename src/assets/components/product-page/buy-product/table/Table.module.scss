@@ -1,0 +1,25 @@
+.table {
+   display: grid;
+   grid-template-columns: 1fr 250px 200px 235px 140px;
+   grid-template-areas: "th1 th2 th3 th4 .";
+}
+
+tr {
+   display:contents;
+}
+
+.th1 {
+   grid-area: th1;
+}
+
+.th2 {
+   grid-area: th2;
+}
+
+.th3 {
+   grid-area: th3;
+}
+
+.th4 {
+   grid-area: th4;
+}

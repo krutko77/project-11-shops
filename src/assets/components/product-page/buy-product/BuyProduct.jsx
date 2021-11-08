@@ -1,6 +1,7 @@
 import Navigation from "../../common/navigation/Navigation.jsx";
 import s from "./BuyProduct.module.scss";
 import RadioButtons from "./radio-buttons/RadioButtons.jsx";
+import Table from './table/Table.jsx'
 
 // стилизация блока навигации
 const styledNavigation = {
@@ -27,8 +28,7 @@ function BuyProduct(props) {
                </div>
                <RadioButtons />
             </div>            
-            <div className={s.table}>
-            </div>
+            <Table />
          </div>
       </section>
    );
