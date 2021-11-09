@@ -8,20 +8,20 @@ import imgSlider2Card6 from "./../../../img/jet-skis/jetski6.png";
 import imgSlider2Card7 from "./../../../img/jet-skis/jetski7.png";
 import imgSlider2Card8 from "./../../../img/jet-skis/jetski8.png";
 import imgSlider2Card12 from "./../../../img/jet-skis/jetski9.png";
-import ProductCard from "../../main/block-various-goods/product-card/ProductCard";
+import SliderProductCard from "../../../components/main-page/block-various-goods/slider-product-card/SliderProductCard";
 
 function Directory(props) {
   return (
     <div className={style.products}>
-      <ProductCard img={imgSlider2Card1} />
-      <ProductCard img={imgSlider2Card2} />
-      <ProductCard img={imgSlider2Card3} />
-      <ProductCard img={imgSlider2Card4} />
-      <ProductCard img={imgSlider2Card5} />
-      <ProductCard img={imgSlider2Card6} />
-      <ProductCard img={imgSlider2Card7} />
-      <ProductCard img={imgSlider2Card8} />
-      <ProductCard img={imgSlider2Card12} />
+      <SliderProductCard img={imgSlider2Card1} />
+      <SliderProductCard img={imgSlider2Card2} />
+      <SliderProductCard img={imgSlider2Card3} />
+      <SliderProductCard img={imgSlider2Card4} />
+      <SliderProductCard img={imgSlider2Card5} />
+      <SliderProductCard img={imgSlider2Card6} />
+      <SliderProductCard img={imgSlider2Card7} />
+      <SliderProductCard img={imgSlider2Card8} />
+      <SliderProductCard img={imgSlider2Card12} />
     </div>
   );
 }

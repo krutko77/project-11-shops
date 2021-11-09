@@ -1,7 +1,7 @@
 import s from "./Catalog.module.scss";
 
 import Filter from "../content/filter/Filter";
-// import Directory from "../content/directory/Directory";
+import Directory from "../content/directory/Directory";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
@@ -25,7 +25,7 @@ function Catalog() {
         <Sorter />
         <div className={s.wrapper}>
           <Filter />
-          {/* <Directory /> */}
+          <Directory />
         </div>
       </div>
     </div>
