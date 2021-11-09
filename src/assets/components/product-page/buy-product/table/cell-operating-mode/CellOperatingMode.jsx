@@ -5,10 +5,10 @@ import s from "./CellOperatingMode.module.scss";
 
 function CellOperatingMode(props) {
    return (   
-     <div className={s.cell}>
-        <div className={`${s.text} ${s.flex}`}></div> 
-        <div className={`${s.text} ${s.flex}`}></div>       
-     </div>
+      <>
+         <span className={`${s.text} ${s.flex}`}></span> 
+         <span className={`${s.text} ${s.flex}`}></span>       
+      </>
    );
 }
 
