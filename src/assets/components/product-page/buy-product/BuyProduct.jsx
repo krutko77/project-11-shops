@@ -28,7 +28,7 @@ function BuyProduct(props) {
                </div>
                <RadioButtons />
             </div>            
-            <Table />
+            <Table tableData={props.tableData} label={props.labelButton} />
          </div>
       </section>
    );

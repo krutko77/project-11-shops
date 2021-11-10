@@ -83,10 +83,10 @@ const navBuyProductData = {
          borderBottomWidth: 2,
          borderBottomStyle: "solid",
          borderBottomColor: "#1C62CD",
-         width: "max-content"         
+         width: "max-content"
       },
       title: "Самовывоз",
-      path: "/"    
+      path: "/"
    },
    data5: {
       title: "Доставка",
@@ -106,6 +106,46 @@ const navBuyProductData = {
       },
       title: "",
       path: "/"
+   },
+}
+
+// данные для большой таблицы в секции buyProduct
+const tableBuyProductData = {
+   dataRow1: {
+      operatingMode: {
+         mode1: "08:00-19:00",
+         mode2: "09:00-17:00",
+      },
+      address: "Москва, ул. Науки 25",
+      availability: "В наличии",
+      quantity: "1"
+   },
+   dataRow2: {
+      operatingMode: {
+         mode1: "08:00-19:00",
+         mode2: "09:00-17:00",
+      },
+      address: "Москва, ул. Южная 134",
+      availability: "В наличии",
+      quantity: "2"
+   },
+   dataRow3: {
+      operatingMode: {
+         mode1: "08:00-19:00",
+         mode2: "09:00-17:00",
+      },
+      address: "Санкт-Петербург,  ул. Красная 19",     
+      availability: "Нет в наличии",
+      quantity: "0"
+   },
+   dataRow4: {
+      operatingMode: {
+         mode1: "08:00-19:00",
+         mode2: "09:00-17:00",
+      },
+      address: "Киев, ул Шевченко 167",      
+      availability: "Нет в наличии",
+      quantity: "0"
    },
 }
 
@@ -177,7 +217,7 @@ function ProductPage() {
                </StyledBreadcrumbs>
             </nav>
             <ProductDescription descriptionData={productDescriptionData} rows={rowsData} labelButton="КУПИТЬ" />
-            <BuyProduct navData={navBuyProductData} labelButton="КУПИТЬ" />
+            <BuyProduct navData={navBuyProductData} tableData={tableBuyProductData} labelButton="КУПИТЬ" />
             <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
          </div>
       </div>

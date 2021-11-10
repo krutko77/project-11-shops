@@ -4,9 +4,11 @@ import s from "./CellCommon.module.scss";
 
 
 function CellCommon(props) {
-   return ( 
-        <span className={s.text}></span>       
-   );
+   return (
+      <div className={s.text}>
+         <span>{props.cellData}</span>
+      </div>
+   );     
 }
 
 export default CellCommon;

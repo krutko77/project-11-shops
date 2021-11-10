@@ -1,11 +1,35 @@
+@import './../../../../../styles/sass/abstracts/variables.scss';
+
+
 .table {
-   display: grid;
+   font-family: "SFProDisplayRegular";
+   line-height: 120%;
+   display: grid;  
    grid-template-columns: 1fr 250px 200px 235px 140px;
-   grid-template-areas: "th1 th2 th3 th4 .";
+   grid-template-areas: "th1 th2 th3 th4 th5"
+      "td1 td2 td3 td4 td5"
+      "td6 td7 td8 td9 td10"
+      "td11 td12 td13 td14 td15"
+      "td16 td17 td18 td19 td20";
+
 }
 
-tr {
-   display:contents;
+tr,
+thead,
+tbody {
+   display: contents;
+}
+
+th {
+   padding: 24px 0;
+   text-align: left;
+   font-size: 20px;
+}
+
+td {
+   padding: 16px 0;
+   font-size: 16px;
+   border-bottom: 1px solid $lightColorText;
 }
 
 .th1 {
@@ -22,4 +46,88 @@ tr {
 
 .th4 {
    grid-area: th4;
+}
+
+.th5 {
+   grid-area: th5;
+}
+
+.td1 {
+   grid-area: td1;
+}
+
+.td2 {
+   grid-area: td2;
+}
+
+.td3 {
+   grid-area: td3;
+}
+
+.td4 {
+   grid-area: td4;
+}
+
+.td5 {
+   grid-area: td5;
+}
+
+.td6 {
+   grid-area: td6;
+}
+
+.td7 {
+   grid-area: td7;
+}
+
+.td8 {
+   grid-area: td8;
+}
+
+.td9 {
+   grid-area: td9;
+}
+
+.td10 {
+   grid-area: td10;
+}
+
+.td11 {
+   grid-area: td11;
+}
+
+.td12 {
+   grid-area: td12;
+}
+
+.td13 {
+   grid-area: td13;
+}
+
+.td14 {
+   grid-area: td14;
+}
+
+.td15 {
+   grid-area: td15;
+}
+
+.td16 {
+   grid-area: td16;
+}
+
+.td17 {
+   grid-area: td17;
+}
+
+.td18 {
+   grid-area: td18;
+}
+
+.td19 {
+   grid-area: td19;
+}
+
+.td20 {
+   grid-area: td20;
 }
