@@ -134,7 +134,7 @@ const tableBuyProductData = {
          mode1: "08:00-19:00",
          mode2: "09:00-17:00",
       },
-      address: "Санкт-Петербург,  ул. Красная 19",     
+      address: "Санкт-Петербург, ул. Красная 19",     
       availability: "Нет в наличии",
       quantity: "0"
    },

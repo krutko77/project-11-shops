@@ -3,7 +3,7 @@ import Button from './../../../common/button/Button.jsx';
 import CellOperatingMode from './cell-operating-mode/CellOperatingMode.jsx';
 import CellCommon from './cell-common/CellCommon.jsx';
 
-// стилизацию кнопки
+// стилизация кнопки
 const styleButton = {
    padding: "10px 45px",
    fontSize: "13px",
