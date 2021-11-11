@@ -11,15 +11,15 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        {/* <Route path="/catalog/:id">
+        <Route path="/catalog/:id">
           <Catalog />
         </Route>
-        <Route path="/product-card"> */}
+        <Route path="/product-card">
           <ProductPage />
-        {/* </Route>
+        </Route>
         <Route path="/">
           <MainPage />
-        </Route> */}
+        </Route>
       </Switch>
       <Footer />
     </BrowserRouter>
