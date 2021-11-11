@@ -1,9 +1,7 @@
-import s from "./CellOperatingMode.module.scss";
+import s from "./CellTimetable.module.scss";
 
 
-
-
-function CellOperatingMode(props) {
+function CellTimetable(props) {
    return (
       <>
          <div className={s.flex}>
@@ -18,4 +16,4 @@ function CellOperatingMode(props) {
    );
 }
 
-export default CellOperatingMode;
+export default CellTimetable;

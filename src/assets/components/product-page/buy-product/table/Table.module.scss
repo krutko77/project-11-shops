@@ -12,13 +12,14 @@
       "td11 td12 td13 td14 td15"
       "td16 td17 td18 td19 td20";
 
-   // grid-template-areas: "th1 td1"
-   //    "th2 th5"
-   //    "td2 td2"
-   //    "th3 td3"
-   //    "th4 td4"
-   //    "td5 td5";
-
+//    для мобильной версии экрана
+//    grid-template-columns: 1fr 1fr;
+//    grid-template-areas: "th1 td1"
+//       "th2 th5"
+//       "td2 td2"
+//       "th3 td3"
+//       "th4 td4"
+//       "td5 td5";
 }
 
 tr,
@@ -59,82 +60,82 @@ td {
    grid-area: th5;
 }
 
-.td1 {
+.tr1 .td1 {
    grid-area: td1;
 }
 
-.td2 {
+.tr1 .td2 {
    grid-area: td2;
 }
 
-.td3 {
+.tr1 .td3 {
    grid-area: td3;
 }
 
-.td4 {
+.tr1 .td4 {
    grid-area: td4;
 }
 
-.td5 {
+.tr1 .td5 {
    grid-area: td5;
 }
 
-.td6 {
+.tr2 .td1 {
    grid-area: td6;
 }
 
-.td7 {
+.tr2 .td2 {
    grid-area: td7;
 }
 
-.td8 {
+.tr2 .td3 {
    grid-area: td8;
 }
 
-.td9 {
+.tr2 .td4 {
    grid-area: td9;
 }
 
-.td10 {
+.tr2 .td5 {
    grid-area: td10;
 }
 
-.td11 {
+.tr3 .td1 {
    grid-area: td11;
 }
 
-.td12 {
+.tr3 .td2 {
    grid-area: td12;
 }
 
-.td13 {
+.tr3 .td3 {
    grid-area: td13;
 }
 
-.td14 {
+.tr3 .td4 {
    grid-area: td14;
 }
 
-.td15 {
+.tr3 .td5 {
    grid-area: td15;
 }
 
-.td16 {
+.tr4 .td1 {
    grid-area: td16;
 }
 
-.td17 {
+.tr4 .td2 {
    grid-area: td17;
 }
 
-.td18 {
+.tr4 .td3 {
    grid-area: td18;
 }
 
-.td19 {
+.tr4 .td4 {
    grid-area: td19;
 }
 
-.td20 {
+.tr4 .td5 {
    grid-area: td20;
 }

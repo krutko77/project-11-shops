@@ -116,7 +116,7 @@ const tableBuyProductData = {
          mode1: "08:00-19:00",
          mode2: "09:00-17:00",
       },
-      address: "Москва, ул. Науки 25",
+      address: "Москва, ул.Науки 25",
       availability: "В наличии",
       quantity: "1"
    },
@@ -125,7 +125,7 @@ const tableBuyProductData = {
          mode1: "08:00-19:00",
          mode2: "09:00-17:00",
       },
-      address: "Москва, ул. Южная 134",
+      address: "Москва, ул.Южная 134",
       availability: "В наличии",
       quantity: "2"
    },
@@ -134,7 +134,7 @@ const tableBuyProductData = {
          mode1: "08:00-19:00",
          mode2: "09:00-17:00",
       },
-      address: "Санкт-Петербург, ул. Красная 19",     
+      address: "Санкт-Петербург, ул.Красная 19",     
       availability: "Нет в наличии",
       quantity: "0"
    },
@@ -143,7 +143,7 @@ const tableBuyProductData = {
          mode1: "08:00-19:00",
          mode2: "09:00-17:00",
       },
-      address: "Киев, ул Шевченко 167",      
+      address: "Киев, ул.Шевченко 167",      
       availability: "Нет в наличии",
       quantity: "0"
    },
