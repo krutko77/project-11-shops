@@ -12,12 +12,15 @@ import cartImg from './../../../../img/slider1/cart.png';
 
 export default function SliderProduct(props) {
    var settings = {
+      '.slick-slide .slick-cloned': {
+         width: "300px"
+      },
       arrows: true,
       dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 4,
-      slidesToScroll: 1
+      slidesToScroll: 1      
    };
    return (
       <div className="slider-product">

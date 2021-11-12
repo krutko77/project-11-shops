@@ -6,13 +6,12 @@
     background: $basicColor;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: auto;
 }
 .inner{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 42px;
+    
 }

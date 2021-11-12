@@ -1,36 +1,33 @@
 @import './../../../../styles/sass/abstracts/mixins.scss';
 @import './../../../../styles/sass/abstracts/variables.scss';
 
+.mailing {
+   padding-top: 38px;
+}
 
-.emailText{
-    color: $basicTextColor;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: left;
-    margin: 25px 0 30px 0;
-  }
-  .btn {
-    color: #ffffff;
-    font-family: SFProDisplay,sans-serif;
-    background: $accentColor;
-    text-transform: uppercase;
-    padding: 8px;
-    border: none;
-    cursor: pointer;
-    font-size: 11px;
-    line-height: 13px;
-    width: 109px;
-    height: 33px;
-    margin-right: 50px;
-  }
-  .emailInput{
-    border: none;
-    height: 33px;
-    width: 201px;
-    margin-left: -10px;
-  }
-  ::placeholder {
-    font-size: 14px;
-    line-height: 17px;
-    color: $lightColorText;
-  }
+.label {
+   margin-bottom: 33px;
+   max-width: 230px;
+}
+
+.emailText {
+   color: $basicTextColor;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.inputButton {
+   display: flex;
+}
+
+.emailInput {
+   border: none;
+   height: 33px;
+   width: 185px;   
+}
+
+::placeholder {
+   font-size: 14px;
+   line-height: 17px;
+   color: $lightColorText;
+}
