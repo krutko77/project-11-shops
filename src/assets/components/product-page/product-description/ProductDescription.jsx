@@ -69,7 +69,7 @@ function productDescription(props) {
                <SmallTable rows={props.rows} />
                <NavLink className={s.linkSmallTable} to={'/'}>Показать еще</NavLink>
             </div>
-            <Button className={s.button} style={styleButton} label={props.labelButton} />
+            <Button className={s.button} style={styleButton} label={"КУПИТЬ"} />
          </div>
       </section>
    );

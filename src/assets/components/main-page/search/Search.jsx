@@ -1,7 +1,14 @@
 import s from "./Search.module.scss";
+import Button from './../../common/button/Button.jsx';
+
+// стилизация кнопки
+const styleButton = {
+   padding: "17px 42px",
+   fontSize: "14px",
+   letterSpacing: "0.8px"
+}
 
 function Search(props) {
-
    return (
       <div className={s.search}>
          <ul className={s.selectButtons}>
@@ -11,7 +18,8 @@ function Search(props) {
          </ul>
          <div className={s.inputBlock}>
             <input className={s.inputSearch} type="text" placeholder="Введите марку " />
-            <button className={s.btnSearch}>ИСКАТЬ</button>
+            <Button className={s.button} style={styleButton} label={"ИСКАТЬ"} />
+            {/* <button className={s.btnSearch}>ИСКАТЬ</button> */}
          </div>
       </div>
    );

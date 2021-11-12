@@ -114,7 +114,7 @@ const navPopularProductData = {
       title: "шины",
       path: "/"
    },
-   data4: {      
+   data4: {
       title: "электроника",
       path: "/"
    },
@@ -313,9 +313,13 @@ function MainPage() {
             </div>
             <Search searchData={searchData} />
             <SectionProducts cardsProductData={sectionProductsCardsData} />
-            <BlockVariousGoods title="Популярные товары" navData={navPopularProductData} cardsData={popularProductCardsData} />
+            <div className={s.popularProducts}>
+               <BlockVariousGoods title="Популярные товары" navData={navPopularProductData} cardsData={popularProductCardsData} />
+            </div>
             <Banner bannerData={bannerData} />
-            <BlockVariousGoods title="С этим товаром покупают" navData={navOtherProductData} cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
+            <div className={s.otherProduct}>
+               <BlockVariousGoods title="С этим товаром покупают" navData={navOtherProductData} cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
+            </div>
          </div>
       </div>
    );

@@ -25,24 +25,25 @@
    cursor: pointer;
 }
 
-.btnSelect:hover {
+.btnSelect:hover,
+.active {
    background-color: #F0F0F4;
    font-weight: 700;
 }
 
-.btnSearch {
-   width: 160px;
-   height: 50px;
-   border: none;
-   color: white;
-   background-color: #09254e;
-   border-radius: 3px;
-   font-family: "SFProDisplayBold";
-   font-size: 14px;
-   line-height: 120%;
-   letter-spacing: 0.8px;
-   cursor: pointer;
-}
+// .btnSearch {
+//    width: 160px;
+//    height: 50px;
+//    border: none;
+//    color: white;
+//    background-color: #09254e;
+//    border-radius: 3px;
+//    font-family: "SFProDisplayBold";
+//    font-size: 14px;
+//    line-height: 120%;
+//    letter-spacing: 0.8px;
+//    cursor: pointer;
+// }
 
 .inputSearch {
    height: 50px;

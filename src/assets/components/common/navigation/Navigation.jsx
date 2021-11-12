@@ -7,6 +7,11 @@ import NavigationItem from "./navigationItem/NavigationItem.jsx";
 //    height: "70px"
 // }
 
+// const styledBackground = {
+//    backgroundColor: "transparent",
+//    marginBottom: "30px"   
+// }
+
 // // стилизация элементов навигации
 // const styledNavItem = {
 //    fontSize: "20px",

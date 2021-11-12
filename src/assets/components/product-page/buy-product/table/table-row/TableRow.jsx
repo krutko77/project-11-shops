@@ -19,7 +19,7 @@ function TableRow(props) {
          <td className={s.td2}><CellTimetable cellData={props.cellData.operatingMode} /></td>
          <td className={s.td3}><CellCommon cellData={props.cellData.availability} /></td>
          <td className={s.td4}><CellCommon cellData={props.cellData.quantity} /></td>
-         <td className={s.td5}><Button style={styleButton} label={props.label} /></td>
+         <td className={s.td5}><Button style={styleButton} label="КУПИТЬ" /></td>
       </tr>
    );
 }

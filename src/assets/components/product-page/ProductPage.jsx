@@ -134,7 +134,7 @@ const tableBuyProductData = {
          mode1: "08:00-19:00",
          mode2: "09:00-17:00",
       },
-      address: "Санкт-Петербург, ул.Красная 19",     
+      address: "Санкт-Петербург, ул.Красная 19",
       availability: "Нет в наличии",
       quantity: "0"
    },
@@ -143,7 +143,7 @@ const tableBuyProductData = {
          mode1: "08:00-19:00",
          mode2: "09:00-17:00",
       },
-      address: "Киев, ул.Шевченко 167",      
+      address: "Киев, ул.Шевченко 167",
       availability: "Нет в наличии",
       quantity: "0"
    },
@@ -266,9 +266,11 @@ function ProductPage() {
                   </MyTypography>
                </StyledBreadcrumbs>
             </nav>
-            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} labelButton="КУПИТЬ" />
-            <BuyProduct navData={navBuyProductData} tableData={tableBuyProductData} labelButton="КУПИТЬ" />
-            <BlockVariousGoods navData={navOtherProductData} title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
+            <ProductDescription descriptionData={productDescriptionData} rows={rowsData} />
+            <BuyProduct navData={navBuyProductData} tableData={tableBuyProductData} />
+            <div className={s.otherProduct}>
+               <BlockVariousGoods title="С этим товаром покупают" navData={navOtherProductData} cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
+            </div>
          </div>
       </div>
    );
