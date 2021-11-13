@@ -9,6 +9,8 @@ import imgSlider2Card7 from "./../../../img/jet-skis/jetski7.png";
 import imgSlider2Card8 from "./../../../img/jet-skis/jetski8.png";
 import imgSlider2Card12 from "./../../../img/jet-skis/jetski9.png";
 import SliderProductCard from "../../../components/main-page/block-various-goods/slider-product-card/SliderProductCard";
+// import img from "./../../../img/slider1/like.svg";
+// import imgCart from "./../../../img/slider1/cart.png";
 
 function Directory(props) {
   return (
