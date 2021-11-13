@@ -198,7 +198,6 @@ const navOtherProductData = {
    },
 }
 
-
 // данные для слайдера
 const otherProductCardsData = {
    cardData1: {
