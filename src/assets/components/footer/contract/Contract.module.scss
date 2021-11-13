@@ -5,18 +5,16 @@
 .list{
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    padding-left: 157px;
-    margin-top: 45px;
+    list-style-type: none;    
 }
+
 .link{
     color: $basicTextColor;
     text-decoration: none;
     font-size: 10px;
-    line-height: 12px;
-    padding-left: 45px;
+    line-height: 120%;  
 }
-.item__right{
-    margin: 0 0 20px 81px;
-    
+.item{
+   padding-left: 95px;
+   margin-right: 80px;    
 }

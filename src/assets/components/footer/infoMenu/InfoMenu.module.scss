@@ -2,23 +2,24 @@
 @import './../../../../styles/sass/abstracts/variables.scss';
 
 
-.infoMenu{
-    font-size: 14px;
-    padding: 40px 0 0 40px;
-    }
-
-.itemMenu{
-    padding-top: 5px;
-    list-style-type: none;
-    
+.infoMenu {
+   font-size: 14px;
+   padding-left: 65px;
+   margin-right: -15px;
 }
 
-.linkMenu{
-    color: $basicTextColor;
-    text-decoration: none;
+.itemMenu {
+   padding-top: 5px;
+   list-style-type: none;
+
 }
 
-.listMenu{
-    padding-left: 0;
-    text-align: start;
+.linkMenu {
+   color: $basicTextColor;
+   text-decoration: none;
+}
+
+.listMenu {
+   padding-left: 0;
+   text-align: start;
 }

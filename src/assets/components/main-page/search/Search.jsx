@@ -17,9 +17,8 @@ function Search(props) {
             <li><button className={s.btnSelect}>{props.searchData.label3}</button></li>
          </ul>
          <div className={s.inputBlock}>
-            <input className={s.inputSearch} type="text" placeholder="Введите марку " />
-            <Button className={s.button} style={styleButton} label={"ИСКАТЬ"} />
-            {/* <button className={s.btnSearch}>ИСКАТЬ</button> */}
+            <input className={s.inputSearch} name="name" type="text" placeholder="Введите марку" autofocus />
+            <Button className={s.button} style={styleButton} label={"ИСКАТЬ"} />            
          </div>
       </div>
    );

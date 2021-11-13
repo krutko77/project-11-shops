@@ -1,9 +1,9 @@
 @import './../../../../styles/sass/abstracts/mixins.scss';
 @import './../../../../styles/sass/abstracts/variables.scss';
 
-.mailing {
-   padding-top: 38px;
-}
+// .mailing {
+//    padding-top: 38px;
+// }
 
 .label {
    margin-bottom: 33px;
@@ -29,5 +29,6 @@
 ::placeholder {
    font-size: 14px;
    line-height: 17px;
-   color: $lightColorText;
+   color: $veryLightColor;
+   padding-left: 12px;  
 }
