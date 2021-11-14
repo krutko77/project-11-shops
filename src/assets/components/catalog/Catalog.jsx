@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Sorter from "./sorter/Sorter";
-import PaginationDirectory from './pagination-directory/PaginationDirectory.jsx';
+import UsePagination from './pagination/UsePagination.jsx';
 
 const data = {
    heading: "Гидроциклы",
@@ -31,7 +31,7 @@ function Catalog() {
                <Filter />
                <div className={s.inner}>
                   <Directory />
-                  <PaginationDirectory />
+                  <UsePagination />
                </div>
             </div>
          </div>
