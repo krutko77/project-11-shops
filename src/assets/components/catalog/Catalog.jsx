@@ -6,11 +6,7 @@ import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Sorter from "./sorter/Sorter";
-<<<<<<< HEAD
-import PaginationDirectory from "./pagination-directory/PaginationDirectory.jsx";
-=======
-import UsePagination from './pagination/UsePagination.jsx';
->>>>>>> cd69e35b98405cd8b8b919cb64301e2f7be1e6ce
+import UsePagination from "./pagination/UsePagination.jsx";
 
 import imgSlider2Card1 from "./../../img/jet-skis/jetski1.png";
 import imgSlider2Card2 from "./../../img/jet-skis/jetski2.png";
