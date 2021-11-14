@@ -2,19 +2,22 @@
 @import './../../../../styles/sass/abstracts/variables.scss';
 
 
-.shopMenu{
-    font-size: 14px;    
+h3,
+.shopMenu {
+   font-size: 14px;
 }
 
-.item{
-    padding-top: 5px;
-    list-style-type: none;
+.item {
+   padding-top: 5px;
+   list-style-type: none;
 }
-.link{
-    color: $basicTextColor;
-    text-decoration: none;
+
+.link {
+   color: $basicTextColor;
+   text-decoration: none;
 }
-.list{
-    padding-left: 0;
-    text-align: start;
+
+.list {
+   padding-left: 0;
+   text-align: start;
 }

@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Sorter from "./sorter/Sorter";
+import PaginationDirectory from "./pagination-directory/PaginationDirectory.jsx";
 
 import imgSlider2Card1 from "./../../img/jet-skis/jetski1.png";
 import imgSlider2Card2 from "./../../img/jet-skis/jetski2.png";
@@ -16,6 +17,9 @@ import imgSlider2Card6 from "./../../img/jet-skis/jetski6.png";
 import imgSlider2Card7 from "./../../img/jet-skis/jetski7.png";
 import imgSlider2Card8 from "./../../img/jet-skis/jetski8.png";
 import imgSlider2Card9 from "./../../img/jet-skis/jetski9.png";
+import imgSlider2Card10 from "./../../img/jet-skis/jetski10.png";
+import imgSlider2Card11 from "./../../img/jet-skis/jetski11.png";
+import imgSlider2Card12 from "./../../img/jet-skis/jetski12.png";
 
 // Данные для компоненты Directory
 const ProductsCardData = {
@@ -61,6 +65,19 @@ const ProductsCardData = {
     img: imgSlider2Card9,
     title: "Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper",
     price: "587 440 ₽",
+  },
+  data10: {
+    img: imgSlider2Card10,
+    title: "Гидроцикл Spark 2-UP 900 Ho Ace Pineapple r",
+    price: "587 440 ₽",
+  },
+  data11: {
+    img: imgSlider2Card11,
+    title: "Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla ",
+  },
+  data12: {
+    img: imgSlider2Card12,
+    title: "Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry",
   },
 };
 

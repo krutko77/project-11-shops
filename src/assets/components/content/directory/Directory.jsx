@@ -14,6 +14,9 @@ function Directory(props) {
       <ProductCard cardData={props.cardsData.data7} />
       <ProductCard cardData={props.cardsData.data8} />
       <ProductCard cardData={props.cardsData.data9} />
+      <ProductCard cardData={props.cardsData.data10} />
+      <ProductCard cardData={props.cardsData.data11} />
+      <ProductCard cardData={props.cardsData.data12} />
     </div>
   );
 }
