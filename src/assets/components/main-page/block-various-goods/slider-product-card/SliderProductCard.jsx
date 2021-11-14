@@ -2,11 +2,7 @@ import s from "./SliderProductCard.module.scss";
 
 import img from "./../../../../img/slider1/like.svg";
 import imgCart from "./../../../../img/slider1/cart.png";
-
-const data = {
-  likeImg: img,
-  imgCart: imgCart,
-};
+import IconCheckboxes from "./../../../common/Icon-boxes/IconCheckboxes";
 
 function SliderProductCard(props) {
   return (
@@ -15,7 +11,8 @@ function SliderProductCard(props) {
         {props.sale}
       </span>
       <a className={s.like} href="#">
-        <img className={s.likeImg} src={data.likeImg} alt="" />
+        {/* <img className={s.likeImg} src={data.likeImg} alt="" /> */}
+        <IconCheckboxes />
       </a>
       <div className={s.wrap}>
         <img className={s.productImg} src={props.img} alt="" />
@@ -27,7 +24,7 @@ function SliderProductCard(props) {
         </a>
       </div>
       <a className={s.cartLink} style={props.styleCart}>
-        <img className={s.cartImg} src={props.cartImg} alt="" />
+        <img className={s.cartImg} src={imgCart} alt="" />
       </a>
     </div>
   );

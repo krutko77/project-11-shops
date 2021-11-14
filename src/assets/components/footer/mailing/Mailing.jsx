@@ -1,15 +1,26 @@
-import s from './Mailing.module.scss'
-import React from "react";
+import s from './Mailing.module.scss';
+import Button from './../../common/button/Button.jsx';
+
+// стилизация кнопки
+const styleButton = {
+   padding: "10px 19px",
+   borderRadius: 0,
+   fontSize: "11px",
+   letterSpacing: "0.8px"
+}
 
 function Mailing() {
-    return (
-        <div className={s.mailing}>
-            <p className={s.emailText}>Подпишитесь на нашу рассылку <br/>
-            и узнавайте о акция быстрее</p>
-            <input className={s.emailInput} type="url" name="sait" placeholder="Введите ваш e-mail:"/>
-            <button className={s.btn}>Отправить</button>
-        </div>
-    );
+   return (
+      <div className={s.mailing}>
+         <div className={s.label}>
+            <span className={s.emailText}>Подпишитесь на нашу рассылку и узнавайте о акциях быстрее</span>
+         </div>
+         <div className={s.inputButton}>
+            <input className={s.emailInput} type="text" name="mail" placeholder="Введите ваш e-mail:" />
+            <Button style={styleButton} label={"ОТПРАВИТЬ"} />
+         </div>
+      </div>
+   );
 }
 
 export default Mailing;

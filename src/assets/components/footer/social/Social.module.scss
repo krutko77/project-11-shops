@@ -1,11 +1,17 @@
-.list{
-    display: flex;
-    margin: 50px 10px 0px 10px;
+.social {
+   padding-top: 43px;
+   margin-right: 45px;
 }
-.item{
-    padding-right: 30px;
-    list-style-type: none;
+
+.list {
+   display: flex;
 }
+
+.item {
+   margin-right: 30px;
+   list-style-type: none;
+}
+
 .imgSocial {
-    width: 30px;
+   width: 30px;
 }

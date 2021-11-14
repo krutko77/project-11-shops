@@ -2,19 +2,26 @@
 
 .item {
    font-family: "SFProDisplayRegular";
-   // font-size: 20px;
-   // line-height: 150%;
-   color: $basicTextColor
-}
-
-.item:hover,
-.active {
-   font-weight: 600;
-   border-bottom: 2px solid $accentColor;
-   width: max-content;   
+   color: $basicTextColor; 
+   position: relative;     
 }
 
 a {
    color: inherit;
    text-decoration: none;
 }
+
+.item:hover{
+   font-weight: 600;   
+}
+
+.item:hover::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: $accentColor;
+   bottom: 0;
+   left: 0;
+}
+

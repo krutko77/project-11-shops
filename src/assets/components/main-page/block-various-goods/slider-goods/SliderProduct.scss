@@ -1,34 +1,33 @@
-
+.slider-product .slick-slider {
+   width: 1195px;
+}
 
 .slider-product .slick-track {
-    position: relative !important;
-
-    margin-bottom: 35px !important;
+   position: relative !important;
+   margin-bottom: 35px !important;
 }
 
 
 .slider-product .slick-prev {
-    background: url("./../../../../img/slider1/arrow_left.svg") 0 0 no-repeat !important;
-    height: 30px !important;
-    left: -5% !important;
+   background: url("./../../../../img/slider1/arrow_left.svg") 0 0 no-repeat !important;
+   height: 30px !important;
+   left: -37px !important;
 }
 
 .slider-product .slick-next {
-    background: url("./../../../../img/slider1/arrow_right.svg")  0 0 no-repeat !important;
-    height: 30px !important;
-    right: -5% !important;    
+   background: url("./../../../../img/slider1/arrow_right.svg") 0 0 no-repeat !important;
+   height: 30px !important;
+   right: -15px !important;
 }
 
 
 .slider-product .slick-arrow {
-    position: absolute !important;
-    top: 40% !important;
-    color: transparent;
+   position: absolute !important;
+   top: 46% !important;
+   color: transparent;
 }
 
-.slider-product .slick-prev:before, .slick-next:before {
-    content: ""
+.slider-product .slick-prev:before,
+.slick-next:before {
+   content: ""
 }
-
-
-

@@ -38,16 +38,12 @@
    z-index: 2 !important;
 }
 
-.slider-banner .slick-prev:before {
-   content: none !important;
-}
-
 .slider-banner .slick-next {
    right: 25px !important;
    background: url("./../../../img/slider-banner/arrow-next.svg") 0 0 no-repeat !important;
 }
 
-.slider-banner .slick-next:before {
+.slider-banner .slick-prev:before, .slick-next:before {
    content: none !important;
 }
 

@@ -93,6 +93,104 @@ const sectionProductsCardsData = {
    }
 }
 
+// данные для навигации секции popularProduct
+const navPopularProductData = {
+   data1: {
+      myStyle: {
+         fontWeight: 600,
+         borderBottomWidth: 2,
+         borderBottomStyle: "solid",
+         borderBottomColor: "#1C62CD",
+         width: "max-content"
+      },
+      title: "запчасти",
+      path: "/"
+   },
+   data2: {
+      title: "моторы",
+      path: "/"
+   },
+   data3: {
+      title: "шины",
+      path: "/"
+   },
+   data4: {
+      title: "электроника",
+      path: "/"
+   },
+   data5: {
+      title: "инструменты",
+      path: "/"
+   },
+   data6: {
+      title: "аксессуары",
+      path: "/"
+   },
+   data7: {
+      myStyle: {
+         display: "none"
+      },
+      title: "",
+      path: "/"
+   },
+   data8: {
+      myStyle: {
+         display: "none"
+      },
+      title: "",
+      path: "/"
+   },
+}
+
+// данные для навигации секции otherProduct
+const navOtherProductData = {
+   data1: {
+      title: "запчасти",
+      path: "/"
+   },
+   data2: {
+      title: "моторы",
+      path: "/"
+   },
+   data3: {
+      title: "шины",
+      path: "/"
+   },
+   data4: {
+      myStyle: {
+         fontWeight: 600,
+         borderBottomWidth: 2,
+         borderBottomStyle: "solid",
+         borderBottomColor: "#1C62CD",
+         width: "max-content"
+      },
+      title: "электроника",
+      path: "/"
+   },
+   data5: {
+      title: "инструменты",
+      path: "/"
+   },
+   data6: {
+      title: "аксессуары",
+      path: "/"
+   },
+   data7: {
+      myStyle: {
+         display: "none"
+      },
+      title: "",
+      path: "/"
+   },
+   data8: {
+      myStyle: {
+         display: "none"
+      },
+      title: "",
+      path: "/"
+   },
+}
+
 // данные для среднего слайдера
 const popularProductCardsData = {
    cardData1: {
@@ -215,9 +313,13 @@ function MainPage() {
             </div>
             <Search searchData={searchData} />
             <SectionProducts cardsProductData={sectionProductsCardsData} />
-            <BlockVariousGoods title="Популярные товары" cardsData={popularProductCardsData} />
+            <div className={s.popularProducts}>
+               <BlockVariousGoods title="Популярные товары" navData={navPopularProductData} cardsData={popularProductCardsData} />
+            </div>
             <Banner bannerData={bannerData} />
-            <BlockVariousGoods title="С этим товаром покупают" cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
+            <div className={s.otherProduct}>
+               <BlockVariousGoods title="С этим товаром покупают" navData={navOtherProductData} cardsData={otherProductCardsData} btnStyle={{ display: "none" }} />
+            </div>
          </div>
       </div>
    );

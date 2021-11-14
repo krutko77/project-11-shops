@@ -2,17 +2,20 @@
 @import './../../../../src/styles/sass/abstracts/variables.scss';
 
 
-.footer{
-    background: $basicColor;
+.footer {
+   background: $basicColor;
+   height: 230px; //  
 }
-.container{
-    width: 1200px;
-    padding: 0 15px;
-    margin: auto;
+
+.container {
+   max-width: 1200px;
+   padding: 0 15px;
+   margin: auto;
 }
-.inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 42px;
+
+.inner {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 40px;
+   margin-bottom: 40px;
 }

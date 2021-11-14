@@ -25,23 +25,10 @@
    cursor: pointer;
 }
 
-.btnSelect:hover {
+.btnSelect:hover,
+.active {
    background-color: #F0F0F4;
    font-weight: 700;
-}
-
-.btnSearch {
-   width: 160px;
-   height: 50px;
-   border: none;
-   color: white;
-   background-color: #09254e;
-   border-radius: 3px;
-   font-family: "SFProDisplayBold";
-   font-size: 14px;
-   line-height: 120%;
-   letter-spacing: 0.8px;
-   cursor: pointer;
 }
 
 .inputSearch {
@@ -52,8 +39,11 @@
 }
 
 input::placeholder {
-   padding-left: 20px;
-   color: #656464;
+   color: #656464;   
+}
+
+input,
+input::placeholder {
    font-family: "SFProDisplayRegular";
    font-size: 16px;
    line-height: 120%;
