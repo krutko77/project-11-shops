@@ -10,6 +10,7 @@ const List = styled('ul')({
    alignItems: "center",
 });
 
+
 export default function UsePagination() {
    const { items } = usePagination({
       count: 11,
