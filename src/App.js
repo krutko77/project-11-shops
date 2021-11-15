@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Switch>
         {/* <Route path="/catalog/:id"> */}
-          <Catalog />
+        <Catalog />
         {/* </Route>
         <Route path="/product-card">
           <ProductPage />
