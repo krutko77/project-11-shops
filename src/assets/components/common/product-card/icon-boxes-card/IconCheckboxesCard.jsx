@@ -4,9 +4,9 @@ import Favorite from '@mui/icons-material/Favorite';
 import { styled } from '@mui/material/styles';
 
 
-// стилизация маржина и размера иконки
+// стилизация паддинга и размера иконки
 const MyCheckbox = styled(Checkbox)({
-   marginLeft: -10
+   padding: 0
 }
 );
 
