@@ -1,7 +1,7 @@
 import s from "./ProductCard.module.scss";
 
 import imgCart from "./../../../img/slider1/cart.png";
-import IconCheckboxes from "./../../common/Icon-boxes/IconCheckboxes";
+import IconCheckboxesCard from "./icon-boxes-card/IconCheckboxesCard.jsx";
 
 function ProductCard(props) {
   return (
@@ -12,7 +12,7 @@ function ProductCard(props) {
         </span>
       )}
       <a className={s.like} href="#">
-        <IconCheckboxes />
+        <IconCheckboxesCard />
       </a>
       <div className={s.wrap}>
         <img className={s.productImg} src={props.cardData.img} alt="" />
@@ -22,10 +22,9 @@ function ProductCard(props) {
         {props.cardData.inStock && (
           <div className={s.notAvailable}>
             <span className={s.nope}>{props.cardData.nope}нет в наличии</span>
-            <a className={s.inform} href="#">
-              Сообщить о поступлении
-              {props.inform}
-            </a>
+            <NavLink className={s.inform} href="#">
+              Сообщить о поступлении{props.inform}
+            </NavLink>
           </div>
         )}
       </div>

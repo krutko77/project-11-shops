@@ -95,9 +95,6 @@
    right: 0;
 }
 
-
-
-
 .box:hover {
 
    cursor: pointer;
@@ -110,9 +107,14 @@
       width: 230px;
       height: 61px;
 
-      background-color: $veryLightColor;
+      // background-color: $veryLightColor;
 
-      box-shadow: rgba(0, 0, 0, 0.2);
+      // box-shadow: rgba(0, 0, 0, 0.2);
+
+      background: #FFFFFF;
+      opacity: 0.9;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
 
       display: flex;
       justify-content: center;
