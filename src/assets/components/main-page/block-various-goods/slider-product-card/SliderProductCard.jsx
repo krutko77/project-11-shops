@@ -1,8 +1,8 @@
 import s from "./SliderProductCard.module.scss";
 
-import img from "./../../../../img/slider1/like.svg";
+// import img from "./../../../../img/slider1/like.svg";
 import imgCart from "./../../../../img/slider1/cart.png";
-import IconCheckboxes from "./../../../common/icon-boxes/IconCheckboxes";
+import IconCheckboxes from "../../../common/Icon-boxes/IconCheckboxes";
 
 function SliderProductCard(props) {
   return (

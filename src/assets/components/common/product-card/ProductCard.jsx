@@ -1,4 +1,5 @@
 import s from "./ProductCard.module.scss";
+import { Link } from "react-router-dom";
 
 import imgCart from "./../../../img/slider1/cart.png";
 import IconCheckboxesCard from "./icon-boxes-card/IconCheckboxesCard.jsx";
@@ -22,9 +23,9 @@ function ProductCard(props) {
         {props.cardData.inStock && (
           <div className={s.notAvailable}>
             <span className={s.nope}>{props.cardData.nope}нет в наличии</span>
-            <NavLink className={s.inform} href="#">
+            <Link className={s.inform} to="/123">
               Сообщить о поступлении{props.inform}
-            </NavLink>
+            </Link>
           </div>
         )}
       </div>
