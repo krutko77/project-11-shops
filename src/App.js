@@ -13,10 +13,10 @@ function App() {
       <Switch>
         {/* <Route path="/catalog/:id"> */}
         <Catalog />
+        {/* </Route> */}
+        {/* <Route path="/product-card"> */}
+        {/* <ProductPage /> */}
         {/* </Route>
-        <Route path="/product-card">
-          <ProductPage />
-        </Route>
         <Route path="/">
           <MainPage />
         </Route> */}
