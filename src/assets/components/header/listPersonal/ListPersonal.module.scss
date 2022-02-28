@@ -1,25 +1,17 @@
 @import './../../../../styles/sass/abstracts/variables.scss';
 @import './../../../../styles/sass/abstracts/mixins.scss';
 
-
-
-
-
 .headerItem {
   @include text (20px, 700, 24px, $basicTextColor);
 }
-
 
 .listPersonal {
   display: flex;
 }
 
-
 .counterWrap {
   display: flex;
 }
-
-
 
 .personalCounter {
   background-color: $accentColor;

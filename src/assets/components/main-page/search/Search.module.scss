@@ -23,6 +23,7 @@
    font-size: 20px;
    line-height: 120%;
    cursor: pointer;
+   transition: background-color 0.2s ease 0.1s;
 }
 
 .btnSelect:hover,
@@ -38,8 +39,13 @@
    border: none;
 }
 
+input {
+   outline: none;
+   padding-left: 15px;
+}
+
 input::placeholder {
-   color: #656464;   
+   color: #656464;
 }
 
 input,

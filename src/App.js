@@ -11,16 +11,16 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        {/* <Route path="/catalog/:id"> */}
+        <Route path="/catalog/:id">
         <Catalog />
-        {/* </Route>
+        </Route>
         <Route path="/product-card">
           <ProductPage />
         </Route>
         <Route path="/">
           <MainPage />
-        </Route> */}
-      </Switch>
+        </Route>
+      </Switch> 
       <Footer />
     </BrowserRouter>
   );

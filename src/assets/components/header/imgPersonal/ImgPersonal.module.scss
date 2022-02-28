@@ -3,7 +3,13 @@
 
 
 
+.imgPersonal {
+   transition: opacity 0.2s ease 0.1s;
 
+   &:hover {
+      opacity: 0.6;
+   }
+}
 
 .linkPersonal:not(:last-child) {
    margin-right: 8px;

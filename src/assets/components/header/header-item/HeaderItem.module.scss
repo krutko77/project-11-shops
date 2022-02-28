@@ -1,54 +1,15 @@
 @import './../../../../styles/sass/abstracts/variables.scss';
 @import './../../../../styles/sass/abstracts/mixins.scss';
 
-
-
-
-
 .headerItem {
-  @include text (20px, 700, 24px, $basicTextColor);
+   @include text (20px, 700, 24px, $basicTextColor);
+   transition: color 0.2s ease 0.1s;
 
+   &:hover {
+      color: $accentColor;
+   }
 }
-
 
 .headerItem:not(:last-child) {
-  margin-right: 55px;
+   margin-right: 55px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

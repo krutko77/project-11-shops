@@ -1,53 +1,47 @@
 @import './../../../../../styles/sass/abstracts/mixins.scss';
 @import './../../../../../styles/sass/abstracts/variables.scss';
 
-
-
 .productCard {
-    display: flex;
-    justify-content: space-between;
-    width: 370px;
-
-    outline: 1px solid #CDCDCD;
-
-    padding: 18px 0px 16px 22px;
+   display: flex;
+   justify-content: space-between;
+   width: 370px;
+   outline: 1px solid #CDCDCD;
+   padding: 18px 0px 16px 22px;
+   transition: box-shadow 0.3s ease 0.1s;
 }
 
 .productCard:hover {
-    box-shadow: 3px 3px 20px 0px #32323240;
-
+   box-shadow: 3px 3px 20px 0px #32323240;
 }
-
-.heading:hover {
-    color: $accentColor;
-}
-
 
 .wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .heading {
    @include text (23px, 700, 27px, $basicTextColor);
-
-   cursor: pointer;
 }
 
 .details {
-    @include text (14px, 400, 17px, $lightColorText);
-    text-decoration: none;
+   @include text (14px, 400, 17px, $lightColorText);
+   text-decoration: none;
+   transition: color 0.2s ease 0.1s;
+
+   &:hover {
+      color: $accentColor;
+      font-weight: 600;
+   }
 }
 
 .imgWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
 }
 
 .img {
-    object-fit: cover;
+   object-fit: cover;
 }
