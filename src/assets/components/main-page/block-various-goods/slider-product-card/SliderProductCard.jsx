@@ -1,6 +1,5 @@
 import s from "./SliderProductCard.module.scss";
-
-// import img from "./../../../../img/slider1/like.svg";
+import { NavLink } from "react-router-dom";
 import imgCart from "./../../../../img/slider1/cart.png";
 import IconCheckboxes from "../../../common/icon-boxes/IconCheckboxes";
 
@@ -19,13 +18,13 @@ function SliderProductCard(props) {
             <span className={s.title}>{props.title}</span>
             <span className={s.price}>{props.price}</span>
             <span className={s.nope}>{props.nope}</span>
-            <a className={s.inform} href="#">
+            <NavLink className={s.inform} to={'/'}>
                {props.inform}
-            </a>
+            </NavLink>
          </div>
-         <a className={s.cartLink} style={props.styleCart}>
+         <div className={s.cartLink} style={props.styleCart}>
             <img className={s.cartImg} src={imgCart} alt="" />
-         </a>
+         </div>
       </div>
    );
 }

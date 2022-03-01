@@ -15,6 +15,11 @@ h3,
 .link {
    color: $basicTextColor;
    text-decoration: none;
+   transition: color 0.2s ease 0.1s;
+
+   &:hover {
+      color: #1C62CD;
+   }
 }
 
 .list {
