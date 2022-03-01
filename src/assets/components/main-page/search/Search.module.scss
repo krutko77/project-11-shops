@@ -33,7 +33,7 @@
 }
 
 .inputSearch {
-   height: 50px;
+   height: 51px;
    width: 100%;
    background-color: #F0F0F4;
    border: none;
@@ -41,11 +41,16 @@
 
 input {
    outline: none;
-   padding-left: 15px;
+   padding-left: 20px;
 }
 
 input::placeholder {
    color: #656464;
+   padding-left: 0;
+}
+
+input:focus::placeholder {
+   color: transparent;
 }
 
 input,
