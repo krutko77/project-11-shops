@@ -1,46 +1,31 @@
 import s from "./ProductCard.module.scss";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 import imgCart from "./../../../img/slider1/cart.png";
-import IconCheckboxesCard from "./icon-boxes-card/IconCheckboxesCard.jsx";
+import IconCheckboxes from "../../common/icon-boxes/IconCheckboxes";
 
-function ProductCard(props) {
-  return (
-    <div className={s.box}>
-      {props.cardData.sale && (
-        <span className={s.sale} style={props.styleSale}>
-          SALE
-        </span>
-      )}
-      <a className={s.like} href="#">
-        <IconCheckboxesCard />
-      </a>
-      <div className={s.wrap}>
-        <img className={s.productImg} src={props.cardData.img} alt="" />
-        <span className={s.title}>{props.cardData.title}</span>
-        <span className={s.price}>{props.cardData.price}</span>
-
-        {props.cardData.inStock && (
-          <div className={s.notAvailable}>
-            <span className={s.nope}>{props.cardData.nope}нет в наличии</span>
-            <Link className={s.inform} to="/123">
-              Сообщить о поступлении{props.inform}
-            </Link>
-          </div>
-        )}
+function SliderProductCard(props) {
+   return (
+      <div className={s.box}>
+         <span className={s.sale} style={props.styleSale}>
+            {props.sale}
+         </span>
+         <NavLink className={s.like} to="'/'">
+            <IconCheckboxes />
+         </NavLink>
+         <div className={s.wrap}>
+            <img className={s.productImg} src={props.img} alt="" />
+            <span className={s.title}>{props.title}</span>
+            <span className={s.price}>{props.price}</span>
+            <span className={s.nope}>{props.nope}</span>
+            <NavLink className={s.inform} to={'/'}>
+               {props.inform}
+            </NavLink>
+         </div>
+         <div className={s.cartLink} style={props.styleCart}>
+            <img className={s.cartImg} src={imgCart} alt="" />
+         </div>
       </div>
-      {props.cardData.basket && (
-        <a className={s.cartLink} style={props.styleCart}>
-          <img className={s.cartImg} src={imgCart} alt="" />
-        </a>
-      )}
-      {/* {props.cardData.inStock ? (
-        <div> price & cartLink </div>
-      ) : (
-        <div> nope & inform </div>
-      )} */}
-    </div>
-  );
+   );
 }
 
-export default ProductCard;
+export default SliderProductCard;

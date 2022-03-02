@@ -52,7 +52,7 @@ const navData = {
          width: "max-content"
       },
       title: "Гидроциклы",
-      path: "/"
+      path: "/catalog"
    },
    data4: {
       title: "Лодки",
@@ -129,7 +129,7 @@ function Header(props) {
                   <ListPersonal />
                </div>
             </div>
-            <Navigation navData={navData} styledNavigation={styledNavigation} styledBackground={styledBackground} styledNavItem={styledNavItem} />           
+            <Navigation navData={navData} styledNavigation={styledNavigation} styledBackground={styledBackground} styledNavItem={styledNavItem} />
          </div>
       </header>
    );

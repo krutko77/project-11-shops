@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path="/catalog/:id">
+        <Route path="/catalog">
         <Catalog />
         </Route>
-        <Route path="/product-card">
+        <Route path="/product-page">
           <ProductPage />
         </Route>
         <Route path="/">

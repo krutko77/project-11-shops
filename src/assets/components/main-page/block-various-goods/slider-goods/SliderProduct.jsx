@@ -1,6 +1,6 @@
 import "./SliderProduct.scss";
 import Slider from "react-slick";
-import SliderProductCard from "../slider-product-card/SliderProductCard";
+import ProductCard from "./../../../common/product-card/ProductCard.jsx";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,7 +28,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale=""
                      styleSale={{ display: "none" }}
                      title={props.cardsData.cardData1.title}
@@ -41,7 +41,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale={props.cardsData.cardData2.sale}
                      title={props.cardsData.cardData2.title}
                      img={props.cardsData.cardData2.img}
@@ -53,7 +53,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale=""
                      styleSale={{ display: "none" }}
                      title={props.cardsData.cardData3.title}
@@ -66,7 +66,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale={props.cardsData.cardData4.sale}
                      title={props.cardsData.cardData4.title}
                      img={props.cardsData.cardData4.img}
@@ -80,7 +80,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale={props.cardsData.cardData5.sale}
                      title={props.cardsData.cardData5.title}
                      img={props.cardsData.cardData5.img}
@@ -95,7 +95,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale=""
                      styleSale={{ display: "none" }}
                      title={props.cardsData.cardData6.title}
@@ -108,7 +108,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale={props.cardsData.cardData7.sale}
                      title={props.cardsData.cardData7.title}
                      img={props.cardsData.cardData7.img}
@@ -122,7 +122,7 @@ export default function SliderProduct(props) {
 
             <div>
                <NavLink to={'/'}>
-                  <SliderProductCard
+                  <ProductCard
                      sale=""
                      styleSale={{ display: "none" }}
                      title={props.cardsData.cardData8.title}

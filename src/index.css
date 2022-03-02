@@ -84,3 +84,4 @@ button:hover {
 button:not(.slick-arrow):active {
    transform: translate(1px, 2px);
 }
+

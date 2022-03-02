@@ -69,7 +69,7 @@ const sectionProductsCardsData = {
    cardData2: {
       title: "Гидроциклы",
       img: imgProduct2,
-      link: '/product-card/jet-skis'
+      link: '/catalog'
    },
    cardData3: {
       title: "Катера",

@@ -259,7 +259,7 @@ function ProductPage() {
                <StyledBreadcrumbs
                   separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
                   <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,
-                  <Link underline="hover" key="2" color="inherit" href="/">Гидроциклы</Link>,
+                  <Link underline="hover" key="2" color="inherit" href="/catalog">Гидроциклы</Link>,
                   <MyTypography key="3" color="inherit" >
                      Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
                   </MyTypography>
