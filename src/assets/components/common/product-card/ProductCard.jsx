@@ -1,31 +1,33 @@
 import s from "./ProductCard.module.scss";
 import { NavLink } from "react-router-dom";
 import imgCart from "./../../../img/slider1/cart.png";
-import IconCheckboxes from "../../common/icon-boxes/IconCheckboxes";
+import IconCheckboxes from "./../icon-boxes/IconCheckboxes.jsx";
 
-function SliderProductCard(props) {
+function ProductCard(props) {
    return (
       <div className={s.box}>
-         <span className={s.sale} style={props.styleSale}>
-            {props.sale}
+         <span className={s.sale} style={props.cardData.styleSale}>
+            {props.cardData.sale}
          </span>
-         <NavLink className={s.like} to="'/'">
+         <div className={s.like}>
             <IconCheckboxes />
-         </NavLink>
+         </div>
          <div className={s.wrap}>
-            <img className={s.productImg} src={props.img} alt="" />
-            <span className={s.title}>{props.title}</span>
-            <span className={s.price}>{props.price}</span>
-            <span className={s.nope}>{props.nope}</span>
-            <NavLink className={s.inform} to={'/'}>
-               {props.inform}
+            <NavLink to={props.cardData.link}>
+               <img className={s.productImg} src={props.cardData.img} alt="img" />
+            </NavLink>            
+            <span className={s.title}>{props.cardData.title}</span>
+            <span className={s.price}>{props.cardData.price}</span>
+            <span className={s.nope}>{props.cardData.nope}</span>
+            <NavLink className={s.inform} to={props.cardData.informLink}>
+               {props.cardData.inform}
             </NavLink>
          </div>
-         <div className={s.cartLink} style={props.styleCart}>
+         <div className={s.cartLink} style={props.cardData.styleCart}>
             <img className={s.cartImg} src={imgCart} alt="" />
          </div>
       </div>
    );
 }
 
-export default SliderProductCard;
+export default ProductCard;

@@ -1,5 +1,4 @@
 import s from "./BlockVariousGoods.module.scss";
-
 import TitleBlock from "./title-block/TitleBlock";
 import SliderProduct from "./slider-goods/SliderProduct";
 import ButtonShowMore from "./button-show-more/ButtonShowMore";

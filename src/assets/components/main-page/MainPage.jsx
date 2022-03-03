@@ -194,52 +194,44 @@ const navOtherProductData = {
 // данные для среднего слайдера
 const popularProductCardsData = {
    cardData1: {
+      styleSale: {
+         display: "none"
+      },
       title: "Водонепроницаемый Рюкзак",
       img: imgSlider1Card1,
-      price: "9 800 ₽"
+      price: "9 800 ₽",
+      link: "/",
+      informLink: "/"
    },
    cardData2: {
       title: "Спасательный жилет BRP Men's Airflow PFD",
       img: imgSlider1Card2,
       price: "6 900 ₽",
-      sale: "SALE"
+      sale: "SALE",
+      link: "/",
+      informLink: "/"
    },
    cardData3: {
+      styleSale: {
+         display: "none"
+      },
       title: "BRP Audio-Premium System",
       img: imgSlider1Card3,
-      price: "68 000 ₽"
+      price: "68 000 ₽",
+      link: "/",
+      informLink: "/"
    },
    cardData4: {
       title: "Спасательное снаряжение",
       img: imgSlider1Card4,
       sale: "SALE",
       nope: "нет в наличии",
-      inform: "Сообщить о поступлении"
-   },
-   cardData5: {
-      title: "Спасательное снаряжение",
-      img: imgSlider1Card1,
-      sale: "SALE",
-      nope: "нет в наличии",
-      inform: "Сообщить о поступлении"
-   },
-   cardData6: {
-      title: "Водонепроницаемый Рюкзак",
-      img: imgSlider1Card1,
-      price: "9 800 ₽"
-   },
-   cardData7: {
-      title: "Спасательное снаряжение",
-      img: imgSlider1Card4,
-      sale: "SALE",
-      nope: "нет в наличии",
-      inform: "Сообщить о поступлении"
-   },
-   cardData8: {
-      title: "Спасательное снаряжение",
-      img: imgSlider1Card4,
-      sale: "SALE",
-      price: "7 000 ₽"
+      inform: "Сообщить о поступлении",
+      styleCart: {
+         display: "none"
+      },
+      link: "/",
+      informLink: "/"
    },
 }
 
@@ -253,54 +245,46 @@ const bannerData = {
 // данные для нижнего слайдера
 const otherProductCardsData = {
    cardData1: {
+      sale: "SALE",
       title: "Спасательное снаряжение",
       img: imgSlider2Card1,
       price: "45 800 ₽",
+      link: "/",
+      informLink: "/"
    },
    cardData2: {
+      styleSale: {
+         display: "none"
+      },
       title: "Garmin Echomap Plus 62cv",
       img: imgSlider2Card2,
       price: "45 800 ₽",
-      sale: "SALE",
+      link: "/",
+      informLink: "/"      
    },
    cardData3: {
+      sale: "SALE",
       title: "Garmin Echomap Plus 62cv",
       img: imgSlider2Card3,
       price: "45 800 ₽",
+      link: "/",
+      informLink: "/"
    },
 
    cardData4: {
+      styleSale: {
+         display: "none"
+      },
       title: "Спасательное снаряжение",
-      img: imgSlider2Card4,
-      sale: "SALE",
+      img: imgSlider2Card4,      
       nope: "нет в наличии",
-      inform: "Сообщить о поступлении"
-   },
-   cardData5: {
-      title: "Спасательное снаряжение",
-      img: imgSlider2Card1,
-      sale: "SALE",
-      nope: "нет в наличии",
-      inform: "Сообщить о поступлении"
-   },
-   cardData6: {
-      title: "Garmin Echomap Plus 62cv",
-      img: imgSlider2Card2,
-      price: "45 800 ₽"
-   },
-   cardData7: {
-      title: "Спасательное снаряжение",
-      img: imgSlider2Card3,
-      sale: "SALE",
-      nope: "нет в наличии",
-      inform: "Сообщить о поступлении"
-   },
-   cardData8: {
-      title: "Спасательное снаряжение",
-      img: imgSlider2Card4,
-      sale: "SALE",
-      price: "7 000 ₽"
-   },
+      inform: "Сообщить о поступлении",
+      styleCart: {
+         display: "none"
+      },
+      link: "/",
+      informLink: "/"
+   }
 }
 
 function MainPage() {

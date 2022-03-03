@@ -8,21 +8,21 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+   <BrowserRouter>
       <Header />
-      <Switch>
-        <Route path="/catalog">
-        <Catalog />
-        </Route>
-        <Route path="/product-page">
-          <ProductPage />
-        </Route>
-        <Route path="/">
-          <MainPage />
-        </Route>
-      </Switch> 
+         <Switch>
+            <Route path="/catalog">
+               <Catalog />
+            </Route>
+            <Route path="/product-page">
+               <ProductPage />
+            </Route>
+            <Route path="/">
+               <MainPage />
+            </Route>
+         </Switch> 
       <Footer />
-    </BrowserRouter>
+ </BrowserRouter>
   );
 }
 
