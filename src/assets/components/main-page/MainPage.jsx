@@ -270,7 +270,6 @@ const otherProductCardsData = {
       link: "/",
       informLink: "/"
    },
-
    cardData4: {
       styleSale: {
          display: "none"

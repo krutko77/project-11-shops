@@ -1,5 +1,5 @@
 import style from "./Directory.module.scss";
-import ProductCard from "./../../common/product-card/ProductCard";
+import ProductCard from "./../../common/product-card/ProductCard.jsx";
 
 function Directory(props) {
    return (

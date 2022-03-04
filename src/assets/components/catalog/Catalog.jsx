@@ -23,107 +23,159 @@ import imgSlider2Card12 from "./../../img/jet-skis/jetski12.png";
 
 // Данные для компоненты Directory
 const ProductsCardData = {
-  data1: {
-    img: imgSlider2Card1,
-    title: "Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango",
-    price: "1 049 500 ₽",
-    basket: true,
-  },
-  data2: {
-    img: imgSlider2Card2,
-    title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
-    price: "1 543 000 ₽",
-    sale: true,
-    basket: true,
-  },
-  data3: {
-    img: imgSlider2Card3,
-    title: "Гидроцикл BRP SeaDoo GTR 230hp X California green",
-    price: "732 345 ₽",
-    basket: true,
-  },
-  data4: {
-    img: imgSlider2Card4,
-    title: "Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream",
-    sale: true,
-    inStock: true,
-  },
-  data5: {
-    img: imgSlider2Card5,
-    title: "Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal",
-    price: "1 543 000 ₽",
-    basket: true,
-  },
-  data6: {
-    img: imgSlider2Card6,
-    title: "Гидроцикл BRP SeaDoo Spark 60hp 2 up",
-    price: "732 345 ₽",
-    basket: true,
-  },
-  data7: {
-    img: imgSlider2Card7,
-    title: "Гидроцикл BRP SeaDoo Spark GTS 90hp Rental",
-    price: "857 666 ₽",
-    basket: true,
-  },
-  data8: {
-    img: imgSlider2Card8,
-    title: "Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal bluel",
-    price: "1 229 711 ₽",
-    sale: true,
-    basket: true,
-  },
-  data9: {
-    img: imgSlider2Card9,
-    title: "Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper",
-    price: "587 440 ₽",
-    basket: true,
-  },
-  data10: {
-    img: imgSlider2Card10,
-    title: "Гидроцикл Spark 2-UP 900 Ho Ace Pineapple r",
-    price: "587 440 ₽",
-    basket: true,
-  },
-  data11: {
-    img: imgSlider2Card11,
-    title: "Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla ",
-    sale: true,
-    inStock: true,
-  },
-  data12: {
-    img: imgSlider2Card12,
-    title: "Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry",
-    inStock: true,
-  },
+   data1: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card1,
+      title: "Гидроцикл BRP SeaDoo GTI 130hp SE BlackMango",
+      price: "1 049 500 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data2: {
+      sale: "SALE",
+      img: imgSlider2Card2,
+      title: "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
+      price: "1 543 000 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data3: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card3,
+      title: "Гидроцикл BRP SeaDoo GTR 230hp X California green",
+      price: "732 345 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data4: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card4,
+      title: "Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении",
+      styleCart: {
+         display: "none"
+      },
+      link: "/product-page",
+      informLink: "/"
+   },
+   data5: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card5,
+      title: "Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal",
+      price: "1 543 000 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data6: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card6,
+      title: "Гидроцикл BRP SeaDoo Spark 60hp 2 up",
+      price: "732 345 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data7: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card7,
+      title: "Гидроцикл BRP SeaDoo Spark GTS 90hp Rental",
+      price: "857 666 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data8: {
+      sale: "SALE",
+      img: imgSlider2Card8,
+      title: "Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal bluel",
+      price: "1 229 711 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data9: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card9,
+      title: "Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper",
+      price: "587 440 ₽",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data10: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card10,
+      title: "Гидроцикл Spark 2-UP 900 Ho Ace Pineapple r",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении",
+      styleCart: {
+         display: "none"
+      },
+      link: "/product-page",
+      informLink: "/"
+   },
+   data11: {
+      sale: "SALE",
+      img: imgSlider2Card11,
+      title: "Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla ",
+      link: "/product-page",
+      informLink: "/"
+   },
+   data12: {
+      styleSale: {
+         display: "none"
+      },
+      img: imgSlider2Card12,
+      title: "Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry",
+      nope: "нет в наличии",
+      inform: "Сообщить о поступлении",
+      styleCart: {
+         display: "none"
+      },
+      link: "/product-page",
+      informLink: "/"
+   },
 };
 
 const data = {
-  heading: "Гидроциклы",
+   heading: "Гидроциклы",
 };
 
 function Catalog() {
-  return (
-    <div>
-      <div className={s.container}>
-        <Breadcrumbs separator="›" aria-label="breadcrumb">
-          <Link underline="hover" color="#C4C4C4" href="/">
-            Главная
-          </Link>
-          <Typography color="#C4C4C4">Гидроциклы</Typography>
-        </Breadcrumbs>
-        <h1 className={s.heading}>{data.heading}</h1>
-        <Sorter />
-        <div className={s.wrapper}>
-          <Filter />
-          <div className={s.inner}>
-            <Directory cardsData={ProductsCardData} />
-            <UsePagination />
-          </div>
-        </div>
+   return (
+      <div>
+         <div className={s.container}>
+            <Breadcrumbs separator="›" aria-label="breadcrumb">
+               <Link underline="hover" color="#C4C4C4" href="/">
+                  Главная
+               </Link>
+               <Typography color="#C4C4C4">Гидроциклы</Typography>
+            </Breadcrumbs>
+            <h1 className={s.heading}>{data.heading}</h1>
+            <Sorter />
+            <div className={s.wrapper}>
+               <Filter />
+               <div className={s.inner}>
+                  <Directory cardsData={ProductsCardData} />
+                  <UsePagination />
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  );
+   );
 }
 
 export default Catalog;

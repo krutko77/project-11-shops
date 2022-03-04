@@ -7,23 +7,23 @@ import Footer from "./assets/components/footer/Footer.jsx";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
-  return (
-   <BrowserRouter>
-      <Header />
-         <Switch>
-            <Route path="/catalog">
-               <Catalog />
-            </Route>
-            <Route path="/product-page">
-               <ProductPage />
-            </Route>
-            <Route path="/">
-               <MainPage />
-            </Route>
-         </Switch> 
-      <Footer />
- </BrowserRouter>
-  );
-}
-
-export default App;
+   return (
+     <BrowserRouter>
+       <Header />
+       <Switch>
+         <Route path="/catalog">
+         <Catalog />
+         </Route>
+         <Route path="/product-page">
+           <ProductPage />
+         </Route>
+         <Route path="/">
+           <MainPage />
+         </Route>
+       </Switch> 
+       <Footer />
+     </BrowserRouter>
+   );
+ }
+ 
+ export default App;

@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import ProductCard from "./../../../common/product-card/ProductCard.jsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NavLink } from "react-router-dom";
 
 
 
