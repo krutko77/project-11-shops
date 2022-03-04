@@ -246,9 +246,9 @@ const bannerData = {
 const otherProductCardsData = {
    cardData1: {
       sale: "SALE",
-      title: "Спасательное снаряжение",
+      title: "BRP Audio-портативная система",
       img: imgSlider2Card1,
-      price: "45 800 ₽",
+      price: "35 500 ₽",
       link: "/",
       informLink: "/"
    },
@@ -260,13 +260,13 @@ const otherProductCardsData = {
       img: imgSlider2Card2,
       price: "45 800 ₽",
       link: "/",
-      informLink: "/"      
+      informLink: "/"
    },
    cardData3: {
       sale: "SALE",
-      title: "Garmin Echomap Plus 62cv",
+      title: "RF D.E.S.S.TM Key",
       img: imgSlider2Card3,
-      price: "45 800 ₽",
+      price: "7 500 ₽",
       link: "/",
       informLink: "/"
    },
@@ -275,7 +275,7 @@ const otherProductCardsData = {
          display: "none"
       },
       title: "Спасательное снаряжение",
-      img: imgSlider2Card4,      
+      img: imgSlider2Card4,
       nope: "нет в наличии",
       inform: "Сообщить о поступлении",
       styleCart: {

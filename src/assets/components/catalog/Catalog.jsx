@@ -118,7 +118,7 @@ const ProductsCardData = {
          display: "none"
       },
       img: imgSlider2Card10,
-      title: "Гидроцикл Spark 2-UP 900 Ho Ace Pineapple r",
+      title: "Гидроцикл Spark 2-UP 900 Ho Ace Pineapple",
       nope: "нет в наличии",
       inform: "Сообщить о поступлении",
       styleCart: {

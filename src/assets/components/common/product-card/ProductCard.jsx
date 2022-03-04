@@ -12,10 +12,12 @@ function ProductCard(props) {
          <div className={s.like}>
             <IconCheckboxes />
          </div>
-         <div className={s.wrap}>
+         <div className={s.contentWrap}>
             <NavLink to={props.cardData.link}>
-               <img className={s.productImg} src={props.cardData.img} alt="img" />
-            </NavLink>            
+               <div className={s.imgWrap}>
+                  <img className={s.productImg} src={props.cardData.img} alt="img" />
+               </div>
+            </NavLink>
             <span className={s.title}>{props.cardData.title}</span>
             <span className={s.price}>{props.cardData.price}</span>
             <span className={s.nope}>{props.cardData.nope}</span>
