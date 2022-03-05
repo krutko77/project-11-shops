@@ -1,7 +1,7 @@
 import s from "./BlockVariousGoods.module.scss";
 import TitleBlock from "./title-block/TitleBlock";
 import SliderProduct from "./slider-goods/SliderProduct";
-import GrayButton from "../../common/gray-button/GrayButton.jsx";
+import GrayButton from "./../../common/grey-button/GrayButton.jsx";
 import Navigation from './../../common/navigation/Navigation.jsx';
 
 // стилизация блока навигации

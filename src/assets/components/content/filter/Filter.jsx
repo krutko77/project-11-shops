@@ -7,7 +7,7 @@ import Select from "./select/Select";
 import { NavLink } from "react-router-dom";
 import Stack from "./button/Button";
 import Country from "./country/Country";
-import GrayButton from "./../../common/gray-button/GrayButton.jsx";
+import GrayButton from "./../../common/grey-button/GrayButton.jsx";
 
 
 function Filter(props) {
