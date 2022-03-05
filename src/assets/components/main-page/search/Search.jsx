@@ -18,7 +18,7 @@ function Search(props) {
          </ul>
          <div className={s.inputBlock}>
             <input className={s.inputSearch} name="name" type="text" placeholder="Введите марку" autofocus />
-            <Button className={s.button} style={styleButton} label={"ИСКАТЬ"} />            
+            <Button className={s.button} style={styleButton} label={"Искать"} />            
          </div>
       </div>
    );

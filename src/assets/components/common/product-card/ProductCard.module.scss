@@ -73,6 +73,12 @@
       }
    }
 
+   .productImg {
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+   }
+
    .title {
       @include text (18px, 400, 21px, inherit);
       display: block;

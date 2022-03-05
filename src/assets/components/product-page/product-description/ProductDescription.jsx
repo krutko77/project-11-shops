@@ -83,7 +83,7 @@ function productDescription(props) {
                   Показать еще
                </NavLink>
             </div>
-            <Button className={s.button} style={styleButton} label={"КУПИТЬ"} />
+            <Button className={s.button} style={styleButton} label={"Купить"} />
          </div>
       </section>
    );

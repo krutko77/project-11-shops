@@ -1,7 +1,7 @@
 import s from "./BlockVariousGoods.module.scss";
 import TitleBlock from "./title-block/TitleBlock";
 import SliderProduct from "./slider-goods/SliderProduct";
-import ButtonShowMore from "./button-show-more/ButtonShowMore";
+import GrayButton from "../../common/gray-button/GrayButton.jsx";
 import Navigation from './../../common/navigation/Navigation.jsx';
 
 // стилизация блока навигации
@@ -13,7 +13,7 @@ const styledNavigation = {
 
 const styledBackground = {
    backgroundColor: "transparent",
-   marginBottom: "30px"   
+   marginBottom: "30px"
 }
 
 // стилизация элементов навигации
@@ -28,7 +28,7 @@ function BlockVariousGoods(props) {
          <TitleBlock title={props.title} />
          <Navigation navData={props.navData} styledNavigation={styledNavigation} styledBackground={styledBackground} styledNavItem={styledNavItem} />
          <SliderProduct cardsData={props.cardsData} />
-         <ButtonShowMore style={props.btnStyle} />
+         <GrayButton style={props.btnStyle} label={"Показать еще"}/>
       </div>
    );
 }

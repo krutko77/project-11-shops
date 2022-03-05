@@ -17,7 +17,7 @@ function Mailing() {
          </div>
          <div className={s.inputButton}>
             <input className={s.emailInput} type="text" name="mail" placeholder="Введите ваш e-mail:" />
-            <Button style={styleButton} label={"ОТПРАВИТЬ"} />
+            <Button style={styleButton} label={"Отправить"} />
          </div>
       </div>
    );

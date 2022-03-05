@@ -216,7 +216,7 @@ const otherProductCardsData = {
       img: imgSlider2Card2,
       price: "45 800 ₽",
       link: "/",
-      informLink: "/"      
+      informLink: "/"
    },
    cardData3: {
       sale: "SALE",
@@ -231,7 +231,7 @@ const otherProductCardsData = {
          display: "none"
       },
       title: "Спасательное снаряжение",
-      img: imgSlider2Card4,      
+      img: imgSlider2Card4,
       nope: "нет в наличии",
       inform: "Сообщить о поступлении",
       styleCart: {

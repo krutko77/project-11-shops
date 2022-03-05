@@ -4,7 +4,9 @@ import Filter from "../content/filter/Filter";
 import Directory from "../content/directory/Directory";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Link from "@mui/material/Link";
+import { styled } from '@mui/material/styles';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Link from '@mui/material/Link';
 import Sorter from "./sorter/Sorter";
 import UsePagination from "./pagination/UsePagination.jsx";
 
@@ -154,16 +156,38 @@ const data = {
    heading: "Гидроциклы",
 };
 
+// стилизация "хлебных крошек"
+const StyledBreadcrumbs = styled(Breadcrumbs)(({ theme }) => {
+   return {
+      fontFamily: "SFProDisplayRegular",
+      fontSize: 15,
+      color: "#C4C4C4",
+      "& .MuiBreadcrumbs-separator": {
+         marginLeft: 0,
+         marginRight: 0
+      }
+   };
+})
+
+const MyTypography = styled(Typography)(({ theme }) => {
+   return {
+      fontFamily: "SFProDisplayRegular",
+      fontSize: 15,
+   };
+})
+
 function Catalog() {
    return (
       <div>
          <div className={s.container}>
-            <Breadcrumbs separator="›" aria-label="breadcrumb">
-               <Link underline="hover" color="#C4C4C4" href="/">
-                  Главная
-               </Link>
-               <Typography color="#C4C4C4">Гидроциклы</Typography>
-            </Breadcrumbs>
+            <nav className={s.NavBreadcrumbs}>
+               <StyledBreadcrumbs
+                  separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
+                  <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,                  
+                  <MyTypography key="3" color="inherit" >
+                  Гидроциклы</MyTypography>
+               </StyledBreadcrumbs>
+            </nav>
             <h1 className={s.heading}>{data.heading}</h1>
             <Sorter />
             <div className={s.wrapper}>

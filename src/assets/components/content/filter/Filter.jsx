@@ -7,14 +7,10 @@ import Select from "./select/Select";
 import { NavLink } from "react-router-dom";
 import Stack from "./button/Button";
 import Country from "./country/Country";
-import ContainedButtons from "./buttonFilter/ButtonFilter";
-import arrow from "./../../../img/arrow.svg";
+import GrayButton from "./../../common/gray-button/GrayButton.jsx";
+
 
 function Filter(props) {
-   // const data = { ссылка1 };
-   // const data2 = { ссылка2 };
-   // const data3 = { ссылка3 };
-   // const data4 = { ссылка4 };
    return (
       <div className={style.filter}>
          <h3 className={style.title}>Параметры</h3>
@@ -124,8 +120,8 @@ function Filter(props) {
             </details>
          </div>
 
-         <div className={style.footerFilter}>
-            <ContainedButtons />
+         <div className={style.grayButton}>
+            <GrayButton label={"Выбрать"} />
          </div>
 
          <input
