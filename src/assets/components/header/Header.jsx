@@ -121,7 +121,8 @@ function Header(props) {
                            className={s.svgElem4}
                         ></path>
                      </svg>
-                  </NavLink>
+                  </NavLink
+                  >
                </div>
                <div className={s.navigationRight}>
                   <ul className={s.listRight}>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Rating } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import StarIcon from "@mui/icons-material/Star";
-import IconCheckboxes from "../../common/icon-boxes/IconCheckboxes";
+import IconCheckboxes from "../../common/icon-boxes/IconCheckboxes.jsx";
 import SmallTable from "./small-table/SmallTable.jsx";
 import Button from "../../common/button/Button.jsx";
 
