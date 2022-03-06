@@ -4,7 +4,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { styled } from '@mui/material/styles';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import { NavLink } from "react-router-dom";
 import BuyProduct from "./buy-product/BuyProduct.jsx";
 import BlockVariousGoods from "../main-page/block-various-goods/BlockVariousGoods.jsx";
 
@@ -249,8 +249,8 @@ function ProductPage() {
             <nav className={s.NavBreadcrumbs}>
                <StyledBreadcrumbs
                   separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
-                  <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,
-                  <Link underline="hover" key="2" color="inherit" href="/catalog">Гидроциклы</Link>,
+                  <NavLink underline="hover" key="1" color="inherit" to="/">Главная</NavLink>,
+                  <NavLink underline="hover" key="2" color="inherit" to="/catalog">Гидроциклы</NavLink>,
                   <MyTypography key="3" color="inherit" >
                      Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
                   </MyTypography>

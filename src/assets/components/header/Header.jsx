@@ -1,9 +1,10 @@
 import s from "././Header.module.scss";
 import HeaderItem from "./header-item/HeaderItem";
 import ListPersonal from "./listPersonal/ListPersonal";
+import { NavLink } from "react-router-dom";
 import Navigation from './../common/navigation/Navigation.jsx'
-// import NavigationHeader from "./navigation-header/NavigationHeader.jsx";
 
+// данные для навигации
 const data = {
    titleLink: "Магазины",
 };
@@ -89,7 +90,7 @@ function Header(props) {
                   </ul>
                </nav>
                <div className={s.logoSvg}>
-                  <a href="/">
+                  <NavLink to="/">
                      <svg
                         className={s.logo}
                         width="80"
@@ -120,7 +121,7 @@ function Header(props) {
                            className={s.svgElem4}
                         ></path>
                      </svg>
-                  </a>
+                  </NavLink>
                </div>
                <div className={s.navigationRight}>
                   <ul className={s.listRight}>

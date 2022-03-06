@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import { styled } from '@mui/material/styles';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import Link from '@mui/material/Link';
+import { NavLink } from "react-router-dom";
 import Sorter from "./sorter/Sorter";
 import UsePagination from "./pagination/UsePagination.jsx";
 
@@ -183,7 +183,7 @@ function Catalog() {
             <nav className={s.NavBreadcrumbs}>
                <StyledBreadcrumbs
                   separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
-                  <Link underline="hover" key="1" color="inherit" href="/">Главная</Link>,                  
+                  <NavLink underline="hover" key="1" color="inherit" to="/">Главная</NavLink>,                  
                   <MyTypography key="3" color="inherit" >
                   Гидроциклы</MyTypography>
                </StyledBreadcrumbs>
