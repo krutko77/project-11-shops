@@ -249,8 +249,8 @@ function ProductPage() {
             <nav className={s.NavBreadcrumbs}>
                <StyledBreadcrumbs
                   separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
-                  <NavLink underline="hover" key="1" color="inherit" to="/">Главная</NavLink>,
-                  <NavLink underline="hover" key="2" color="inherit" to="/catalog">Гидроциклы</NavLink>,
+                  <NavLink key="1" color="inherit" to="/">Главная</NavLink>,
+                  <NavLink key="2" color="inherit" to="/catalog">Гидроциклы</NavLink>,
                   <MyTypography key="3" color="inherit" >
                      Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
                   </MyTypography>

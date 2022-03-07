@@ -183,9 +183,9 @@ function Catalog() {
             <nav className={s.NavBreadcrumbs}>
                <StyledBreadcrumbs
                   separator={<NavigateNextIcon fontSize="medium" />} aria-label="breadcrumb">
-                  <NavLink underline="hover" key="1" color="inherit" to="/">Главная</NavLink>,                  
+                  <NavLink key="1" color="inherit" to="/">Главная</NavLink>,
                   <MyTypography key="3" color="inherit" >
-                  Гидроциклы</MyTypography>
+                     Гидроциклы</MyTypography>
                </StyledBreadcrumbs>
             </nav>
             <h1 className={s.heading}>{data.heading}</h1>
