@@ -1,5 +1,5 @@
 ## Интернет магазин "DRIVE MOTO"
-Десктопная версия многостраничного сайта интернет магазина "DRIVE MOTO". Работа выполнена в команде. Проект создавался с использованием GULP, Sass, GIT, REACT, Material UI, Slick Slider, Flex, Grid Layout.
+Десктопная версия многостраничного сайта интернет магазина "DRIVE MOTO". Работа выполнена в команде. Проект создавался с использованием GULP, Sass, GIT, REACT, Material UI, Slick Slider, Flex, Grid Layout, Pixel Perfect, Figma.
 
 Здесь приведены три страницы сайта: Главная, Каталог, Карточка товара.
 
