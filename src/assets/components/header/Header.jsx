@@ -79,7 +79,7 @@ const navData = {
 
 function Header(props) {
    return (
-      <header className={s.header}>
+      <header className={s.header} id={"top"}>
          <div className={s.container}>
             <div className={s.headerWrap}>
                <nav className={s.navigationLeft}>
@@ -94,8 +94,8 @@ function Header(props) {
                      <svg
                         className={s.logo}
                         width="80"
-                        height="76"
-                        viewBox="0 0 80 76"
+                        height="80"
+                        viewBox="0 0 80 75"
                         fill="#2F3035"
                         stroke="#2F3035"
                         xmlns="http://www.w3.org/2000/svg"
@@ -121,8 +121,7 @@ function Header(props) {
                            className={s.svgElem4}
                         ></path>
                      </svg>
-                  </NavLink
-                  >
+                  </NavLink>
                </div>
                <div className={s.navigationRight}>
                   <ul className={s.listRight}>

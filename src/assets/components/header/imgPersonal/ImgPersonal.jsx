@@ -1,11 +1,12 @@
 
 import s from './ImgPersonal.module.scss';
+import { NavLink } from "react-router-dom";
 
 function ImgPersonal(props) {
     return (
-        <a className={s.linkPersonal}>
-            <img className={s.imgPersonal} src={props.img} />
-        </a>
+        <NavLink className={s.linkPersonal} to="/">
+            <img className={s.imgPersonal} src={props.img} alt="icon"/>
+        </NavLink>
     );
 }
 

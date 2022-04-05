@@ -53,15 +53,8 @@
 
 body {
    margin: 0;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-
-   color: #2f3035;
    font-family: "SFProDisplayRegular", sans-serif;
-   /* font-family: "BarlowBold", sans-serif; */
+   color: #2f3035;
 }
 
 code {

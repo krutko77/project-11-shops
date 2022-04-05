@@ -26,7 +26,7 @@ function ProductCard(props) {
             </NavLink>
          </div>
          <div className={s.cartLink} style={props.cardData.styleCart}>
-            <img className={s.cartImg} src={imgCart} alt="" />
+            <img className={s.cartImg} src={imgCart} alt="icon" />
          </div>
       </div>
    );

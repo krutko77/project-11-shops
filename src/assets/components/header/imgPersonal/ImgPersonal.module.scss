@@ -4,10 +4,10 @@
 
 
 .imgPersonal {
-   transition: opacity 0.2s ease 0.1s;
+   transition: transform 0.2s ease;
 
    &:hover {
-      opacity: 0.6;
+      transform: scale(1.1);
    }
 }
 
