@@ -49,7 +49,8 @@ const promoData = {
    img: imgPromo,
    productName: "Лодочный мотор Suzuki DF9.9BRS",
    text: "Акция действует до",
-   date: "31.08.2020"
+   date: "31.08.2020",
+   link: "/"
 }
 
 // данные для поиска

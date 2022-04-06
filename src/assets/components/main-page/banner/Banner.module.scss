@@ -1,12 +1,24 @@
+@import './../../../../styles/sass/abstracts/variables.scss';
+@import './../../../../styles/sass/abstracts/mixins.scss';
+
+
 .banner {
    width: 100%;
    height: 165px;
-   background-color: #1C62CD;
-   color: white;
+   background-color: $accentColor;
+   color: $veryLightColor;
    display: grid;
    grid-template-columns: 222px 222px 1fr 407px;
    align-items: center;
    margin-bottom: 72px;
+
+   img {
+      transition: transform 0.3s ease;
+
+      &:hover {
+         transform: scale(1.2);
+      }
+   }
 }
 
 .img1 {
@@ -22,8 +34,7 @@
 .bannerType,
 .text {
    font-family: "SFProDisplayBold";
-   font-size: 36px;
-   line-height: 100%;
+   @include text (36px, 700, 100%, $veryLightColor);
 }
 
 .bannerType {
@@ -34,13 +45,11 @@
    display: inline-block;
    width: 284px;
    height: 57px;
-   background-color: white;
+   background-color: $veryLightColor;
    text-decoration: none;
    padding: 4px 41px;
    font-family: "SFProDisplayMedium";
-   font-size: 24px;
-   color: black;
-   line-height: 210%;
+   @include text (24px, 500, 210%, $basicTextColor);
    cursor: pointer;
    transition: opacity 0.2s ease 0.1s;
 

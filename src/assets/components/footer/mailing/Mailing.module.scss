@@ -19,12 +19,22 @@
 .emailInput {
    border: none;
    height: 33px;
-   width: 185px;   
+   width: 185px;
+   padding-left: 15px;
+   transition: 0.3s ease 0.1s;
+
+   &:hover {
+      box-shadow: 0 0 10px 0 #32323240;
+   }
+
+   &:focus {
+      box-shadow: 0 0 10px 0 #32323240;
+   }
 }
 
 ::placeholder {
    font-size: 14px;
    line-height: 17px;
    color: $veryLightColor;
-   padding-left: 12px;  
+   padding-left: 12px;
 }
