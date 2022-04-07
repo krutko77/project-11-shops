@@ -1,11 +1,11 @@
 import s from './Footer.module.scss';
-import { Link } from 'react-router-dom';
 import Mailing from './mailing/Mailing';
 import Contract from './contract/Contract';
 import InfoMenu from './infoMenu/InfoMenu';
 import ShopMenu from './shopMenu/ShopMenu';
 import Social from './social/Social';
-import icon from './../../img/go-top-icon.png'; 
+import ScrollUpButton from './../common/scroll-up-button/ScrollUpButton.jsx';
+// import icon from './../../img/go-top-icon.png'; 
 
 
 function Footer() {
@@ -20,9 +20,10 @@ function Footer() {
             </div>
             <Contract />
          </div>
-         <Link className={s.goTop} to="#top">
+         <ScrollUpButton />
+         {/* <Link className={s.goTop} to="#top">
             <img className={s.goTopIcon} src={icon} alt="icon"/>
-         </Link>
+         </Link> */}
       </footer>
    );
 }
