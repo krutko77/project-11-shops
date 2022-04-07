@@ -1,8 +1,10 @@
+@import './../../../../styles/sass/abstracts/variables.scss';
+
 .btn {
    display: block;
    color: white;
    text-transform: uppercase;
-   background-color: #1C62CD;
+   background-color: $accentColor;
    border: none;
    border-radius: 3px;
    font-family: "SFProDisplayRegular";

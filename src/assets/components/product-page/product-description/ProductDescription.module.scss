@@ -1,5 +1,5 @@
 @import './../../../../styles/sass/abstracts/variables.scss';
-
+@import './../../../../styles/sass/abstracts/mixins.scss';
 
 .productDescription {
    display: grid;
@@ -28,6 +28,13 @@
    padding-top: 64px;
 }
 
+.saleLabel,
+.link,
+.itemNumber {
+   font-family: "SFProDisplayRegular";
+   @include text (15px, 400, 120%, inherit);
+}
+
 .saleLabel {
    width: 94px;
    height: 44px;
@@ -43,14 +50,11 @@
 
 .img {
    margin-bottom: 18px;
-}
+   transition: transform 0.3s ease;
 
-.saleLabel,
-.link,
-.itemNumber {
-   font-family: "SFProDisplayRegular";
-   font-size: 15px;
-   line-height: 120%;
+   &:hover {
+      transform: scale(1.1);
+   }
 }
 
 .link,
@@ -69,8 +73,7 @@
 
 .oldPrice {
    font-family: "BarlowRegular";
-   font-size: 30px;
-   color: $semiLightColorText;
+   @include text (30px, 400, 120%, $semiLightColorText);
    position: relative;
    margin-bottom: 6px;
 }
@@ -87,7 +90,7 @@
 
 .newPrice {
    font-family: "BarlowBold";
-   font-size: 40px;
+   @include text (40px, 700, 120%, inherit);
    margin-bottom: 12px;
 }
 
@@ -107,8 +110,7 @@
 .title {
    max-width: 530px;
    font-family: "SFProDisplayBold";
-   font-size: 30px;
-   line-height: 120%;
+   @include text (30px, 700, 120%, inherit);
    margin-bottom: 10px;
 }
 
@@ -128,6 +130,12 @@
 
 .diagramIcon {
    margin-right: 23px;
+   cursor: pointer;
+   transition: transform 0.3s ease 0.1s;
+
+   &:hover {
+      transform: scale(0.9);
+   }
 }
 
 .checkbox {
@@ -145,12 +153,11 @@
 
 .linkList {
    font-family: "SFProDisplayRegular";
-   color: $basicTextColor;
-   font-size: 20px;
-   line-height: 120%;
+   @include text (20px, 400, 120%, $basicTextColor);
    padding-bottom: 3px;
    margin-right: 40px;
-   opacity: 60%;
+   opacity: 0.6;
+   transition: opacity 0.3s ease 0.1s;
 }
 
 .linkList:hover,
@@ -158,8 +165,7 @@
    font-weight: 700;
    border-bottom: 2px solid $accentColor;
    width: max-content;
-   opacity: 100%;
-   transition: 0.2s;
+   opacity: 1;
 }
 
 .smallTableWrap {

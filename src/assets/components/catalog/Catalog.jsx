@@ -133,6 +133,7 @@ const ProductsCardData = {
       sale: "SALE",
       img: imgSlider2Card11,
       title: "Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla ",
+      price: "587 440 ₽",
       link: "/product-page",
       informLink: "/"
    },

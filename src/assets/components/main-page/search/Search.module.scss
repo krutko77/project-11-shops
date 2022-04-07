@@ -46,22 +46,6 @@
    }
 }
 
-input {
-   outline: none;
-
-   &:focus {
-      box-shadow: 0 0 10px 0 #32323240;
-
-      &::placeholder {
-         color: transparent;
-      }
-   }
-
-   &::placeholder {
-      padding-left: 20px;  
-   }  
-}
-
 input,
 input::placeholder {
    font-family: "SFProDisplayRegular";

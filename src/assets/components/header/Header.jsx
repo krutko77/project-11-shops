@@ -20,7 +20,7 @@ const data4 = {
 
 // стилизация блока навигации
 const styledNavigation = {
-   justifyContent: "space-between",
+   justifyContent: "space-around",
    height: "53px"
 }
 

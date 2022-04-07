@@ -67,14 +67,29 @@ ul {
 }
 
 button {
-   transition: opacity 0.2s ease 0.1s;
+   transition: opacity 0.3s ease 0.1s;
 }
 
 button:hover {
-   opacity: 0.7;
+   opacity: 0.8;
 }
 
 button:not(.slick-arrow):active {
    transform: translate(1px, 2px);
 }
 
+input {
+   outline: none;   
+}
+
+input:focus {
+   box-shadow: 0 0 10px 0 #32323240;   
+}
+
+input::placeholder {
+   padding-left: 20px;  
+} 
+
+input:focus::placeholder {
+   color: transparent;
+}
