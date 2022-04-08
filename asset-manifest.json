@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/project-11-shops/static/css/main.f270d329.chunk.css",
+    "main.css": "/project-11-shops/static/css/main.11b849f0.chunk.css",
     "main.js": "/project-11-shops/static/js/main.c80f4ecd.chunk.js",
     "main.js.map": "/project-11-shops/static/js/main.c80f4ecd.chunk.js.map",
     "runtime-main.js": "/project-11-shops/static/js/runtime-main.f27b5fd1.js",
@@ -12,7 +12,7 @@
     "static/js/3.50de41f3.chunk.js.map": "/project-11-shops/static/js/3.50de41f3.chunk.js.map",
     "index.html": "/project-11-shops/index.html",
     "static/css/2.9827f795.chunk.css.map": "/project-11-shops/static/css/2.9827f795.chunk.css.map",
-    "static/css/main.f270d329.chunk.css.map": "/project-11-shops/static/css/main.f270d329.chunk.css.map",
+    "static/css/main.11b849f0.chunk.css.map": "/project-11-shops/static/css/main.11b849f0.chunk.css.map",
     "static/js/2.8761e442.chunk.js.LICENSE.txt": "/project-11-shops/static/js/2.8761e442.chunk.js.LICENSE.txt",
     "static/media/index.css": "/project-11-shops/static/media/SFProDisplay-Semibold.340c3a1a.woff",
     "static/media/SliderBanner.scss": "/project-11-shops/static/media/arrow-prev.d5f9e6ce.svg",
@@ -69,7 +69,7 @@
     "static/js/runtime-main.f27b5fd1.js",
     "static/css/2.9827f795.chunk.css",
     "static/js/2.8761e442.chunk.js",
-    "static/css/main.f270d329.chunk.css",
+    "static/css/main.11b849f0.chunk.css",
     "static/js/main.c80f4ecd.chunk.js"
   ]
 }
