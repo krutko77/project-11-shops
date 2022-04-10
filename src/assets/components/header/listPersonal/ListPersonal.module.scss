@@ -2,67 +2,46 @@
 @import './../../../../styles/sass/abstracts/mixins.scss';
 
 .headerItem {
-  @include text (20px, 700, 24px, $basicTextColor);
+   @include text (20px, 700, 24px, $basicTextColor);
 }
 
+
 .listPersonal {
-  display: flex;
+   display: flex;
+   align-items: flex-end;
+
+   svg:hover path {
+      fill: $accentColor;
+   }
 }
 
 .counterWrap {
-  display: flex;
+   display: flex;
 }
 
 .personalCounter {
-  background-color: $accentColor;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+   background-color: $accentColor;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
 
-  @include text (10px, 500, 12px, $veryLightColor);
+   @include text (10px, 500, 12px, $veryLightColor);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-  transform: translate(-50%, 50%);
+   transform: translate(-50%, 50%);
 }
 
+.imgPersonal {
+   transition: transform 0.2s ease;
 
+   &:hover {
+      transform: scale(1.1);
+   }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.linkPersonal:not(:last-child) {
+   margin-right: 8px;
+}

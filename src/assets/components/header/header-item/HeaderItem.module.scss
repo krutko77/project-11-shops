@@ -1,13 +1,5 @@
 @import './../../../../styles/sass/abstracts/variables.scss';
-@import './../../../../styles/sass/abstracts/mixins.scss';
 
-.headerItem {
-   @include text (20px, 700, 24px, $basicTextColor);     
-}
-
-.headerItem:not(:last-child) {
-   margin-right: 55px;
-}
 
 .headerLink {
    transition: color 0.2s ease 0.1s; 

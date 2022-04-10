@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 function HeaderItem(props) {
    return (
-      <li className={s.headerItem}>
+      <div>
          <NavLink className={s.headerLink} to="/">{props.titleLink}</NavLink>
-      </li>
+      </div>
    );
 }
 

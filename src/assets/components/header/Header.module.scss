@@ -1,5 +1,5 @@
 @import './../../../styles/sass/abstracts/variables.scss';
-
+@import './../../../styles/sass/abstracts/mixins.scss';
 
 .header {
    margin-bottom: 37px;
@@ -19,6 +19,13 @@
    margin-bottom: 47px;
 }
 
+.headerItem {
+   @include text (20px, 700, 24px, $basicTextColor);
+}
+
+.headerItem:not(:last-child) {
+   margin-right: 55px;
+}
 
 .listLeft {
    display: flex;
@@ -30,23 +37,30 @@
    transform: translate(-50%, 0%);
 }
 
-.listRight {
+.location {
+   display: flex;
+   align-items: center;
    margin-right: 93px;
-
-   position: relative;
+   cursor: pointer;
 }
 
-.listRight::before {
-   content: "";
-   background-image: url(./../../img/location.png);
-   background-repeat: no-repeat;
-   width: 27px;
-   height: 30px;
-
-   position: absolute;
-   top: -31%;
-   left: -15%;
+.locationIcon {
+   margin-right: 3px;
+   transition: transform 0.3s ease 0.1s;
 }
+
+.location:hover .headerItem {
+   color: $accentColor;
+}
+
+.location:hover .locationIcon {
+   transform: translateY(-10px);
+}
+
+.location:hover path {
+   fill: $accentColor;
+}
+
 
 .navigationRight {
    display: flex;
